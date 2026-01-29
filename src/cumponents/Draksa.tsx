@@ -92,7 +92,11 @@ export const SlurpWhenFed = ({
 
   return (
     <label className="flex gap-3">
-      <span>SlurpWhenFed</span>
+      <div className="flex flex-col">
+        <span>Slurp when fed </span>
+        <span>(ReadAloud as you type) </span>
+      </div>
+
       <input
         className="w-10"
         type="checkbox"
@@ -121,16 +125,21 @@ export const Draksa = () => {
       <SlurpWhenFed isSlurpingWhenFed={isSlurpingWhenFed} />
 
       <div className="pt-40">
-        <details content="story"></details>
-
         <details className="group rounded-lg border p-4">
           <summary className="flex cursor-pointer list-none items-center gap-2 font-medium">
             <span className="transition group-open:rotate-90">▶</span>
-            How to use
+            <strong>Draksa</strong> story
           </summary>
 
-          <div className="text-muted-foreground mt-3 text-sm">
-            <h2>Draksa story 📚: {draksaStory}</h2>
+          <div className="text-muted-foreground mt-3 flex flex-col gap-4 text-base">
+            <p>
+              TLDR: Use browser <strong>SpeechSynthesis api</strong>. It is free voiceover
+              in your tab offline.
+            </p>
+
+            <h2>
+              <strong>Draksa</strong> story 📚: {draksaStory}
+            </h2>
           </div>
         </details>
       </div>
