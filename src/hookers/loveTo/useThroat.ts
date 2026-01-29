@@ -1,7 +1,7 @@
 // src\hookers\loveTo\useThroat.ts
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 const defaultVoiceName = 'Google US English';
 const fallbackLang = 'en-US';
@@ -11,6 +11,8 @@ interface PurrringOptions {
   pitch?: number;
   rate?: number;
 }
+
+const DEFAULT = {};
 
 /** Use voice chords and throat muscles to produce sound */
 export const useThroat = () => {
@@ -29,36 +31,50 @@ export const useThroat = () => {
     loadVoices();
   }, []);
 
-  const findVoice = () => {
+  const findVoice = useCallback(() => {
     for (const lang of preferredLangs) {
       const voice = voices.find(v => v.lang === lang);
       if (voice) return voice;
     }
     // Якщо нема потрібної мови, шукаємо по імені
     return voices.find(v => v.name.includes(defaultVoiceName)) ?? voices[0];
-  };
+  }, [voices]);
 
-  const speak = (text: string, { pitch, rate }: PurrringOptions = {}) => {
+  const openWideAndPuuurrr = useCallback(
+    (text: string, { pitch, rate }: PurrringOptions = DEFAULT) => {
+      if (!window.speechSynthesis) return;
+
+      window.speechSynthesis.cancel();
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.pitch = pitch ?? 1.1;
+      utterance.rate = rate ?? 1;
+
+      const voice = findVoice();
+      if (voice) {
+        utterance.voice = voice;
+        utterance.lang = voice.lang;
+        console.log(`🗣 Using voice:`, voice.name, 'lang:', voice.lang);
+      } else {
+        utterance.lang = fallbackLang;
+        console.warn('⚠️ No voice found, using fallback lang');
+      }
+
+      window.speechSynthesis.speak(utterance);
+    },
+    [findVoice]
+  );
+
+  const stopMeowing = useCallback(() => {
     if (!window.speechSynthesis) return;
 
     window.speechSynthesis.cancel();
+  }, []);
 
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.pitch = pitch ?? 1.1;
-    utterance.rate = rate ?? 1;
+  const petHer = useMemo(
+    () => ({ openWideAndPuuurrr, stopMeowing }),
+    [openWideAndPuuurrr, stopMeowing]
+  );
 
-    const voice = findVoice();
-    if (voice) {
-      utterance.voice = voice;
-      utterance.lang = voice.lang;
-      console.log(`🗣 Using voice:`, voice.name, 'lang:', voice.lang);
-    } else {
-      utterance.lang = fallbackLang;
-      console.warn('⚠️ No voice found, using fallback lang');
-    }
-
-    window.speechSynthesis.speak(utterance);
-  };
-
-  return speak;
+  return petHer;
 };

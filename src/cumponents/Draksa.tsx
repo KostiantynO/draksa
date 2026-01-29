@@ -1,0 +1,139 @@
+// src\cumponents\Draksa.tsx
+
+import { useThroat } from '@/hookers/loveTo/useThroat';
+
+import { useCallback, useRef } from 'react';
+
+import type { RefObject, ChangeEvent } from 'react';
+
+const pweaseFeedMeDaddy = 'Pwease, feed me, Daddy... :3';
+
+export const Throat = ({
+  iWantYourJuicy,
+  isSlurpingWhenFed,
+}: {
+  iWantYourJuicy: RefObject<string>;
+  isSlurpingWhenFed: RefObject<boolean>;
+}) => {
+  const { openWideAndPuuurrr } = useThroat();
+
+  const foodRef = useRef<HTMLTextAreaElement | null>(null);
+
+  const onChange = useCallback(
+    (e: ChangeEvent<HTMLTextAreaElement>) => {
+      if (!iWantYourJuicy) return;
+
+      iWantYourJuicy.current = e.currentTarget.value;
+
+      if (!isSlurpingWhenFed.current) return;
+
+      openWideAndPuuurrr(iWantYourJuicy.current);
+    },
+    [iWantYourJuicy, isSlurpingWhenFed, openWideAndPuuurrr]
+  );
+
+  return (
+    <div className="flex flex-col">
+      <textarea
+        className="text-foreground placeholder:text-secondary-foreground/60 w-full min-w-0 resize-none bg-transparent text-base leading-6 outline-none disabled:opacity-0"
+        placeholder={pweaseFeedMeDaddy}
+        onChange={onChange}
+        ref={foodRef}
+      />
+    </div>
+  );
+};
+
+export const FeedHer = ({ iWantYourJuicy }: { iWantYourJuicy: RefObject<string> }) => {
+  const { openWideAndPuuurrr } = useThroat();
+
+  const onFed = () => {
+    openWideAndPuuurrr(iWantYourJuicy.current);
+  };
+
+  return (
+    <button
+      onClick={onFed}
+      className="rounded-lg bg-pink-600 px-6 py-3 text-lg font-semibold text-white shadow-lg hover:bg-pink-700"
+    >
+      Feed her
+    </button>
+  );
+};
+
+import React from 'react';
+
+export const StopMeowing = () => {
+  const { stopMeowing } = useThroat();
+
+  return (
+    <button
+      onClick={stopMeowing}
+      className="rounded-lg bg-pink-900 px-6 py-3 text-lg font-semibold text-white shadow-lg hover:bg-pink-950"
+    >
+      Stop Meowing
+    </button>
+  );
+};
+
+export const SlurpWhenFed = ({
+  isSlurpingWhenFed,
+}: {
+  isSlurpingWhenFed: RefObject<boolean>;
+}) => {
+  const onChange = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      if (!isSlurpingWhenFed) return;
+
+      isSlurpingWhenFed.current = e.currentTarget.checked;
+    },
+    [isSlurpingWhenFed]
+  );
+
+  return (
+    <label className="flex gap-3">
+      <span>SlurpWhenFed</span>
+      <input
+        className="w-10"
+        type="checkbox"
+        defaultChecked={isSlurpingWhenFed.current}
+        onChange={onChange}
+      />
+    </label>
+  );
+};
+
+const draksaStory = 'when 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is born :D';
+
+export const Draksa = () => {
+  const iWantYourJuicy = useRef(pweaseFeedMeDaddy);
+  const isSlurpingWhenFed = useRef(true);
+
+  return (
+    <div className="flex flex-col gap-4 rounded-2xl border p-4">
+      <h1 className="mb-4 text-4xl font-bold">
+        Draksa <span className="text-base">(MeowAloud)</span>
+      </h1>
+
+      <Throat iWantYourJuicy={iWantYourJuicy} isSlurpingWhenFed={isSlurpingWhenFed} />
+      <FeedHer iWantYourJuicy={iWantYourJuicy} />
+      <StopMeowing />
+      <SlurpWhenFed isSlurpingWhenFed={isSlurpingWhenFed} />
+
+      <div className="pt-40">
+        <details content="story"></details>
+
+        <details className="group rounded-lg border p-4">
+          <summary className="flex cursor-pointer list-none items-center gap-2 font-medium">
+            <span className="transition group-open:rotate-90">▶</span>
+            How to use
+          </summary>
+
+          <div className="text-muted-foreground mt-3 text-sm">
+            <h2>Draksa story 📚: {draksaStory}</h2>
+          </div>
+        </details>
+      </div>
+    </div>
+  );
+};
