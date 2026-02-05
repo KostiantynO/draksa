@@ -8,7 +8,7 @@ import type { RefObject, ChangeEvent } from 'react';
 
 const pweaseFeedMeDaddy = 'Pwease, feed me, Daddy... :3';
 
-export const Throat = ({
+const Throat = ({
   iWantYourJuicy,
   isSlurpingWhenFed,
 }: {
@@ -44,7 +44,7 @@ export const Throat = ({
   );
 };
 
-export const FeedHer = ({ iWantYourJuicy }: { iWantYourJuicy: RefObject<string> }) => {
+const FeedHer = ({ iWantYourJuicy }: { iWantYourJuicy: RefObject<string> }) => {
   const { openWideAndPuuurrr } = useThroat();
 
   const onFed = () => {
@@ -61,9 +61,7 @@ export const FeedHer = ({ iWantYourJuicy }: { iWantYourJuicy: RefObject<string> 
   );
 };
 
-import React from 'react';
-
-export const StopMeowing = () => {
+const StopMeowing = () => {
   const { stopMeowing } = useThroat();
 
   return (
@@ -76,7 +74,7 @@ export const StopMeowing = () => {
   );
 };
 
-export const SlurpWhenFed = ({
+const SlurpWhenFed = ({
   isSlurpingWhenFed,
 }: {
   isSlurpingWhenFed: RefObject<boolean>;

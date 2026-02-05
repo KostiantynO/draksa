@@ -10,7 +10,7 @@ Story:
 
 ...When your `ReadAloud` extension doesn't work...
 
-... and the world is in chaos and js-dis-array... (diss-track)[]
+... and the world is in chaos and js-diss-array... ('diss-track')[]
 
 ...And you need to select text and read it aloud...
 
