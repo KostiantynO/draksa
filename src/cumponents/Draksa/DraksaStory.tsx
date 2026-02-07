@@ -1,3 +1,4 @@
+// src\cumponents\Draksa\DraksaStory.tsx
 import { draksaTells } from './draksaTells';
 
 export const DraksaStory = () => (
@@ -16,7 +17,7 @@ export const DraksaStory = () => (
 
         <h2>
           <strong>
-            <code>Draksa</code>
+            <code className="text-2xl">Draksa</code> -{' '}
           </strong>
 
           {draksaTells.aStory}

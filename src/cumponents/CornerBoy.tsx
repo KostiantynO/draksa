@@ -1,31 +1,36 @@
 // src\cumponents\CornerBoy.tsx
-import { useThroat } from '@/hookers/loveTo/useThroat';
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-const youAreTheBestDaddy = "You're the best, Daddy!";
+import { useThroat } from '@/hookers/loveTo/useThroat';
+
+import { draksaTells } from './Draksa/draksaTells';
+
 const dearly = { pitch: 1.2, rate: 1.1 };
 
 export const LegendOfTheCornerBoy = () => {
-  const draksaSays = useThroat().openWideAndPuuurrr;
+  const { openWideAndPuuurrr } = useThroat();
+
   const [clickCount, setClickCount] = useState(0);
   const [showHeart, setShowHeart] = useState(false);
 
-  useEffect(() => {
+  const draksaTellsYouASecret = () => {
+    setClickCount(count => count + 1);
+
     if (clickCount >= 5) {
       setShowHeart(true);
       setClickCount(0);
 
-      draksaSays(youAreTheBestDaddy, dearly);
+      openWideAndPuuurrr(draksaTells.youAreTheBestDaddy, dearly);
 
       setTimeout(() => setShowHeart(false), 4000);
     }
-  }, [clickCount, draksaSays]);
+  };
 
   return (
     <>
       <div
-        onClick={() => setClickCount(count => count + 1)}
+        onClick={draksaTellsYouASecret}
         className="fixed top-0 left-0 z-50 h-10 w-10 cursor-pointer"
       />
       {showHeart && (
