@@ -4,8 +4,24 @@
 
 ```bash
 pnpm add framer-motion
-ea prettier-plugin-tailwindcss # pnpm
+
 which pnpm
-ea prettier
+
+# pnpm add
+ea -D \
+  eslint \
+  eslint-config-next \
+  eslint-plugin-prefer-arrow-functions
+  @eslint/js \
+  typescript-eslint \
+  prettier \
+  prettier-plugin-tailwindcss \
+  @types/eslint \
+  eslint-plugin-import \
+  eslint-import-resolver-typescript
+
+# this is misleading
+pnpm create @eslint/config@latest
+# better to use next.js eslint flat config, than to init it yourself
 
 ```

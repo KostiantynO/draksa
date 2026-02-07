@@ -2,7 +2,7 @@
 'use client';
 
 import { LegendOfTheCornerBoy } from '@/cumponents/CornerBoy';
-import { Draksa } from '@/cumponents/Draksa';
+import { Draksa } from '@/cumponents/Draksa/Draksa';
 
 const OnlyVoice = () => {
   return (
