@@ -8,7 +8,7 @@ import { DraksaCuntext } from '@/cuntext/DraksaCuntext';
 import type { ReactNode } from 'react';
 
 const itIsSooDeep = signal<string>(draksaTells.pweaseFeedMeDaddy);
-const isSlurpingWhenFed = signal(true);
+const isMeowingOnType = signal(true);
 
 export const ProviderDaddy = ({ children }: { children: ReactNode }) => {
   const cuntextValue = useMemo(
@@ -18,9 +18,9 @@ export const ProviderDaddy = ({ children }: { children: ReactNode }) => {
         itIsSooDeep.value = value;
       },
 
-      isSlurpingWhenFed,
-      toggleIsSlurpingWhenFed: () => {
-        isSlurpingWhenFed.value = !isSlurpingWhenFed.value;
+      isMeowingOnType,
+      toggleIsMeowingOnType: () => {
+        isMeowingOnType.value = !isMeowingOnType.value;
       },
     }),
     []

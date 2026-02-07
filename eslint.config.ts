@@ -1,26 +1,30 @@
 // eslint.config.ts
 
-import atEslint_Js from '@eslint/js';
-import eslintConfigNext_CoreWebVitals from 'eslint-config-next/core-web-vitals';
-import eslintConfigNext_Typescript from 'eslint-config-next/typescript';
-import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
+import js from '@eslint/js';
 import { defineConfig, globalIgnores } from 'eslint/config';
-import typescriptEslint from 'typescript-eslint';
+import ts from 'typescript-eslint';
+
+// configs
+import nextConfig from 'eslint-config-next/core-web-vitals';
+import nextTs from 'eslint-config-next/typescript';
+
+// butPlugIns
+import butPlugInHooks from 'eslint-plugin-react-hooks';
 
 // @ts-expect-error Lib does not export types
 import preferArrowFunctions from 'eslint-plugin-prefer-arrow-functions';
 
 const eslintConfig = defineConfig([
-  atEslint_Js.configs.recommended, // useless???
+  js.configs.recommended, // useless???
 
-  ...eslintConfigNext_CoreWebVitals,
-  ...eslintConfigNext_Typescript,
+  ...nextConfig,
+  ...nextTs,
 
   // SEVERITY: 8 - adds TS strict type checks
-  typescriptEslint.configs.recommendedTypeChecked,
-  typescriptEslint.configs.stylisticTypeChecked,
+  ts.configs.recommendedTypeChecked,
+  ts.configs.stylisticTypeChecked,
 
-  eslintPluginReactHooks.configs.flat['recommended-latest'],
+  butPlugInHooks.configs.flat['recommended-latest'],
 
   {
     // SEVERITY: 9 - adds 'scope', to do not lint config file itself.
@@ -155,7 +159,7 @@ const eslintConfig = defineConfig([
   // SEVERITY: 10/10 - disable linting for the config file itself
   {
     files: ['eslint.config.ts'],
-    extends: [typescriptEslint.configs.disableTypeChecked],
+    extends: [ts.configs.disableTypeChecked],
   },
 
   globalIgnores([

@@ -7,7 +7,7 @@ import { useThroat } from '@/hookers/loveTo/useThroat';
 import type { ChangeEvent } from 'react';
 
 export const useMeow = () => {
-  const { itIsSooDeep, isSlurpingWhenFed, putInMeYour } = useDraksa();
+  const { itIsSooDeep, isMeowingOnType, putInMeYour } = useDraksa();
 
   const { openWideAndPuuurrr } = useThroat();
 
@@ -15,11 +15,11 @@ export const useMeow = () => {
     (e: ChangeEvent<HTMLTextAreaElement>) => {
       putInMeYour(e.currentTarget.value);
 
-      if (!isSlurpingWhenFed.value) return;
+      if (!isMeowingOnType.value) return;
 
       openWideAndPuuurrr(itIsSooDeep.value);
     },
-    [putInMeYour, isSlurpingWhenFed.value, openWideAndPuuurrr, itIsSooDeep.value]
+    [putInMeYour, isMeowingOnType.value, openWideAndPuuurrr, itIsSooDeep.value]
   );
 
   const meowAsYouType = useMemo(

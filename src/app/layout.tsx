@@ -1,8 +1,9 @@
 // src\app\layout.tsx
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
+import { Geist, Geist_Mono } from 'next/font/google';
+
+import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 const geistSans = Geist({
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Draksa',
-  description: 'Ja gotova!',
+  description: 'MeowAloud',
 };
 
 const GoonLayout = ({
@@ -27,9 +28,7 @@ const GoonLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

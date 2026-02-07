@@ -20,6 +20,7 @@ ea -D \
   eslint-plugin-import \
   eslint-import-resolver-typescript \
   eslint-plugin-react-hooks
+  @next/eslint-plugin-next
 
 # this is misleading
 pnpm create @eslint/config@latest

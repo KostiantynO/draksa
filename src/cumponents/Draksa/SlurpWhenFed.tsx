@@ -3,7 +3,7 @@
 import { useCheckBucks } from '@/hookers/loveTo/useCheckBucks';
 
 export const SlurpWhenFed = () => {
-  const { toggleMeowingOnType, isSlurpingWhenFed } = useCheckBucks();
+  const { isMeowingOnType, toggleIsMeowingOnType } = useCheckBucks();
 
   return (
     <label className="flex gap-3">
@@ -13,11 +13,11 @@ export const SlurpWhenFed = () => {
       </div>
 
       <input
-        name="isSlurpingWhenFed"
+        name="isMeowingOnType"
         className="w-10"
         type="checkbox"
-        defaultChecked={isSlurpingWhenFed.value}
-        onChange={toggleMeowingOnType}
+        defaultChecked={isMeowingOnType.value}
+        onChange={toggleIsMeowingOnType}
       />
     </label>
   );
