@@ -7,11 +7,24 @@ import { DraksaCuntext } from '@/cuntext/DraksaCuntext';
 
 import type { ReactNode } from 'react';
 
-const putInMeYour = signal(draksaTells.pweaseFeedMeDaddy);
+const itIsSooDeep = signal<string>(draksaTells.pweaseFeedMeDaddy);
 const isSlurpingWhenFed = signal(true);
 
 export const ProviderDaddy = ({ children }: { children: ReactNode }) => {
-  const cuntextValue = useMemo(() => ({ putInMeYour, isSlurpingWhenFed }), []);
+  const cuntextValue = useMemo(
+    () => ({
+      itIsSooDeep,
+      putInMeYour: (value: string) => {
+        itIsSooDeep.value = value;
+      },
+
+      isSlurpingWhenFed,
+      toggleIsSlurpingWhenFed: () => {
+        isSlurpingWhenFed.value = !isSlurpingWhenFed.value;
+      },
+    }),
+    []
+  );
 
   return <DraksaCuntext.Provider value={cuntextValue}>{children}</DraksaCuntext.Provider>;
 };
