@@ -23,3 +23,12 @@ Story:
 ## So, the `true story of Draksa` is:
 
 When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is born :D - a MeowAloud
+
+### Plan:
+
+- [ ] add button for read speed change
+- [ ] add button for read pitch change
+- [ ] add clear button
+- [ ] add paste button (from clipboard)
+- [ ] add language selection list (dropdown details menu)
+- [ ] add custom dragon/naga/kitty purring ancient language :D
