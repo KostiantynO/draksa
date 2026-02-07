@@ -1,70 +1,40 @@
 // eslint.config.ts
 
-import js from '@eslint/js';
+import atEslint_Js from '@eslint/js';
+import eslintConfigNext_CoreWebVitals from 'eslint-config-next/core-web-vitals';
+import eslintConfigNext_Typescript from 'eslint-config-next/typescript';
+import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 import { defineConfig, globalIgnores } from 'eslint/config';
-import importPlugIn from 'eslint-plugin-import';
-// import arrows from 'eslint-plugin-prefer-arrow-functions';
-// import react from 'eslint-plugin-react';
-import globals from 'globals';
-import ts from 'typescript-eslint';
-import nextVitals from 'eslint-config-next/core-web-vitals';
-import nextTs from 'eslint-config-next/typescript';
-import nextPlugin from '@next/eslint-plugin-next';
+import typescriptEslint from 'typescript-eslint';
+
+// @ts-expect-error Lib does not export types
+import preferArrowFunctions from 'eslint-plugin-prefer-arrow-functions';
 
 const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
+  atEslint_Js.configs.recommended, // useless???
 
-  // arrows.configs.all, // enforces arrows, but ultimately useless
-
-  js.configs.recommended, // useless???
+  ...eslintConfigNext_CoreWebVitals,
+  ...eslintConfigNext_Typescript,
 
   // SEVERITY: 8 - adds TS strict type checks
-  ts.configs.recommendedTypeChecked,
-  ts.configs.stylisticTypeChecked,
+  typescriptEslint.configs.recommendedTypeChecked,
+  typescriptEslint.configs.stylisticTypeChecked,
 
-  // react.configs.flat.recommended, // useless???
-  // react.configs.flat['jsx-runtime'], //  useless???
+  eslintPluginReactHooks.configs.flat['recommended-latest'],
 
   {
     // SEVERITY: 9 - adds 'scope', to do not lint config file itself.
     files: ['src/**/*.{ts,tsx}'],
 
-    // SEVERITY: 9 - adds 'import' rules.
-    extends: [
-      importPlugIn.flatConfigs.recommended,
-      importPlugIn.flatConfigs.typescript,
-      importPlugIn.flatConfigs.react,
-    ],
-
-    linterOptions: { reportUnusedDisableDirectives: 'warn' }, // useless?
+    plugins: {
+      'prefer-arrow-functions': preferArrowFunctions,
+    },
 
     languageOptions: {
-      parser: ts.parser, //  useless?
-
-      ecmaVersion: 'latest', // useless
-      sourceType: 'module', // useless
-
       // SEVERITY: 8 - adds TS strict type checks
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
-      },
-
-      // useless?
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-    },
-
-    // SEVERITY: 7 - remove squiggly lines on imports
-    settings: {
-      'import/resolver': {
-        typescript: {
-          alwaysTryTypes: true,
-          project: './tsconfig.json',
-        },
       },
     },
 
@@ -84,16 +54,51 @@ const eslintConfig = defineConfig([
       // personal
       'linebreak-style': ['error', 'unix'],
       'prefer-arrow-callback': ['error', { allowUnboundThis: false }],
+      'func-style': 'error',
+
+      'prefer-arrow-functions/prefer-arrow-functions': [
+        'error',
+        {
+          classPropertiesAllowed: false, // No arrows in class properties?
+          // Set true if you use classes
+          disallowPrototype: true, // Block functions on prototypes (anti-this)
+          singleReturnOnly: false,
+        },
+      ],
       'no-shadow': 'error',
       'no-restricted-imports': 'error',
       'no-param-reassign': 'error',
       'object-shorthand': 'warn',
 
-      'sort-imports': ['error', { ignoreCase: true, ignoreDeclarationSort: true }],
+      // for now I will keep it disabled.
+      // 'sort-imports': ['error', { ignoreCase: true, ignoreDeclarationSort: true }],
+
+      // VSCode settings sort better in my humble opinion.
+      // Cause i discover them by accident :D :D :D
+      // in my editor today ...
+      // I may change my mind later,
+      // but for now, i will use those settings in order to format my code:
+      //
+      //  settings.json
+      // {
+      //       "[typescript][typescriptreact][javascript][javascriptreact]": {
+      //   "editor.formatOnPaste": false,
+      //   "editor.formatOnType": false,
+      //   "editor.formatOnSave": false,
+      //   "editor.codeActionsOnSave": {
+      //     "source.formatDocument": "explicit", // Prettier -> ESLint
+      //     "source.organizeImports": "explicit", // Real Magic
+      //     "source.sortImports": "explicit", // magic
+      //     "source.removeUnusedImports": "explicit", // trick
+      //     "source.fixAll.eslint": "explicit", // MUST HAVE for separate type imports.
+      //   },
+      // },
 
       'import/no-default-export': 'error',
       'import/no-unresolved': 'error',
       'import/newline-after-import': 'error',
+
+      // this is *magic*
       'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
       // ahhh, bliss :D
@@ -115,7 +120,6 @@ const eslintConfig = defineConfig([
           ],
           pathGroups: [
             { pattern: './globals.css', group: 'builtin', position: 'before' },
-            { pattern: '@/**', group: 'internal' },
           ],
           alphabetize: { order: 'asc', caseInsensitive: true },
         },
@@ -151,7 +155,7 @@ const eslintConfig = defineConfig([
   // SEVERITY: 10/10 - disable linting for the config file itself
   {
     files: ['eslint.config.ts'],
-    extends: [ts.configs.disableTypeChecked],
+    extends: [typescriptEslint.configs.disableTypeChecked],
   },
 
   globalIgnores([

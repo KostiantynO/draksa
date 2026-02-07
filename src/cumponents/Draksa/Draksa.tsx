@@ -1,6 +1,6 @@
 // src\cumponents\Draksa\Draksa.tsx
 
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useRef } from 'react';
 
 import { useThroat } from '@/hookers/loveTo/useThroat';
 
@@ -54,20 +54,11 @@ const SlurpWhenFed = ({
     [isSlurpingWhenFed]
   );
 
-  let a = Math.random();
-
-  useEffect(() => {
-    a = a + 1;
-    return;
-  }, [a]);
-
-  a = a - 1;
-
   return (
     <label className="flex gap-3">
       <div className="flex flex-col">
         <span>Slurp when fed </span>
-        <span>(ReadAloud as you type) </span>
+        <span>(read on type) </span>
       </div>
 
       <input

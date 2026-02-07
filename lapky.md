@@ -11,14 +11,15 @@ which pnpm
 ea -D \
   eslint \
   eslint-config-next \
-  eslint-plugin-prefer-arrow-functions
+  eslint-plugin-prefer-arrow-functions@3.4.2
   @eslint/js \
   typescript-eslint \
   prettier \
   prettier-plugin-tailwindcss \
   @types/eslint \
   eslint-plugin-import \
-  eslint-import-resolver-typescript
+  eslint-import-resolver-typescript \
+  eslint-plugin-react-hooks
 
 # this is misleading
 pnpm create @eslint/config@latest
