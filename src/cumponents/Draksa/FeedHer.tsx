@@ -6,10 +6,10 @@ import { useThroat } from '@/hookers/loveTo/useThroat';
 export const FeedHer = () => {
   const { openWideAndPuuurrr } = useThroat();
 
-  const { iWantYourJuicyRef } = useDraksa();
+  const { putInMeYour } = useDraksa();
 
   const onFed = () => {
-    openWideAndPuuurrr(iWantYourJuicyRef.current);
+    openWideAndPuuurrr(putInMeYour.value);
   };
 
   return (

@@ -1,5 +1,5 @@
 // src\hookers\loveTo\useReadOnType.ts
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 
 import { useDraksa } from '@/hookers/loveTo/useDraksa';
 import { useThroat } from '@/hookers/loveTo/useThroat';
@@ -9,20 +9,25 @@ import type { ChangeEvent } from 'react';
 export const useReadOnType = () => {
   const { openWideAndPuuurrr } = useThroat();
 
-  const { isSlurpingWhenFedRef, iWantYourJuicyRef } = useDraksa();
+  const { isSlurpingWhenFed, putInMeYour } = useDraksa();
 
   const readOnType = useCallback(
     (e: ChangeEvent<HTMLTextAreaElement>) => {
-      if (!iWantYourJuicyRef) return;
+      if (!putInMeYour) return;
 
-      iWantYourJuicyRef.current = e.currentTarget.value;
+      putInMeYour.value = e.currentTarget.value;
 
-      if (!isSlurpingWhenFedRef.current) return;
+      if (!isSlurpingWhenFed.value) return;
 
-      openWideAndPuuurrr(iWantYourJuicyRef.current);
+      openWideAndPuuurrr(putInMeYour.value);
     },
-    [iWantYourJuicyRef, isSlurpingWhenFedRef, openWideAndPuuurrr]
+    [isSlurpingWhenFed, openWideAndPuuurrr, putInMeYour]
   );
 
-  return readOnType;
+  const speakAsYouType = useMemo(
+    () => ({ putInMeYour, sheMeows: readOnType }),
+    [putInMeYour, readOnType]
+  );
+
+  return speakAsYouType;
 };

@@ -17,6 +17,7 @@
     "node": "v24.13.0"
   },
   "dependencies": {
+    "@preact/signals-react": "^3.8.0",
     "framer-motion": "^12.9.2",
     "next": "15.3.8",
     "react": "^19.0.0",

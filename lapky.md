@@ -25,4 +25,6 @@ ea -D \
 pnpm create @eslint/config@latest
 # better to use next.js eslint flat config, than to init it yourself
 
+ea @preact/signals-react
+
 ```

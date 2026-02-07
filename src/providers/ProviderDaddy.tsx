@@ -1,16 +1,17 @@
 // src\providers\ProviderDaddy.tsx
-import { useMemo, useRef } from 'react';
+import { signal } from '@preact/signals-react';
+import { useMemo } from 'react';
 
 import { draksaTells } from '@/cumponents/Draksa/draksaTells';
 import { DraksaCuntext } from '@/cuntext/DraksaCuntext';
 
 import type { ReactNode } from 'react';
 
-export const ProviderDaddy = ({ children }: { children: ReactNode }) => {
-  const iWantYourJuicyRef = useRef(draksaTells.pweaseFeedMeDaddy);
-  const isSlurpingWhenFedRef = useRef(true);
+const putInMeYour = signal(draksaTells.pweaseFeedMeDaddy);
+const isSlurpingWhenFed = signal(true);
 
-  const cuntextValue = useMemo(() => ({ iWantYourJuicyRef, isSlurpingWhenFedRef }), []);
+export const ProviderDaddy = ({ children }: { children: ReactNode }) => {
+  const cuntextValue = useMemo(() => ({ putInMeYour, isSlurpingWhenFed }), []);
 
   return <DraksaCuntext.Provider value={cuntextValue}>{children}</DraksaCuntext.Provider>;
 };
