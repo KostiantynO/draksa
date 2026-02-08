@@ -11,7 +11,7 @@ which pnpm
 ea -D \
   eslint \
   eslint-config-next \
-  eslint-plugin-prefer-arrow-functions@3.4.2
+  eslint-plugin-prefer-arrow-functions@3.4.2 \
   @eslint/js \
   typescript-eslint \
   prettier \
@@ -19,8 +19,9 @@ ea -D \
   @types/eslint \
   eslint-plugin-import \
   eslint-import-resolver-typescript \
-  eslint-plugin-react-hooks
-  @next/eslint-plugin-next
+  eslint-plugin-react-hooks \
+  @next/eslint-plugin-next \
+  babel-plugin-react-compiler
 
 # this is misleading
 pnpm create @eslint/config@latest
