@@ -1,5 +1,5 @@
 // src\hookers\loveTo\useMeow.ts
-import { useCallback, useMemo } from 'react';
+'use client';
 
 import { useDraksa } from '@/hookers/loveTo/useDraksa';
 import { useThroat } from '@/hookers/loveTo/useThroat';
@@ -7,25 +7,20 @@ import { useThroat } from '@/hookers/loveTo/useThroat';
 import type { ChangeEvent } from 'react';
 
 export const useMeow = () => {
-  const { itIsSooDeep, isMeowingOnType, putInMeYour } = useDraksa();
+  const { polyGlotka, isMeowingOnType, putInMeYour } = useDraksa();
 
   const { openWideAndPuuurrr } = useThroat();
 
-  const sheMeows = useCallback(
-    (e: ChangeEvent<HTMLTextAreaElement>) => {
-      putInMeYour(e.currentTarget.value);
+  const sheMeows = (e: ChangeEvent<HTMLTextAreaElement>) => {
+    putInMeYour(e.currentTarget.value);
 
-      if (!isMeowingOnType.value) return;
+    if (!isMeowingOnType.value) return;
 
-      openWideAndPuuurrr(itIsSooDeep.value);
-    },
-    [putInMeYour, isMeowingOnType.value, openWideAndPuuurrr, itIsSooDeep.value]
-  );
+    // prettier-ignore
+    openWideAndPuuurrr( );
+  };
 
-  const meowAsYouType = useMemo(
-    () => ({ itIsSooDeep, sheMeows }),
-    [itIsSooDeep, sheMeows]
-  );
+  const meowAsYouType = { polyGlotka, sheMeows };
 
   return meowAsYouType;
 };

@@ -1,4 +1,5 @@
 // src\cumponents\Draksa\StopMeowing.tsx
+'use client';
 
 import { useThroat } from '@/hookers/loveTo/useThroat';
 

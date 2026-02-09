@@ -1,6 +1,6 @@
 {
   "name": "draksa",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "author": {
@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "@preact/signals-react": "^3.8.0",
-    "framer-motion": "^12.9.2",
     "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

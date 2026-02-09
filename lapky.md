@@ -3,8 +3,6 @@
 <!-- Не залишати слідів! 🐾 -->
 
 ```bash
-pnpm add framer-motion
-
 which pnpm
 
 # pnpm add

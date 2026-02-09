@@ -1,4 +1,5 @@
 // src\hookers\loveTo\useCheckBucks.tsx
+'use client';
 
 import { useDraksa } from '@/hookers/loveTo/useDraksa';
 

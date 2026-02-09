@@ -1,28 +1,28 @@
 2026-01-29:
 
-# Draksa (MeowAloud)
+# What: Draksa (MeowAloud)
 
-`Draksa`: heyyy, 'Daddy', I aaamm онлааааа-`Ain`! 🎉 Like a desert miss-chief! :D:D:D
+`Draksa`: Heyyy, 'Daddy'! I aaamm онлааааа-`Ain`!
+
+## Why:
+
+If your `ReadAloud` doesn't wrok,
+
+and the world is in chaos and js-diss-array...
+
+```ts
+const a: Diss[] = ['M 2 🐝']; // ;D
+```
+
+Brother and sister will save the day!
+
+YIN! YANG! YO!...oh,... that is the wrong intro :D
 
 ---
 
-Story:
+`Draksa's story`:
 
-...When your `ReadAloud` extension doesn't work...
-
-... and the world is in chaos and js-diss-array... ('diss-track')[]
-
-...And you need to select text and read it aloud...
-
-...Brother and sister will save the day...
-
-...YIN!-YANG!-YO!...oh, sorry ... that is the wrong intro :D :D :D
-
----
-
-## So, the `true story of Draksa` is:
-
-When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is born :D - a MeowAloud
+When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is born :D
 
 ### Plan:
 

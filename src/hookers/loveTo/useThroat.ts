@@ -1,7 +1,11 @@
 // src\hookers\loveTo\useThroat.ts
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import { wait } from '@/tools/wait';
+
+import { useDraksa } from './useDraksa';
 
 const defaultVoiceName = 'Google US English';
 const fallbackLang = 'en-US';
@@ -16,41 +20,80 @@ const DEFAULT = {};
 
 /** Use voice chords and throat muscles to produce sound */
 export const useThroat = () => {
+  const { polyGlotka } = useDraksa();
+
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+  // const dearly = { pitch: 1.2, rate: 1.1 };
 
   useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = window.speechSynthesis.getVoices();
-      if (availableVoices.length > 0) {
+    let shouldModifySpeechSynthesis = true;
+
+    const longTask = async () => {
+      console.log('long task: start');
+
+      await wait(1000);
+
+      console.log('long task: after await wait(1000)');
+
+      if (!shouldModifySpeechSynthesis) return;
+
+      console.log('long task: before load voices');
+      const loadVoices = () => {
+        console.log('loadVoices: start');
+        if (!shouldModifySpeechSynthesis) return;
+        console.log('loadVoices: before getVoices');
+        const availableVoices = window.speechSynthesis.getVoices();
+
+        if (!availableVoices.length) return;
+
+        console.log('availableVoices.length > 0: inside');
+        if (!shouldModifySpeechSynthesis) return;
+        console.log('availableVoices.length > 0: before setVoices');
         setVoices(availableVoices);
-        console.log('🚀 loadVoices availableVoices:', availableVoices);
-      }
+        console.log({ availableVoices });
+      };
+
+      if (!shouldModifySpeechSynthesis) return;
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+      loadVoices();
+      console.log('loadVoices(): after call');
     };
 
-    window.speechSynthesis.onvoiceschanged = loadVoices;
-    loadVoices();
+    longTask().catch(console.error);
+
+    return () => {
+      console.log('useEffect return: start ');
+
+      shouldModifySpeechSynthesis = false;
+
+      console.log('useEffect return: set window obj prop to null');
+      window.speechSynthesis.onvoiceschanged = null;
+    };
   }, []);
 
-  const findVoice = useCallback(() => {
+  const findVoice = async () => {
+    await wait(1000);
+
     for (const lang of preferredLangs) {
       const voice = voices.find(v => v.lang === lang);
       if (voice) return voice;
     }
     // Якщо нема потрібної мови, шукаємо по імені
     return voices.find(v => v.name.includes(defaultVoiceName)) ?? voices[0];
-  }, [voices]);
+  };
 
-  const openWideAndPuuurrr = useCallback(
-    (text: string, { pitch, rate }: PurrringOptions = DEFAULT) => {
-      if (!window.speechSynthesis) return;
+  const openWideAndPuuurrr = ({ pitch, rate }: PurrringOptions = DEFAULT) => {
+    if (!window.speechSynthesis) return;
 
-      window.speechSynthesis.cancel();
+    window.speechSynthesis.cancel();
 
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.pitch = pitch ?? 1.1;
-      utterance.rate = rate ?? 1;
+    const utterance = new SpeechSynthesisUtterance(polyGlotka.value);
+    utterance.pitch = pitch ?? 1.1;
+    utterance.rate = rate ?? 1;
 
-      const voice = findVoice();
+    const longTask = async () => {
+      const voice = await findVoice();
+
       if (voice) {
         utterance.voice = voice;
         utterance.lang = voice.lang;
@@ -61,20 +104,18 @@ export const useThroat = () => {
       }
 
       window.speechSynthesis.speak(utterance);
-    },
-    [findVoice]
-  );
+    };
 
-  const stopMeowing = useCallback(() => {
+    longTask().catch(console.error);
+  };
+
+  const stopMeowing = () => {
     if (!window.speechSynthesis) return;
 
     window.speechSynthesis.cancel();
-  }, []);
+  };
 
-  const petHer = useMemo(
-    () => ({ openWideAndPuuurrr, stopMeowing }),
-    [openWideAndPuuurrr, stopMeowing]
-  );
+  const petHer = { openWideAndPuuurrr, stopMeowing };
 
   return petHer;
 };

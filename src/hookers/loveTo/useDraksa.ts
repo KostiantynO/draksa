@@ -1,13 +1,16 @@
 // src\hookers\loveTo\useDraksa.ts
+'use client';
+
 import { useContext } from 'react';
 
-import { DraksaCuntext } from '@/cuntext/DraksaCuntext';
-import { ProviderDaddy } from '@/providers/ProviderDaddy';
+import { DraksaContext } from '@/context/DraksaContext';
+import { DraksaProvider } from '@/providers/DraksaProvider';
 
+/** useContext(DraksaContext) */
 export const useDraksa = () => {
-  const context = useContext(DraksaCuntext);
+  const context = useContext(DraksaContext);
   if (!context) {
-    throw new Error(`${useDraksa.name} is what Draksa's ${ProviderDaddy.name} does`);
+    throw new Error(`Only ${DraksaProvider.name} can ${useDraksa.name} ;D`);
   }
   return context;
 };

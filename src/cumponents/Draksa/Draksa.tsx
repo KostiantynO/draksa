@@ -1,6 +1,5 @@
 // src\cumponents\Draksa\Draksa.tsx
-
-import { ProviderDaddy } from '@/providers/ProviderDaddy';
+import { DraksaProvider } from '@/providers/DraksaProvider';
 
 import { DraksaStory } from './DraksaStory';
 import { FeedHer } from './FeedHer';
@@ -14,12 +13,12 @@ export const Draksa = () => {
     <div className="flex flex-col gap-4 rounded-2xl border p-4">
       <Name />
 
-      <ProviderDaddy>
+      <DraksaProvider>
         <Throat />
         <FeedHer />
         <StopMeowing />
         <SlurpWhenFed />
-      </ProviderDaddy>
+      </DraksaProvider>
 
       <DraksaStory />
     </div>

@@ -1,4 +1,5 @@
 // src\cumponents\Draksa\SlurpWhenFed.tsx
+'use client';
 
 import { useCheckBucks } from '@/hookers/loveTo/useCheckBucks';
 
@@ -6,10 +7,9 @@ export const SlurpWhenFed = () => {
   const { isMeowingOnType, toggleIsMeowingOnType } = useCheckBucks();
 
   return (
-    <label className="flex gap-3">
+    <label className="flex gap-3 mt-3">
       <div className="flex flex-col">
-        <span>Slurp when fed </span>
-        <span>(read on type) </span>
+        <span>Read on type</span>
       </div>
 
       <input
