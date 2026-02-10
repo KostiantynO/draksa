@@ -1,10 +1,11 @@
+// src\draksa\cumponents\Draksa\ReadSpeed.tsx
 // src\cumponents\Draksa\ReadSpeed.tsx
 
 'use client';
 
 import { useTransition } from 'react';
 
-import { useDraksa } from '@/hookers/loveTo/useDraksa';
+import { useDraksa } from '@/draksa/context/useDraksa';
 
 import type { ChangeEvent } from 'react';
 

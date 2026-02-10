@@ -201,9 +201,24 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 ### Plan:
 
-- [ ] add button for read speed change
+#### CRITICAL
+
+- [ ] bug - fix useTroat hook (read MDN docs about speechSynth api)
+- [ ] bug - fix `no offline voices`
+
+#### Priority
+
+- [ ] add debounce for 50ms for textarea :D / ask ai how to do it best, is there a better
+      option from Dan Abramov? There should be smth...
+
+#### Normal
+
+- [x] add button for read speed change
 - [ ] add button for read pitch change
 - [ ] add clear button
 - [ ] add paste button (from clipboard)
 - [ ] add language selection list (dropdown details menu)
 - [ ] add custom dragon/naga/kitty purring ancient language :D
+- [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :D
+- [ ] bug - fix lint warning
+      [`⚠ The Next.js plugin was not detected in your ESLint configuration.`](https://nextjs.org/docs/app/api-reference/config/eslint#migrating-existing-config)

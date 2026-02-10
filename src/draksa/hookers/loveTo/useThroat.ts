@@ -1,11 +1,9 @@
-// src\hookers\loveTo\useThroat.ts
+// src\draksa\hookers\loveTo\useThroat.ts
 'use client';
 
 import { useEffect, useState } from 'react';
 
-import { wait } from '@/tools/wait';
-
-import { useDraksa } from './useDraksa';
+import { useDraksa } from '../../context/useDraksa';
 
 const defaultVoiceName = 'Google US English';
 const fallbackLang = 'en-US';
@@ -18,13 +16,14 @@ interface PurrringOptions {
 
 const DEFAULT = {};
 
-/** Use voice chords and throat muscles to produce sound */
+/** Use voice chords and throat muscles to produce sound... I mean, use speechSynth api from browser Gods :D */
 export const useThroat = () => {
   const { polyGlotka, readSpeed } = useDraksa();
 
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   // const dearly = { pitch: 1.2, rate: 1.1 };
 
+  // TODO replace this with ai.
   useEffect(() => {
     let shouldModifySpeechSynthesis = true;
 
@@ -69,9 +68,7 @@ export const useThroat = () => {
     };
   }, []);
 
-  const findVoice = async () => {
-    await wait(100);
-
+  const findVoice = () => {
     for (const lang of preferredLangs) {
       const voice = voices.find(v => v.lang === lang);
       if (voice) return voice;
@@ -89,22 +86,20 @@ export const useThroat = () => {
     utterance.pitch = pitch ?? 1.1;
     utterance.rate = readSpeed.value ?? 1;
 
-    const longTask = async () => {
-      const voice = await findVoice();
+    const voice = findVoice();
 
-      if (voice) {
-        utterance.voice = voice;
-        utterance.lang = voice.lang;
-        console.log(`🗣 Using voice:`, voice.name, 'lang:', voice.lang);
-      } else {
-        utterance.lang = fallbackLang;
-        console.warn('⚠️ No voice found, using fallback lang');
-      }
+    if (voice) {
+      utterance.voice = voice;
+      utterance.lang = voice.lang;
+      console.log(`🗣 Using voice:`, voice.name, 'lang:', voice.lang);
+    } else {
+      utterance.lang = fallbackLang;
+      console.warn('⚠️ No voice found, using fallback lang');
+    }
 
-      window.speechSynthesis.speak(utterance);
-    };
+    console.log({ utterance });
 
-    longTask().catch(console.error);
+    window.speechSynthesis.speak(utterance);
   };
 
   const stopMeowing = () => {

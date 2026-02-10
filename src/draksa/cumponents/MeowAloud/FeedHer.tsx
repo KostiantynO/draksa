@@ -1,7 +1,8 @@
+// src\draksa\cumponents\Draksa\FeedHer.tsx
 // src\cumponents\Draksa\FeedHer.tsx
 'use client';
 
-import { useLips } from '@/hookers/loveTo/useLips';
+import { useLips } from '@/draksa/hookers/loveTo/useLips';
 
 export const FeedHer = () => {
   const slurp = useLips();

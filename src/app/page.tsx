@@ -1,6 +1,6 @@
 // src\app\page.tsx
 
-import { Draksa } from '@/cumponents/Draksa/Draksa';
+import { Draksa } from '@/draksa/cumponents/Draksa';
 
 const OnlyVoice = () => {
   return (

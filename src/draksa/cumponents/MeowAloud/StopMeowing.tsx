@@ -1,7 +1,8 @@
+// src\draksa\cumponents\Draksa\StopMeowing.tsx
 // src\cumponents\Draksa\StopMeowing.tsx
 'use client';
 
-import { useThroat } from '@/hookers/loveTo/useThroat';
+import { useThroat } from '@/draksa/hookers/loveTo/useThroat';
 
 export const StopMeowing = () => {
   const { stopMeowing } = useThroat();

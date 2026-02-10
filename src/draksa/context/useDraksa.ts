@@ -1,10 +1,10 @@
-// src\hookers\loveTo\useDraksa.ts
+// src\draksa\hookers\loveTo\useDraksa.ts
 'use client';
 
 import { useContext } from 'react';
 
-import { DraksaContext } from '@/context/DraksaContext';
-import { DraksaProvider } from '@/providers/DraksaProvider';
+import { DraksaContext } from '@/draksa/context/DraksaContext';
+import { DraksaProvider } from '@/draksa/providers/DraksaProvider';
 
 /** useContext(DraksaContext) */
 export const useDraksa = () => {

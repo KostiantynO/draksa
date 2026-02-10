@@ -1,7 +1,8 @@
+// src\draksa\cumponents\Draksa\SlurpWhenFed.tsx
 // src\cumponents\Draksa\SlurpWhenFed.tsx
 'use client';
 
-import { useDraksa } from '@/hookers/loveTo/useDraksa';
+import { useDraksa } from '@/draksa/context/useDraksa';
 
 export const SlurpWhenFed = () => {
   const { isMeowingOnType, toggleIsMeowingOnType } = useDraksa();
