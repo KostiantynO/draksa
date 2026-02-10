@@ -4,20 +4,21 @@ import { DraksaProvider } from '@/providers/DraksaProvider';
 import { DraksaStory } from './DraksaStory';
 import { FeedHer } from './FeedHer';
 import { Name } from './Name';
-import { SlurpWhenFed } from './SlurpWhenFed';
+import { Settings } from './Settings';
 import { StopMeowing } from './StopMeowing';
 import { Throat } from './Throat';
 
 export const Draksa = () => {
   return (
-    <div className="flex flex-col gap-4 rounded-2xl border p-4">
+    <div className="flex w-[320] flex-col gap-4 rounded-2xl border p-4">
       <Name />
 
       <DraksaProvider>
         <Throat />
         <FeedHer />
         <StopMeowing />
-        <SlurpWhenFed />
+
+        <Settings />
       </DraksaProvider>
 
       <DraksaStory />

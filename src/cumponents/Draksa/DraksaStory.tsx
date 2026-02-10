@@ -9,7 +9,7 @@ export const DraksaStory = () => (
         <strong>Story</strong>
       </summary>
 
-      <div className="text-muted-foreground mt-3 flex flex-col gap-4 text-base">
+      <div className=" mt-3 flex flex-col gap-4 text-base">
         <p>
           TLDR: Use browser <code>SpeechSynthesis api</code>.
           <span>It is a voiceover gift from browser Gods.</span>

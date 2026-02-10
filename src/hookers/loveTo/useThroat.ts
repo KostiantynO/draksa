@@ -20,7 +20,7 @@ const DEFAULT = {};
 
 /** Use voice chords and throat muscles to produce sound */
 export const useThroat = () => {
-  const { polyGlotka } = useDraksa();
+  const { polyGlotka, readSpeed } = useDraksa();
 
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   // const dearly = { pitch: 1.2, rate: 1.1 };
@@ -28,10 +28,8 @@ export const useThroat = () => {
   useEffect(() => {
     let shouldModifySpeechSynthesis = true;
 
-    const longTask = async () => {
+    const longTask = () => {
       console.log('long task: start');
-
-      await wait(1000);
 
       console.log('long task: after await wait(1000)');
 
@@ -59,7 +57,7 @@ export const useThroat = () => {
       console.log('loadVoices(): after call');
     };
 
-    longTask().catch(console.error);
+    longTask();
 
     return () => {
       console.log('useEffect return: start ');
@@ -72,7 +70,7 @@ export const useThroat = () => {
   }, []);
 
   const findVoice = async () => {
-    await wait(1000);
+    await wait(100);
 
     for (const lang of preferredLangs) {
       const voice = voices.find(v => v.lang === lang);
@@ -82,14 +80,14 @@ export const useThroat = () => {
     return voices.find(v => v.name.includes(defaultVoiceName)) ?? voices[0];
   };
 
-  const openWideAndPuuurrr = ({ pitch, rate }: PurrringOptions = DEFAULT) => {
+  const openWideAndPuuurrr = ({ pitch }: PurrringOptions = DEFAULT) => {
     if (!window.speechSynthesis) return;
 
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(polyGlotka.value);
     utterance.pitch = pitch ?? 1.1;
-    utterance.rate = rate ?? 1;
+    utterance.rate = readSpeed.value ?? 1;
 
     const longTask = async () => {
       const voice = await findVoice();
