@@ -1,18 +1,22 @@
-// src\hookers\loveTo\useMeow.ts
+// src\cumponents\Draksa\useThroatLogic.ts
 'use client';
+
+import { useSignals } from '@preact/signals-react/runtime';
 
 import { useDraksa } from '@/hookers/loveTo/useDraksa';
 import { useThroat } from '@/hookers/loveTo/useThroat';
 
 import type { ChangeEvent } from 'react';
 
-export const useMeow = () => {
+export const useThroatLogic = () => {
+  useSignals();
+
   const { polyGlotka, isMeowingOnType, putInMeYour } = useDraksa();
 
   const { openWideAndPuuurrr } = useThroat();
 
-  const sheMeows = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    putInMeYour(e.currentTarget.value);
+  const sheMeows = ({ currentTarget: { value } }: ChangeEvent<HTMLTextAreaElement>) => {
+    putInMeYour(value);
 
     if (!isMeowingOnType.value) return;
 

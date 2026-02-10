@@ -1,4 +1,175 @@
-2026-01-29:
+2026-02-10:
+
+---
+
+---
+
+|-----------------------------------------------------------|
+
+|-----------------------------------------------------------|
+
+|---------------- ⛔ ⚠ WARNING! ⚠ ⛔ ----------------|
+
+|-----------------------------------------------------------|
+
+|------------ ⚠ THIS IS A WORK OF ART! ⚠ -------------|
+
+|-----------------------------------------------------------|
+
+|----------- 🛑 LEAVE WHILE YOU CAN!!! 🛑 -----------|
+
+|--------------------- NOW! :D :D :D ----------------------|
+
+|-----------------------------------------------------------|
+
+---
+
+---
+
+Genres:
+
+- semantic vandalism - playful :D
+- aggressive minimalism - codeChuck 💻🪓
+
+---
+
+`OnlyAdults` and catgirls ARE ALLOWED :D
+
+---
+
+If `you` `need` to `do your homework`, then `GO`!!!
+
+Be cool, like Naruto! He studied at least 3 years! :D
+
+---
+
+Shooe!
+
+---
+
+Hush! :)
+
+---
+
+Kysh-kysh! :D
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Are you still here??? :)
+
+OKEEEYy, honey :D You have been warned :D
+
+---
+
+---
+
+---
 
 # What: Draksa (MeowAloud)
 
@@ -6,17 +177,21 @@
 
 ## Why:
 
-If your `ReadAloud` doesn't wrok,
+If your `ReadAloud` doesn't wrok, unlike Skyrim :D
 
 and the world is in chaos and js-diss-array...
 
 ```ts
-const a: Diss[] = ['M 2 🐝']; // ;D
+const a: Diss[] = ['M 2 the 🐝']; // ;D
 ```
 
 Brother and sister will save the day!
 
 YIN! YANG! YO!...oh,... that is the wrong intro :D
+
+---
+
+---
 
 ---
 

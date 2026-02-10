@@ -6,6 +6,7 @@ import { createContext } from 'react';
 import type { Signal } from '@preact/signals-react';
 
 interface DraksaContextType {
+  /** Draksa is a berry 🍓 smart girl! :D Eager for wisdom! */
   polyGlotka: Signal<string>;
   putInMeYour: (value: string) => void;
 

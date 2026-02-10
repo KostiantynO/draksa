@@ -8,7 +8,6 @@ import { draksaTells } from '@/cumponents/Draksa/draksaTells';
 
 import type { ReactNode } from 'react';
 
-/** Draksa is a berry 🍓 smart girl! :D Eager for wisdom! */
 const polyGlotka = signal<string>(draksaTells.pweaseFeedMeDaddy);
 const isMeowingOnType = signal(true);
 
