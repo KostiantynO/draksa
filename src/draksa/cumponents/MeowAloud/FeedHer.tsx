@@ -1,24 +1,22 @@
-// src\draksa\cumponents\Draksa\FeedHer.tsx
-// src\cumponents\Draksa\FeedHer.tsx
+// src\draksa\cumponents\MeowAloud\FeedHer.tsx
 'use client';
 
-import { useLips } from '@/draksa/hookers/loveTo/useLips';
+import { useFeedHerLogic } from '@/draksa/cumponents/MeowAloud/useFeedHerLogic';
+import { mood } from '@/draksa/perf/mood/mood';
 
 export const FeedHer = () => {
-  const slurp = useLips();
+  const { sllluuuuuuuurp_8p_8P_8o_8O_8, petHer } = useFeedHerLogic();
 
-  const petHer = () => {
-    //
-    console.log('*pet* - *pat*');
-  };
+  const isSlurping = mood.isSlurping.peek() ? 'Feeding...' : 'Feed her (Pway ;3)';
 
   return (
     <button
+      type="button"
       onTouchStart={petHer}
-      onClick={slurp}
+      onClick={sllluuuuuuuurp_8p_8P_8o_8O_8}
       className="rounded-lg bg-pink-600 px-6 py-3 text-lg font-semibold text-white shadow-lg hover:bg-pink-700"
     >
-      Feed her
+      {isSlurping}
     </button>
   );
 };

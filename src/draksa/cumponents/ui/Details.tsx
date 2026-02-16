@@ -1,4 +1,4 @@
-// src\cumponents\Draksa\Details.tsx
+// src\draksa\cumponents\ui\Details.tsx
 
 import type { ReactNode } from 'react';
 

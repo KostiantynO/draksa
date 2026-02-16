@@ -1,12 +1,9 @@
-// src\draksa\cumponents\Draksa\StopMeowing.tsx
-// src\cumponents\Draksa\StopMeowing.tsx
+// src\draksa\cumponents\MeowAloud\StopMeowing.tsx
 'use client';
 
-import { useThroat } from '@/draksa/hookers/loveTo/useThroat';
+import { stopMeowing } from '@/draksa/voice/stopMeowing';
 
 export const StopMeowing = () => {
-  const { stopMeowing } = useThroat();
-
   return (
     <button
       onClick={stopMeowing}

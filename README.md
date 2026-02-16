@@ -30,6 +30,7 @@ Genres:
 
 - semantic vandalism - playful :D
 - aggressive minimalism - codeChuck 💻🪓
+- chaotic good
 
 ---
 
@@ -185,7 +186,7 @@ and the world is in chaos and js-diss-array...
 const a: Diss[] = ['M 2 the 🐝']; // ;D
 ```
 
-Brother and sister will save the day!
+Browser and sister will save the day!
 
 YIN! YANG! YO!...oh,... that is the wrong intro :D
 
@@ -222,3 +223,12 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 - [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :D
 - [ ] bug - fix lint warning
       [`⚠ The Next.js plugin was not detected in your ESLint configuration.`](https://nextjs.org/docs/app/api-reference/config/eslint#migrating-existing-config)
+
+#### What I learned from this project
+
+- React отдаляєт нас от дома.
+- Но вещи происходят в доме.
+- Нужно думать про структуру и простоту разметки.
+- Нам нужна одна кнопка
+- One input
+- done.
