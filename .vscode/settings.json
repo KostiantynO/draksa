@@ -1,3 +1,22 @@
 {
-  "cSpell.words": ["cumponents"]
+  "cSpell.words": ["cumponents"],
+
+  // Force absolute imports (@/...) instead of relative (../)
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+
+  // Make auto-imports and "Organize Imports" actually respect the above
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
+
+  // Auto-fix imports on save (this is what makes it feel magical)
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  // Optional but nice: sort imports the way you like
+  "typescript.preferences.organizeImports": {
+    "star": "last",
+    "type": "last"
+  }
 }
