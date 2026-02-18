@@ -10,7 +10,7 @@ export const FeedHer = () => {
   useSignals();
   const { sllluuuuuuuurp_8p_8P_8o_8O_8, petHer } = useFeedHerLogic();
 
-  const isSlurping = mood.isSlurping.value ? 'Feeding...' : 'Feed her (Pway ;3)';
+  const isSlurping = mood.isSlurping.value ? 'Slurping...' : 'Feed her (Pway ;3)';
 
   return (
     <button
