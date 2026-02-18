@@ -27,10 +27,6 @@ const welcomeToTheClub = () => {
 
   console.log({ iLikeItAndILickIt });
 
-  iLikeItAndILickIt.onstart = () => {
-    mood.doesSheWantToSlurp(true);
-  };
-
   iLikeItAndILickIt.onend = () => {
     mood.doesSheWantToSlurp(false);
     iLikeItAndILickIt.onstart = null;

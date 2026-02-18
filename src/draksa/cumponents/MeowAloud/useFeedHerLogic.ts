@@ -3,10 +3,13 @@
 
 import { useEffect } from 'react';
 
+import { mood } from '@/draksa/perf/mood/mood';
 import { openWideAndPuuurrr } from '@/draksa/voice/openWideAndPuuurrr';
 
 export const useFeedHerLogic = () => {
   const sllluuuuuuuurp_8p_8P_8o_8O_8 = () => {
+    mood.doesSheWantToSlurp(true);
+
     // prettier-ignore
     openWideAndPuuurrr( );
   };

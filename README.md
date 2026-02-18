@@ -204,7 +204,6 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 #### CRITICAL
 
-- [ ] bug - fix useTroat hook (read MDN docs about speechSynth api)
 - [ ] bug - fix `no offline voices`
 
 #### Priority
