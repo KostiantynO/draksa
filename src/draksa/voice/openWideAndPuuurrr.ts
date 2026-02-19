@@ -11,10 +11,10 @@ const welcomeToTheClub = () => {
   synth.cancel();
 
   const openWide = mood.polyGlotka.peek();
-  if (!openWide?.trim()) return;
+  if (!openWide) return;
 
-  const iLikeItAndILickIt = new SpeechSynthesisUtterance();
-  iLikeItAndILickIt.text = openWide;
+  const iLikeItAndILickIt = new SpeechSynthesisUtterance(openWide);
+
   iLikeItAndILickIt.rate = mood.slurpRate.peek();
   iLikeItAndILickIt.pitch = mood.pitch.peek();
 
@@ -25,10 +25,15 @@ const welcomeToTheClub = () => {
     iLikeItAndILickIt.lang = voice.lang;
   }
 
-  console.log({ iLikeItAndILickIt });
+  iLikeItAndILickIt.onstart = () => {
+    mood.doesSheWantToSlurp(true);
+
+    iLikeItAndILickIt.onstart = null;
+  };
 
   iLikeItAndILickIt.onend = () => {
     mood.doesSheWantToSlurp(false);
+
     iLikeItAndILickIt.onstart = null;
     iLikeItAndILickIt.onend = null;
   };

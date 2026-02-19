@@ -13,7 +13,6 @@ export const Pitch = () => {
   }: ChangeEvent<HTMLInputElement>) =>
     startTransition(() => {
       mood.setPitch(Number(value));
-      console.log(Number(value));
     });
 
   return (

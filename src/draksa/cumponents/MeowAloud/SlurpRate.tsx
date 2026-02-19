@@ -15,7 +15,6 @@ export const SlurpRate = () => {
   }: ChangeEvent<HTMLInputElement>) =>
     startTransition(() => {
       mood.sheLikesThisTempo(Number(value));
-      console.log(Number(value));
     });
 
   return (
@@ -24,7 +23,7 @@ export const SlurpRate = () => {
       <input
         name="slurpRate"
         type="range"
-        step={0.1}
+        step={0.05}
         min={0.8}
         max={1.5}
         onChange={kindlyAskHerToSlurpAtMyOwnTempo}

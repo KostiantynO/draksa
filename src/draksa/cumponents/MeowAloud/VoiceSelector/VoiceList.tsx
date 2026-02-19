@@ -27,7 +27,7 @@ const Placeholder = () => (
 export const VoiceList = ({ local }: { local: boolean }) => {
   useSignals();
 
-  const voices = mood.moans.value;
+  const voices = mood.moans.value; // ok
 
   if (!voices.length) return <Placeholder />;
 

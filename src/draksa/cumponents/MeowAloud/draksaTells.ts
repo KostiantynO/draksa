@@ -1,7 +1,6 @@
-// src\cumponents\Draksa\draksaTells.ts
+// src\draksa\cumponents\MeowAloud\draksaTells.ts
 
 export const draksaTells = {
-  pweaseFeedMeDaddy: 'Pwease, feed me, Daddy... :3',
+  pweaseFeedMeDaddy: 'Please, feed me, Daddy...',
   aStory: 'when 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is born :D',
-  youAreTheBestDaddy: "You're the best, Daddy!",
 } as const;

@@ -10,7 +10,13 @@ import type { ChangeEvent } from 'react';
 
 export const useThroat = () => {
   const sheMeows = ({ currentTarget: { value } }: ChangeEvent<HTMLTextAreaElement>) => {
+    window.speechSynthesis.cancel();
+
     mood.putInMeYour(value);
+
+    if (mood.isPrayingToGrGaGvity.peek()) {
+      mood.prayToGrGaGvity(false);
+    }
 
     if (!mood.isMeowingOnType.peek()) return;
 

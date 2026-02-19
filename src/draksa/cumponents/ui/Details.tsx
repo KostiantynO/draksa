@@ -14,7 +14,7 @@ export const Details = ({
   return (
     <details className={`group rounded-lg border p-4 ${className}`}>
       <summary className="flex cursor-pointer list-none items-center gap-2 font-medium">
-        <span className="transition group-open:rotate-90">▶</span>
+        <span className="z-[-1] transition group-open:rotate-90">▶</span>
         <strong>{summary}</strong>
       </summary>
 

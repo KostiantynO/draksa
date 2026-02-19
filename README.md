@@ -202,19 +202,8 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 ### Plan:
 
-#### CRITICAL
-
-- [ ] bug - fix `no offline voices`
-
-#### Priority
-
-- [ ] add debounce for 50ms for textarea :D / ask ai how to do it best, is there a better
-      option from Dan Abramov? There should be smth...
-
 #### Normal
 
-- [x] add button for read speed change
-- [ ] add button for read pitch change
 - [ ] add clear button
 - [ ] add paste button (from clipboard)
 - [ ] add language selection list (dropdown details menu)

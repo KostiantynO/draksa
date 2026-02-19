@@ -20,7 +20,6 @@ export const bounce = (cb: () => unknown, ms: number) => {
   let id: undefined | ReturnType<typeof setTimeout>; // browser timeout
 
   const curried = () => {
-    console.log(id);
     if (id) clearTimeout(id);
 
     id = setTimeout(() => {
@@ -38,7 +37,6 @@ export const bounce = (cb: () => unknown, ms: number) => {
   curried.cancel = () => {
     if (!id) return;
     clearTimeout(id);
-    console.log({ cute: `:3 ${String(id)}` });
 
     id = void 0;
   };

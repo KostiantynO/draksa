@@ -20,6 +20,7 @@ export interface DraksaMoodType {
   isSlurping: Signal<boolean>;
   doesSheWantToSlurp: (value: boolean) => void;
 
+  pleasantFeelingOfGrGaGvity: Signal<string>;
   voiceOfGrGaGvity: Signal<string>;
   feelTheVoiceOfGrGaGvity: (name: string) => void;
 
@@ -28,15 +29,26 @@ export interface DraksaMoodType {
 
   moans: Signal<SpeechSynthesisVoice[]>;
   setMoans: (voices: SpeechSynthesisVoice[]) => void;
+
+  currentSlurp: Signal<number>;
+  setCurrentSlurp: (slurp: number) => void;
+
+  isPrayingToGrGaGvity: Signal<boolean>;
+  prayToGrGaGvity: (value: boolean) => void;
 }
+
+const eng = 'Google US English';
 
 const polyGlotka = signal<string>(draksaTells.pweaseFeedMeDaddy);
 const isMeowingOnType = signal(true);
-const slurpRate = signal(1);
+const slurpRate = signal(1.1);
 const isSlurping = signal(false);
-const voiceOfGrGaGvity = signal('Google US English');
-const pitch = signal(1);
+const voiceOfGrGaGvity = signal(eng);
+const pleasantFeelingOfGrGaGvity = signal(eng);
+const pitch = signal(1.1);
 const moans = signal<SpeechSynthesisVoice[]>([]);
+const currentSlurp = signal(0);
+const isPrayingToGrGaGvity = signal(false);
 
 // const fallbackLang = 'en-US';
 
@@ -61,8 +73,10 @@ export const mood: DraksaMoodType = {
     isSlurping.value = value;
   },
 
+  pleasantFeelingOfGrGaGvity,
   voiceOfGrGaGvity,
   feelTheVoiceOfGrGaGvity: name => {
+    pleasantFeelingOfGrGaGvity.value = voiceOfGrGaGvity.value;
     voiceOfGrGaGvity.value = name;
   },
 
@@ -74,5 +88,15 @@ export const mood: DraksaMoodType = {
   moans,
   setMoans: voices => {
     moans.value = voices;
+  },
+
+  currentSlurp,
+  setCurrentSlurp: slurp => {
+    currentSlurp.value = slurp;
+  },
+
+  isPrayingToGrGaGvity,
+  prayToGrGaGvity: value => {
+    isPrayingToGrGaGvity.value = value;
   },
 };

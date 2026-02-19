@@ -10,7 +10,6 @@ export const useLoudMoans = () => {
     const updateVoiceArrayInSignalsStorage = () => {
       const voices = window.speechSynthesis.getVoices();
       mood.setMoans(voices);
-      console.log({ useLoudMoans: voices });
     };
 
     updateVoiceArrayInSignalsStorage();

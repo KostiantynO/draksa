@@ -25,21 +25,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-@keyframes fadeOut {
-  from {
-    opacity: 0.6;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOutTo {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 0;
-  }
-}
