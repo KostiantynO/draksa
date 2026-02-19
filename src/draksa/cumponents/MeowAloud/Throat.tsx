@@ -10,7 +10,7 @@ export const Throat = () => {
   return (
     <textarea
       name="prettyLips"
-      className="text-foreground placeholder:text-secondary-foreground/60 w-full min-w-0 resize-none bg-transparent text-base leading-6 outline-none disabled:opacity-0"
+      className="text-foreground placeholder:text-secondary-foreground/60 min-h-64 w-full grow bg-transparent text-base leading-6 disabled:opacity-0"
       placeholder={draksaTells.pweaseFeedMeDaddy}
       onChange={sheMeows}
     />
