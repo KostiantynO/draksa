@@ -6,6 +6,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "noUncheckedSideEffectImports": true,
 
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -22,10 +23,10 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
+    // "rootDir": "./src/", need for TS 6.0, but it imports things outside of the src.
+    "types": ["node"],
     "paths": {
       "@/*": ["./src/*"],
-
       "@/draksa/*": ["./src/draksa/*"]
     }
   },
