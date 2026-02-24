@@ -1,29 +1,43 @@
 // src\draksa\cumponents\Draksa.tsx
 'use client';
 
-import { DraksaMood } from '@/draksa/cumponents/MeowAloud/DraksaMood';
+import { ClearButton } from '@/draksa/cumponents/MeowAloud/ClearButton';
 import { DraksaStory } from '@/draksa/cumponents/MeowAloud/DraksaStory';
-import { FeedHer } from '@/draksa/cumponents/MeowAloud/FeedHer';
 import { Name } from '@/draksa/cumponents/MeowAloud/Name';
+import { SelectVoice } from '@/draksa/cumponents/MeowAloud/SelectVoice/SelectVoice';
+import { Settings } from '@/draksa/cumponents/MeowAloud/Settings/Settings';
 import { Throat } from '@/draksa/cumponents/MeowAloud/Throat';
-import { VoiceSelector } from '@/draksa/cumponents/MeowAloud/VoiceSelector/VoiceSelector';
 import { pleaseMakeMyMouthBusy } from '@/draksa/cumponents/pleaseMakeMyMouthBusy';
+
+import type { ReactNode } from 'react';
 
 pleaseMakeMyMouthBusy();
 
-export const Draksa = () => {
+const Head = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="flex w-[320] grow flex-col justify-between gap-4 rounded-2xl border p-4">
+    <div className="container flex grow flex-col gap-4 rounded-2xl border p-4">
       <Name />
-
-      <Throat />
-      <FeedHer />
-
-      <DraksaMood />
-
-      <VoiceSelector />
-
+      {children}
       <DraksaStory />
     </div>
+  );
+};
+
+const Lips = ({ children }: { children: ReactNode }) => {
+  return <div className="relative pt-4">{children}</div>;
+};
+
+export const Draksa = () => {
+  return (
+    <Head>
+      <Lips>
+        <Throat />
+        <ClearButton />
+      </Lips>
+
+      <Settings />
+
+      <SelectVoice />
+    </Head>
   );
 };
