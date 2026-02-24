@@ -8,17 +8,17 @@
 
 |-----------------------------------------------------------|
 
-|---------------- ⛔ ⚠ WARNING! ⚠ ⛔ ----------------|
+|------------------- ⛔ ⚠ WARNING! ⚠ ⛔ -------------------|
 
 |-----------------------------------------------------------|
 
-|------------ ⚠ THIS IS A WORK OF ART! ⚠ -------------|
+|--------------- ⚠ THIS IS A WORK OF ART! ⚠ ---------------|
 
 |-----------------------------------------------------------|
 
-|----------- 🛑 LEAVE WHILE YOU CAN!!! 🛑 -----------|
+|-------------- 🛑 LEAVE WHILE YOU CAN!!! 🛑 --------------|
 
-|--------------------- NOW! :D :D :D ----------------------|
+|--------------------- NOW! :D :D :D -----------------------|
 
 |-----------------------------------------------------------|
 
@@ -204,9 +204,7 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 #### Normal
 
-- [ ] add clear button
 - [ ] add paste button (from clipboard)
-- [ ] add language selection list (dropdown details menu)
 - [ ] add custom dragon/naga/kitty purring ancient language :D
 - [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :D
 - [ ] bug - fix lint warning

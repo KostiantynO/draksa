@@ -3,17 +3,18 @@
 
 import { mood } from '@/draksa/perf/mood/mood';
 
-const fallbackLangName = 'Google US English';
+const eng = 'Google US English';
 
 export const findVoice = () => {
-  const voices = mood.moans.peek();
+  const moans = mood.moans.moans.peek();
+  if (!moans.length) return;
 
-  const voice = voices.find(({ name }) => name === mood.voiceOfGrGaGvity.peek());
+  const activeVoiceName = mood.moans.voice.peek();
+
+  const voice = moans.find(({ name }) => name === activeVoiceName);
 
   if (voice) return voice;
 
-  const fallbackVoice = voices.find(({ name }) => name === fallbackLangName);
-  console.warn(`⚠️ No voice found, using fallback '${fallbackLangName}' ⚠️`);
-
+  const fallbackVoice = moans.find(({ name }) => name === eng) ?? moans[0];
   return fallbackVoice;
 };

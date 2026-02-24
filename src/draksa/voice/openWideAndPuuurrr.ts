@@ -3,42 +3,36 @@
 
 import { bounce } from '@/draksa/perf/club/bouncer';
 import { mood } from '@/draksa/perf/mood/mood';
-import { findVoice } from '@/draksa/voice/findVoice';
+import { speakCurrentChunk } from '@/draksa/voice/speakCurrentChunk';
+
+const sentenceSplitterRegExp = /(?<=[,.!?])\s+/;
 
 const welcomeToTheClub = () => {
   const synth = window.speechSynthesis;
 
   synth.cancel();
 
-  const openWide = mood.polyGlotka.peek();
-  if (!openWide) return;
+  const openWide = mood.throat.polyGlotka.peek();
+  const chunks = mood.chunks.chunks.peek();
 
-  const iLikeItAndILickIt = new SpeechSynthesisUtterance(openWide);
+  if (chunks.length) {
+    speakCurrentChunk();
+    console.log({ chunks });
 
-  iLikeItAndILickIt.rate = mood.slurpRate.peek();
-  iLikeItAndILickIt.pitch = mood.pitch.peek();
-
-  const voice = findVoice();
-
-  if (voice) {
-    iLikeItAndILickIt.voice = voice;
-    iLikeItAndILickIt.lang = voice.lang;
+    return;
   }
 
-  iLikeItAndILickIt.onstart = () => {
-    mood.doesSheWantToSlurp(true);
+  const sentences = openWide
+    .split(sentenceSplitterRegExp)
+    .map(s => s.trim())
+    .filter(Boolean);
 
-    iLikeItAndILickIt.onstart = null;
-  };
+  console.log({ sentences });
 
-  iLikeItAndILickIt.onend = () => {
-    mood.doesSheWantToSlurp(false);
+  mood.chunks.setChunks(sentences);
+  mood.chunks.setActiveChunkId(0);
 
-    iLikeItAndILickIt.onstart = null;
-    iLikeItAndILickIt.onend = null;
-  };
-
-  synth.speak(iLikeItAndILickIt);
+  speakCurrentChunk();
 };
 
 export const openWideAndPuuurrr = bounce(welcomeToTheClub, 210);
