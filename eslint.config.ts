@@ -22,19 +22,19 @@ const eslintConfig = defineConfig([
   ...nextConfig,
   ...nextTs,
 
-  // SEVERITY: 8 - adds TS strict type checks
+  // SEVERITY: 8/10 - adds TS strict type checks
   ts.configs.recommendedTypeChecked,
   ts.configs.stylisticTypeChecked,
 
   butPlugInHooks.configs.flat['recommended-latest'],
 
   {
-    // SEVERITY: 9 - adds 'scope', to do not lint config file itself.
+    // SEVERITY: 9/10 - adds 'scope', to do not lint config file itself.
     files: ['src/**/*.{ts,tsx}'],
 
     settings: {
       'import/resolver': {
-        typescript: {}, // SEVERITY: 7 Removes squiggly lines under imports in <Draksa />, for absolute imports
+        typescript: {}, // SEVERITY: 7/10 Removes squiggly lines under imports in <Draksa />, for absolute imports
       },
     },
 
@@ -43,7 +43,7 @@ const eslintConfig = defineConfig([
     },
 
     languageOptions: {
-      // SEVERITY: 8 - adds TS strict type checks
+      // SEVERITY: 8/10 - adds TS strict type checks
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
@@ -154,19 +154,13 @@ const eslintConfig = defineConfig([
 
   // ignore next.js 'app router' page default export
   {
-    files: [
-      'src/**/{page,layout,not-found,error}.tsx',
-      // 'next.config.ts',
-      'prettier.config.mjs',
-      // 'eslint.config.ts',
-      'postcss.config.mjs',
-    ],
+    files: ['src/**/{page,layout,not-found,error}.tsx'],
     rules: { 'import/no-default-export': 'off' },
   },
 
   // SEVERITY: 10/10 - disable linting for the config file itself
   {
-    files: ['eslint.config.ts'],
+    files: ['eslint.config.ts', 'prettier.config.mjs', 'postcss.config.mjs'],
     extends: [ts.configs.disableTypeChecked],
   },
 

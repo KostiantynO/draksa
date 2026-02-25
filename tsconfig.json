@@ -23,6 +23,7 @@
         "name": "next"
       }
     ],
+    // "baseUrl": ".",
     // "rootDir": "./src/", need for TS 6.0, but it imports things outside of the src.
     "types": ["node"],
     "paths": {
@@ -34,8 +35,8 @@
     "src/**/*.ts",
     "src/**/*.tsx",
 
-    "postcss.config.mjs",
-    "prettier.config.mjs",
+    // "postcss.config.mjs",
+    // "prettier.config.mjs",
 
     "next-env.d.ts",
     ".next/types/**/*.ts"

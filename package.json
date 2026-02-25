@@ -4,13 +4,13 @@
   "private": true,
   "type": "module",
   "author": {
-    "name": "Ashmedai 🌞🐲🦄"
+    "name": "Ashmedai 🌞🐲"
   },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "packageManager": "pnpm@9.4.0",
   "engines": {
