@@ -14,7 +14,7 @@ export const speakCurrentChunk = () => {
   const chunks = mood.chunks.chunks.peek();
 
   if (id >= chunks.length) {
-    mood.moans.beSilent();
+    mood.moans.stop();
     return;
   }
 

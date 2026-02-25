@@ -1,9 +1,9 @@
-// src\draksa\cumponents\MeowAloud\VoiceSelector\VoiceList.tsx
+// src\draksa\cumponents\MeowAloud\Voice\VoiceList.tsx
 'use client';
 
 import { useSignals } from '@preact/signals-react/runtime';
 
-import { VoiceOption } from '@/draksa/cumponents/MeowAloud/VoiceSelector/VoiceOption';
+import { VoiceOption } from '@/draksa/cumponents/MeowAloud/Voice/VoiceOption';
 import { mood } from '@/draksa/perf/mood/mood';
 
 const makeVoiceOption = ({
@@ -27,7 +27,7 @@ const Placeholder = () => (
 export const VoiceList = ({ local }: { local: boolean }) => {
   useSignals();
 
-  const voices = mood.moans.value; // ok
+  const voices = mood.moans.moans.value; // ok
 
   if (!voices.length) return <Placeholder />;
 
@@ -35,5 +35,5 @@ export const VoiceList = ({ local }: { local: boolean }) => {
     .filter(({ localService }) => localService === local)
     .map(makeVoiceOption);
 
-  return <ul>{arr}</ul>;
+  return <ul className="flex flex-col px-1">{arr}</ul>;
 };

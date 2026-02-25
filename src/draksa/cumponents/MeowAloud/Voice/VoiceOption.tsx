@@ -1,4 +1,5 @@
-// src\draksa\cumponents\MeowAloud\VoiceSelector\VoiceOption.tsx
+// src\draksa\cumponents\MeowAloud\Voice\VoiceOption.tsx
+'use client';
 
 import { useSignals } from '@preact/signals-react/runtime';
 
@@ -17,22 +18,23 @@ export const VoiceOption = ({
   useSignals();
 
   const chooseVoice = () => {
+    // if (voiceName === mood.moans.voice.peek()) return;
     selectVoice(voiceName);
   };
 
-  const isActive = mood.voiceOfGrGaGvity.value === voiceName; // ok
+  const isActive = mood.moans.voice.value === voiceName; // ok
 
   return (
     <li>
       <button
         type="button"
-        className={`w-full rounded-lg px-4 py-2 text-left transition-all ${
-          isActive ? 'bg-pink-600 text-white shadow-md' : 'hover:bg-zinc-800'
+        className={`w-full cursor-pointer rounded-2xl px-1 py-1 text-left text-sm transition-colors duration-210 hover:bg-pink-700 ${
+          isActive ? 'bg-pink-600 text-white shadow-lg' : 'hover:bg-zinc-800'
         }`}
         onClick={chooseVoice}
       >
         {children}
-        {isActive && ' ✨'}
+        {isActive ? ' ✨' : null}
       </button>
     </li>
   );

@@ -12,13 +12,9 @@ export const useThroat = () => {
   const sheMeows = ({ currentTarget: { value } }: ChangeEvent<HTMLTextAreaElement>) => {
     window.speechSynthesis.cancel();
 
-    mood.putInMeYour(value);
+    mood.throat.pleaseFeedMe(value);
 
-    if (mood.isPrayingToGrGaGvity.peek()) {
-      mood.prayToGrGaGvity(false);
-    }
-
-    if (!mood.isMeowingOnType.peek()) return;
+    if (!mood.settings.isMeowingOnType.peek()) return;
 
     // prettier-ignore
     openWideAndPuuurrr( );

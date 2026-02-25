@@ -7,11 +7,17 @@ import { draksaTells } from '@/draksa/cumponents/MeowAloud/draksaTells';
 
 const EMPTY: [] = [];
 
+type SpeechState = 'idle' | 'meowing' | 'paused';
+
 // prettier-ignore
 export const mood = {
   throat: {
-    polyGlotka: signal<string>(draksaTells.pweaseFeedMeDaddy),
-    putInMeYour: (value: string) => { mood.throat.polyGlotka.value = value; },
+    polyGlotka: signal<string>(draksaTells.pleaseFeedMe),
+    pleaseFeedMe: (value: string) => { mood.throat.polyGlotka.value = value; },
+    lanDyshy: ()=> {
+      mood.throat.pleaseFeedMe('');
+      mood.chunks.reset();
+     }
   },
 
   settings: {
@@ -22,7 +28,7 @@ export const mood = {
     setPitch: (value: number) => { mood.settings.pitch.value = value; },
 
     isMeowingOnType: signal(true),
-    toggleIsMeowingOnType: () => { mood.settings.isMeowingOnType.value = !mood.settings.isMeowingOnType.value; },
+    toggleIsMeowingOnType: () => { mood.settings.isMeowingOnType.value = !mood.settings.isMeowingOnType.peek(); },
   },
 
   moans: {
@@ -32,13 +38,10 @@ export const mood = {
     moans: signal<SpeechSynthesisVoice[]>([]),
     setMoans: (voices: SpeechSynthesisVoice[]) => { mood.moans.moans.value = voices; },
 
-    isSpeaking: signal(false),
-    meow: () => { mood.moans.isSpeaking.value = true; },
-    beSilent: () => { mood.moans.isSpeaking.value = false; },
-
-    isPaused: signal(false),
-    pause: () => { mood.moans.isPaused.value = true; },
-    resume: () => { mood.moans.isPaused.value = false; },
+    state: signal<SpeechState>('idle'),
+    stop: () => { mood.moans.state.value = 'idle'; },
+    meow: () => { mood.moans.state.value = 'meowing'; },
+    pause: () => { mood.moans.state.value = 'paused'; },
   },
 
   chunks: {
@@ -46,7 +49,8 @@ export const mood = {
     setChunks: (newChunks: string[]) => { mood.chunks.chunks.value = newChunks; },
 
     reset: () => {
-      mood.moans.beSilent();
+      mood.moans.stop();
+
       mood.chunks.setChunks(EMPTY);
       mood.chunks.setActiveChunkId(0);
     },

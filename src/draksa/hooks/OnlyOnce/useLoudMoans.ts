@@ -9,7 +9,7 @@ export const useLoudMoans = () => {
   useEffect(() => {
     const updateVoiceArrayInSignalsStorage = () => {
       const voices = window.speechSynthesis.getVoices();
-      mood.setMoans(voices);
+      mood.moans.setMoans(voices);
     };
 
     updateVoiceArrayInSignalsStorage();
