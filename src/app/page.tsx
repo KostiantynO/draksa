@@ -4,7 +4,7 @@ import { Draksa } from '@/draksa/cumponents/Draksa';
 
 const OnlyVoice = () => {
   return (
-    <main className="flex h-auto min-h-screen flex-col items-center justify-center p-8">
+    <main className="px-1 pt-5 pb-21">
       <Draksa />
     </main>
   );

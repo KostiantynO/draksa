@@ -174,7 +174,7 @@ OKEEEYy, honey :D You have been warned :D
 
 # What: Draksa (MeowAloud)
 
-`Draksa`: Heyyy, 'Daddy'! I aaamm онлааааа-`Ain`!
+`Draksa`: Heyyy! I aaamm онлааааа-`Ain`!
 
 ## Why:
 

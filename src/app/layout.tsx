@@ -28,7 +28,9 @@ const GoonLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} overflow-y-scroll antialiased`}
+      >
         {children}
       </body>
     </html>
