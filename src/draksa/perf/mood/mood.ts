@@ -1,23 +1,38 @@
 // src\draksa\perf\mood\mood.ts
 'use client';
 
-import { signal } from '@preact/signals-react';
+import { batch, signal } from '@preact/signals-react';
 
 import { draksaTells } from '@/draksa/cumponents/MeowAloud/draksaTells';
 
 const EMPTY: [] = [];
 
 type SpeechState = 'idle' | 'meowing' | 'paused';
+type PasteState = 'idle' | 'pasting';
 
 // prettier-ignore
 export const mood = {
   throat: {
     polyGlotka: signal<string>(draksaTells.pleaseFeedMe),
     pleaseFeedMe: (value: string) => { mood.throat.polyGlotka.value = value; },
-    lanDyshy: ()=> {
-      mood.throat.pleaseFeedMe('');
-      mood.chunks.reset();
-     }
+
+    wantsAir: signal(false),
+    careForHerAndGiveAir: () => {
+      batch(()=>{
+        mood.throat.pleaseFeedMe('');
+        mood.throat.wantsAir.value = false;
+      });
+    },
+    lanDyshy: () => {
+      batch(() => {
+        mood.throat.pleaseFeedMe('');
+        mood.throat.wantsAir.value = true;
+        mood.chunks.reset();
+      });
+    },
+    pasteState: signal<PasteState>('idle'),
+    stopPasting: () => { mood.throat.pasteState.value = 'idle' },
+    startPasting: () => { mood.throat.pasteState.value = 'pasting' },
   },
 
   settings: {
@@ -49,10 +64,12 @@ export const mood = {
     setChunks: (newChunks: string[]) => { mood.chunks.chunks.value = newChunks; },
 
     reset: () => {
-      mood.moans.stop();
+      batch(() => {
+        mood.moans.stop();
 
-      mood.chunks.setChunks(EMPTY);
-      mood.chunks.setActiveChunkId(0);
+        mood.chunks.setChunks(EMPTY);
+        mood.chunks.setActiveChunkId(0);
+      });
     },
 
     activeChunkId: signal(0),

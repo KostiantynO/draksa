@@ -222,6 +222,12 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
   - call text parser
     - then split new textarea.value into chucks and proceed as usual -> call
       `speakCurrentChunk`
+- [ ] offload main threat from everything:
+  - [ ] add service worker (`Workie`) - async helper-thread is supa-cool! ;D
+  - [ ] move text-splitting to the Workie (it totally can be async)
+  - [ ] move all speech invoking to the Workie (it is sync, need to will find out if this
+        is possible)
+  - [ ] move paste from clipboard to the Workie (it is async anyway)
 - [ ] improve text splitter:
   - [ ] split at new line `\n`
   - [ ] split at space ` `
@@ -232,6 +238,12 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
   - [ ] split at question `?`
   - [ ] if anything of the above is found in the text - AND FOLLOWED BY a new line `\n` -
         or space ` ` char - make a new chunk.
+  - [ ] code endings (like semicolon `;`), and do not speak them if possible :D
+  - [ ] try to detect emojis and speak them correctly.
+  - [ ] try not to confuse semicolon `;` with a winking smile ;D
+  - [ ] a smiling face `:)` - is not a `colon .. closing parenthesis`, but a
+        `smiling face` or `smile` or `haha :)` or `I am friendly :)` or `I am nice` or
+        `I am a good boy` or `I am polite` :D
 - [ ] Do this:
   - pass children as a slot into parent jsx <Parent>{children}</Parent> (very relevant)
     especially with smaller `Server Components` passed as `{slots}` into

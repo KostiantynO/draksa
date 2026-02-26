@@ -49,5 +49,9 @@ export const speakCurrentChunk = () => {
     mood.chunks.reset();
   };
 
+  // if (Math.random() < 0.2 && utter.text.includes(':3')) {
+  // play cat meow audio clip here
+  // }
+
   synth.speak(utter);
 };

@@ -1,6 +1,24 @@
 // src\draksa\cumponents\MeowAloud\Lips.tsx
-import type { ReactNode } from 'react';
+import { FeedHer } from '@/draksa/cumponents/MeowAloud/Mood/FeedHer';
+import { MeowOnType } from '@/draksa/cumponents/MeowAloud/Mood/MeowOnType';
+import { Mood } from '@/draksa/cumponents/MeowAloud/Mood/Mood';
+import { PasteButton } from '@/draksa/cumponents/MeowAloud/Mood/PasteButton';
+import { SpeedButton } from '@/draksa/cumponents/MeowAloud/Mood/SpeedButton';
+import { LanDyshy } from '@/draksa/cumponents/MeowAloud/Throat/LanDyshy';
+import { Throat } from '@/draksa/cumponents/MeowAloud/Throat/Throat';
 
-export const Lips = ({ children }: { children: ReactNode }) => {
-  return <div className="relative">{children}</div>;
+export const Lips = () => {
+  return (
+    <div className="relative">
+      <Throat />
+
+      <LanDyshy />
+      <Mood
+        speedButton={<SpeedButton />}
+        pasteButton={<PasteButton />}
+        feedHer={<FeedHer />}
+        meowOnType={<MeowOnType />}
+      />
+    </div>
+  );
 };

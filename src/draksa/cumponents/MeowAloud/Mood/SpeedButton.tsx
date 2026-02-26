@@ -1,7 +1,7 @@
 // src\draksa\cumponents\MeowAloud\Mood\SpeedButton.tsx
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 
 import { mood } from '@/draksa/perf/mood/mood';
 import { openWideAndPuuurrr } from '@/draksa/voice/openWideAndPuuurrr';
@@ -13,17 +13,19 @@ const SlurpRateButtons = () => {
 
   const selectSpeed = (value: number) =>
     startTransition(() => {
-      if (value === mood.settings.slurpRate.peek()) return;
-
       mood.settings.setSlurpRate(value);
 
       // prettier-ignore
       openWideAndPuuurrr( );
     });
 
+  useEffect(() => openWideAndPuuurrr.cancel, []);
+
   const buttons = speeds.map(speed => (
     <li key={speed}>
       <button
+        name="slurpRateOption"
+        type="button"
         className="relative flex cursor-pointer gap-2 rounded-2xl bg-pink-600 px-3 py-2 text-sm font-bold text-white transition-colors duration-100 outline-none select-none hover:bg-pink-700"
         onClick={() => selectSpeed(speed)}
       >
@@ -50,6 +52,7 @@ export const SpeedButton = () => {
       {opened ? <SlurpRateButtons /> : null}
       <button
         name="slurpRate"
+        type="button"
         title="Slurp rate"
         className="min-w-21 cursor-pointer rounded-2xl bg-pink-600/90 px-4 py-2 text-xl font-bold text-white transition-colors select-none hover:bg-pink-700"
         onClick={showSpeedButtons}

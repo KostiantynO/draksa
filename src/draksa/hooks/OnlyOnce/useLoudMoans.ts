@@ -4,6 +4,9 @@
 import { useEffect } from 'react';
 
 import { mood } from '@/draksa/perf/mood/mood';
+import { pleaseMakeMyMouthBusy } from '@/draksa/voice/pleaseMakeMyMouthBusy';
+
+pleaseMakeMyMouthBusy();
 
 export const useLoudMoans = () => {
   useEffect(() => {

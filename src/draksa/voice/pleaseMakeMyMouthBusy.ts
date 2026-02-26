@@ -1,4 +1,4 @@
-// src\draksa\cumponents\pleaseMakeMyMouthBusy.ts
+// src\draksa\voice\pleaseMakeMyMouthBusy.ts
 'use client';
 
 export const pleaseMakeMyMouthBusy = () => {
