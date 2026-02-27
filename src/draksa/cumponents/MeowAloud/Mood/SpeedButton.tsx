@@ -3,8 +3,8 @@
 
 import { useEffect, useState, useTransition } from 'react';
 
+import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 import { mood } from '@/draksa/perf/mood/mood';
-import { openWideAndPuuurrr } from '@/draksa/voice/openWideAndPuuurrr';
 
 const speeds = [1, 1.1, 1.21, 1.3, 1.4, 1.5];
 

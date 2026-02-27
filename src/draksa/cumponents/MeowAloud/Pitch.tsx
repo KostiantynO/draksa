@@ -1,8 +1,8 @@
 // src\draksa\cumponents\MeowAloud\Pitch.tsx
 import { useTransition } from 'react';
 
+import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 import { mood } from '@/draksa/perf/mood/mood';
-import { openWideAndPuuurrr } from '@/draksa/voice/openWideAndPuuurrr';
 
 import type { ChangeEvent } from 'react';
 

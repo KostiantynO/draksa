@@ -8,7 +8,9 @@ import { draksaTells } from '@/draksa/cumponents/MeowAloud/draksaTells';
 const EMPTY: [] = [];
 
 type SpeechState = 'idle' | 'meowing' | 'paused';
-type PasteState = 'idle' | 'pasting';
+type PasteButtonState = 'idle' | 'pastingAfterButtonClick';
+type KeyboardPasteState = 'idle' | 'pastingAfterCtrlV';
+type ClearButtonState = 'idle' | 'clearingAfterButtonClick';
 
 // prettier-ignore
 export const mood = {
@@ -16,23 +18,23 @@ export const mood = {
     polyGlotka: signal<string>(draksaTells.pleaseFeedMe),
     pleaseFeedMe: (value: string) => { mood.throat.polyGlotka.value = value; },
 
-    wantsAir: signal(false),
-    careForHerAndGiveAir: () => {
-      batch(()=>{
-        mood.throat.pleaseFeedMe('');
-        mood.throat.wantsAir.value = false;
-      });
-    },
-    lanDyshy: () => {
+    clearState: signal<ClearButtonState>('idle'),
+    startClearing: () => {
       batch(() => {
+        mood.throat.clearState.value = 'clearingAfterButtonClick';
         mood.throat.pleaseFeedMe('');
-        mood.throat.wantsAir.value = true;
         mood.chunks.reset();
       });
     },
-    pasteState: signal<PasteState>('idle'),
-    stopPasting: () => { mood.throat.pasteState.value = 'idle' },
-    startPasting: () => { mood.throat.pasteState.value = 'pasting' },
+    stopClearing: () => { mood.throat.clearState.value = 'idle'; },
+
+    pasteButtonState: signal<PasteButtonState>('idle'),
+    stopButtonPasting: () => { mood.throat.pasteButtonState.value = 'idle'; },
+    startButtonPasting: () => { mood.throat.pasteButtonState.value = 'pastingAfterButtonClick'; },
+
+    keyboardPasteState: signal<KeyboardPasteState>('idle'),
+    stopKeyboardPasting: () => { mood.throat.keyboardPasteState.value = 'idle'; },
+    startKeyboardPasting: () => { mood.throat.keyboardPasteState.value = 'pastingAfterCtrlV'; },
   },
 
   settings: {

@@ -4,8 +4,8 @@
 import { useSignals } from '@preact/signals-react/runtime';
 import { useEffect } from 'react';
 
+import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 import { mood } from '@/draksa/perf/mood/mood';
-import { openWideAndPuuurrr } from '@/draksa/voice/openWideAndPuuurrr';
 import { selectVoice } from '@/draksa/voice/selectVoice';
 
 import type { ReactNode } from 'react';

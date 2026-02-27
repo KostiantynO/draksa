@@ -1,6 +1,6 @@
-// src\draksa\voice\prepareText.ts
+// src\draksa\voice\youAreNotPrepared.ts
 import { mood } from '@/draksa/perf/mood/mood';
-import { purrify } from '@/draksa/voice/purrify';
+import { purrify } from '@/draksa/voice/purrify/purrify';
 
 const legs = /(?<=[\n;.!?])\s+/;
 
@@ -11,9 +11,10 @@ export const youAreNotPrepared = () => {
     return;
   }
 
-  const catPoseYOga = polyGlotka.split(legs).map(purrify);
+  const draksa = purrify(polyGlotka);
 
-  console.log(catPoseYOga);
+  const catPoseYoga = draksa.split(legs);
+  console.log(catPoseYoga);
 
-  return catPoseYOga;
+  return catPoseYoga;
 };

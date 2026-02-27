@@ -1,54 +1,101 @@
 // src\draksa\cumponents\MeowAloud\useThroat.ts
 'use client';
 
+import { batch } from '@preact/signals-react';
 import { useEffect, useRef } from 'react';
 
+import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
+import { purrNow } from '@/draksa/perf/club/purrNow';
 import { mood } from '@/draksa/perf/mood/mood';
-import { openWideAndPuuurrr } from '@/draksa/voice/openWideAndPuuurrr';
 
-import type { ChangeEvent } from 'react';
+import type { ChangeEvent, ClipboardEvent } from 'react';
+
+const ctrlV = (e: ClipboardEvent<HTMLTextAreaElement>) => {
+  const yogurt = e.clipboardData.getData('text');
+
+  batch(() => {
+    mood.throat.startKeyboardPasting();
+    mood.chunks.reset();
+    mood.throat.pleaseFeedMe(yogurt);
+  });
+
+  if (!mood.settings.isMeowingOnType.peek()) return;
+
+  console.log('keyboardPaste');
+
+  //prettier-ignore
+  purrNow( )
+};
+
+const typingOrPasteButtonClick = (e: ChangeEvent<HTMLTextAreaElement>) => {
+  const { value } = e.currentTarget;
+  mood.throat.pleaseFeedMe(value);
+
+  if (!mood.settings.isMeowingOnType.peek()) return;
+  if (mood.throat.keyboardPasteState.peek() === 'pastingAfterCtrlV') return;
+
+  console.log('typing or paste button click');
+
+  // prettier-ignore
+  openWideAndPuuurrr( );
+};
+
+const dispatchInputEvent = (ref: HTMLTextAreaElement) =>
+  ref.dispatchEvent(new Event('input', { bubbles: true, cancelable: false }));
+
+const sheMeows = (
+  e: ChangeEvent<HTMLTextAreaElement> | ClipboardEvent<HTMLTextAreaElement>
+) => {
+  if ('clipboardData' in e) {
+    ctrlV(e);
+    return;
+  }
+
+  typingOrPasteButtonClick(e);
+};
 
 export const useThroat = () => {
-  const sheMeows = ({ currentTarget: { value } }: ChangeEvent<HTMLTextAreaElement>) => {
-    // window.speechSynthesis.cancel();
-    mood.throat.pleaseFeedMe(value);
-
-    if (!mood.settings.isMeowingOnType.peek()) return;
-
-    // prettier-ignore
-    openWideAndPuuurrr( );
-  };
-
-  useEffect(() => openWideAndPuuurrr.cancel, []);
-
   const feedMeRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
-    const unsubWantsAirSignal = mood.throat.wantsAir.subscribe(wantsAir => {
-      const polyGlotka = feedMeRef.current;
-      if (!wantsAir || !polyGlotka) return;
-      mood.throat.careForHerAndGiveAir();
+    const unsubClearButtonClick = mood.throat.clearState.subscribe(clearState => {
+      if (clearState !== 'clearingAfterButtonClick') return;
 
-      polyGlotka.value = '';
+      const textareaRef = feedMeRef.current;
+      if (!textareaRef) return;
+
+      console.log({ clearState });
+
+      textareaRef.value = '';
+      dispatchInputEvent(textareaRef);
+      mood.throat.stopClearing();
     });
 
-    return unsubWantsAirSignal;
-  }, []);
+    const unsubPasteButtonClick = mood.throat.pasteButtonState.subscribe(
+      pasteButtonState => {
+        if (pasteButtonState !== 'pastingAfterButtonClick') return;
 
-  useEffect(() => {
-    const unsubInsertingSignal = mood.throat.pasteState.subscribe(pasteState => {
-      const polyGlotkaDOM = feedMeRef.current;
-      if (pasteState !== 'pasting' || !polyGlotkaDOM) return;
-      const newVal = mood.throat.polyGlotka.peek();
+        const textareaRef = feedMeRef.current;
+        if (!textareaRef) return;
 
-      polyGlotkaDOM.value = newVal;
+        console.log({ pasteButtonState });
 
-      polyGlotkaDOM.dispatchEvent(new Event('input', { bubbles: true })); // to trigger onChange
+        const text = mood.throat.polyGlotka.peek();
+        textareaRef.value = text;
+        dispatchInputEvent(textareaRef);
+        mood.throat.stopButtonPasting();
+      }
+    );
 
-      mood.throat.stopPasting();
-    });
+    return () => {
+      openWideAndPuuurrr.cancel();
+      purrNow.cancel();
 
-    return unsubInsertingSignal;
+      batch(() => {
+        unsubClearButtonClick();
+        unsubPasteButtonClick();
+      });
+    };
   }, []);
 
   const meowAsYouType = { sheMeows, feedMeRef };

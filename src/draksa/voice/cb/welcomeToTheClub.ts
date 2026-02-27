@@ -1,15 +1,17 @@
-// src\draksa\voice\openWideAndPuuurrr.ts
+// src\draksa\voice\cb\welcomeToTheClub.ts
 'use client';
-
-import { bounce } from '@/draksa/perf/club/bouncer';
 import { mood } from '@/draksa/perf/mood/mood';
 import { speakCurrentChunk } from '@/draksa/voice/speakCurrentChunk';
 import { youAreNotPrepared } from '@/draksa/voice/youAreNotPrepared';
 
-const welcomeToTheClub = () => {
+export const welcomeToTheClub = () => {
   const synth = window.speechSynthesis;
 
   synth.cancel();
+
+  if (mood.throat.keyboardPasteState.peek() === 'pastingAfterCtrlV') {
+    mood.throat.stopKeyboardPasting();
+  }
 
   const sentences = youAreNotPrepared();
   if (!sentences?.length) return;
@@ -27,5 +29,3 @@ const welcomeToTheClub = () => {
 
   speakCurrentChunk();
 };
-
-export const openWideAndPuuurrr = bounce(welcomeToTheClub, 500);
