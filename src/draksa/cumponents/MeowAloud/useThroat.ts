@@ -30,18 +30,8 @@ export const useThroat = () => {
       textarea.value = state;
     });
 
-    const onPasteUpdateTextarea = mood.throat.pasteButtonState.subscribe(state => {
-      const textarea = throatRef.current;
-      if (!textarea) return;
-      if (state !== 'pastingAfterButtonClick') return;
-      mood.throat.stopButtonPasting();
-
-      textarea.dispatchEvent(new Event('input', { bubbles: true, cancelable: false }));
-    });
-
     const cleanup = () => {
       onChangeUpdateTextarea();
-      onPasteUpdateTextarea();
     };
 
     return cleanup;
