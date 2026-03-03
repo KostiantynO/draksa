@@ -3,30 +3,26 @@
 
 import { batch, signal } from '@preact/signals-react';
 
-import { draksaTells } from '@/draksa/cumponents/MeowAloud/draksaTells';
-
 const EMPTY: [] = [];
 
-type SpeechState = 'idle' | 'meowing' | 'paused';
-type PasteButtonState = 'idle' | 'pastingAfterButtonClick';
+type ChangingVoiceState = 'idle' | 'changingVoice';
+type SpeechState = 'idle' | 'meowing' | 'paused' | 'changingVoice';
+export type PasteButtonState = 'idle' | 'pastingAfterButtonClick';
 type KeyboardPasteState = 'idle' | 'pastingAfterCtrlV';
-type ClearButtonState = 'idle' | 'clearingAfterButtonClick';
 
 // prettier-ignore
 export const mood = {
   throat: {
-    polyGlotka: signal<string>(draksaTells.pleaseFeedMe),
-    pleaseFeedMe: (value: string) => { mood.throat.polyGlotka.value = value; },
+    // polyGlotka: signal<string>(draksaTells.pleaseFeedMe),
+    polyGlotka: signal<string>(''),
+    pleaseFeedMe: (yogurt: string) => { mood.throat.polyGlotka.value = yogurt; },
 
-    clearState: signal<ClearButtonState>('idle'),
-    startClearing: () => {
+    clear: () => {
       batch(() => {
-        mood.throat.clearState.value = 'clearingAfterButtonClick';
         mood.throat.pleaseFeedMe('');
         mood.chunks.reset();
       });
     },
-    stopClearing: () => { mood.throat.clearState.value = 'idle'; },
 
     pasteButtonState: signal<PasteButtonState>('idle'),
     stopButtonPasting: () => { mood.throat.pasteButtonState.value = 'idle'; },
@@ -41,11 +37,14 @@ export const mood = {
     slurpRate: signal(1.21),
     setSlurpRate: (value: number) => { mood.settings.slurpRate.value = value;  },
 
-    pitch: signal(1.1),
+    pitch: signal(1.15),
     setPitch: (value: number) => { mood.settings.pitch.value = value; },
 
     isMeowingOnType: signal(true),
     toggleIsMeowingOnType: () => { mood.settings.isMeowingOnType.value = !mood.settings.isMeowingOnType.peek(); },
+
+    speechDebounceForTypingInMs: signal(500),
+    setSpeechDebounceForTypingInMs: (ms:number) => { mood.settings.speechDebounceForTypingInMs.value = ms },
   },
 
   moans: {
@@ -59,6 +58,10 @@ export const mood = {
     stop: () => { mood.moans.state.value = 'idle'; },
     meow: () => { mood.moans.state.value = 'meowing'; },
     pause: () => { mood.moans.state.value = 'paused'; },
+
+    isChangingVoice: signal<ChangingVoiceState>('idle'),
+    startVoiceChange: () => { mood.moans.isChangingVoice.value = 'changingVoice'; },
+    finishVoiceChange: () => { mood.moans.isChangingVoice.value = 'idle'; },
   },
 
   chunks: {

@@ -1,4 +1,4 @@
-// src\draksa\cumponents\MeowAloud\Voice\VoiceOption.tsx
+// src\draksa\cumponents\MeowAloud\ClubEntrance\BounceOption.tsx
 'use client';
 
 import { useSignals } from '@preact/signals-react/runtime';
@@ -6,26 +6,17 @@ import { useEffect } from 'react';
 
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 import { mood } from '@/draksa/perf/mood/mood';
-import { selectVoice } from '@/draksa/voice/selectVoice';
 
-import type { ReactNode } from 'react';
-
-export const VoiceOption = ({
-  voiceName,
-  children,
-}: {
-  voiceName: string;
-  children: ReactNode;
-}) => {
+export const BounceOption = ({ label }: { label: number }) => {
   useSignals();
 
-  const chooseVoice = () => {
-    selectVoice(voiceName);
+  const chooseBounce = () => {
+    mood.settings.setSpeechDebounceForTypingInMs(label);
   };
 
   useEffect(() => openWideAndPuuurrr.cancel, []);
 
-  const isActive = mood.moans.voice.value === voiceName; // ok
+  const isActive = mood.settings.speechDebounceForTypingInMs.value === label; // ok
 
   return (
     <li>
@@ -35,9 +26,8 @@ export const VoiceOption = ({
         className={`w-full cursor-pointer rounded-2xl px-1 py-1 text-left text-sm transition-colors duration-210 hover:bg-pink-700 ${
           isActive ? 'bg-pink-600 text-white shadow-lg' : 'hover:bg-zinc-800'
         }`}
-        onClick={chooseVoice}
+        onClick={chooseBounce}
       >
-        {children}
         {isActive ? ' ✨' : null}
       </button>
     </li>

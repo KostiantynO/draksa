@@ -41,7 +41,7 @@ const SlurpRateButtons = () => {
   );
 };
 
-export const SpeedButton = () => {
+export const SlurpRate = () => {
   const [opened, setOpened] = useState(false);
   const showSpeedButtons = () => {
     setOpened(o => !o);

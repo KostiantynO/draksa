@@ -10,9 +10,9 @@ const cats = new Map<string, string>(
     OwO: "NonSummerJack Bast'et me ancient egyptian temple priestess excited catgirl with big eyes ",
 
     ᓚᘏᗢ: 'small curled sitting cat',
-    'ლ^•ᴥ•^ლ': 'cute cat with big soft paws up',
+    'ლ^•ᴥ•^ლ': 'cute cat with big softy paws',
 
-    'ฅ^•ﻌ•^ฅ': 'super-cute cat with paws up',
+    'ฅ^•ﻌ•^ฅ': 'super-cute cat with paws',
     '^•ﻌ•^': 'super-cute cat with ears',
     '•ﻌ•': 'cute cat with hidden ears',
     '^+_+^': 'cat face',

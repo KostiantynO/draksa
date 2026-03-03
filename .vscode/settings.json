@@ -1,5 +1,13 @@
 {
-  "cSpell.words": ["catgirl", "cumponents", "meowbe", "nekomancy", "purrifier", "raaawr"],
+  "cSpell.words": [
+    "catgirl",
+    "cumponents",
+    "meowbe",
+    "nekomancy",
+    "purrifier",
+    "purrify",
+    "raaawr"
+  ],
 
   // Force absolute imports (@/...) instead of relative (../)
   "javascript.preferences.importModuleSpecifier": "non-relative",

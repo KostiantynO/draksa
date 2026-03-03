@@ -202,6 +202,10 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 ### Plan:
 
+#### Critical:
+
+- [ ] Add Language autodetect per word/or even character. For puns recognition. :D
+
 #### Normal
 
 - [ ] add paste button (from clipboard)
