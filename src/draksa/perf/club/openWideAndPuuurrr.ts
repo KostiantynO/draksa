@@ -2,6 +2,10 @@
 'use client';
 
 import { bounce } from '@/draksa/perf/club/bouncer';
+import { mood } from '@/draksa/perf/mood/mood';
 import { welcomeToTheClub } from '@/draksa/voice/cb/welcomeToTheClub';
 
-export const openWideAndPuuurrr = bounce(welcomeToTheClub, 500);
+export const openWideAndPuuurrr = bounce(
+  welcomeToTheClub,
+  mood.settings.speechDebounceForTypingInMs.peek()
+);

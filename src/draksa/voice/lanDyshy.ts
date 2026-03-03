@@ -2,7 +2,7 @@
 import { mood } from '@/draksa/perf/mood/mood';
 
 export const lanDyshy = () => {
-  window.speechSynthesis.cancel();
+  if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
 
-  mood.throat.startClearing();
+  mood.throat.clear();
 };

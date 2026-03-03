@@ -3,26 +3,34 @@
 import type { ReactNode } from 'react';
 
 export const Mood = ({
-  speedButton,
-  pasteButton,
   feedHer,
+  soulHug,
+
+  rate,
+  pitch,
+
   meowOnType,
 }: {
-  speedButton: ReactNode;
-  pasteButton: ReactNode;
-  feedHer: ReactNode;
-  meowOnType: ReactNode;
+  feedHer?: ReactNode;
+  soulHug?: ReactNode;
+
+  pitch?: ReactNode;
+  rate?: ReactNode;
+
+  meowOnType?: ReactNode;
 }) => {
   return (
-    <div className="relative mb-10 pt-20">
-      <div className="absolute -top-1 right-12 left-12 z-50 flex items-center gap-4 rounded-full bg-neutral-900/50 p-2 @xs:max-w-xs">
-        {speedButton}
+    <div className="relative mb-10">
+      <div className="grid grid-rows-2 items-center gap-4 rounded-full bg-neutral-900/50 p-2 @xs:max-w-xs">
+        <div className="flex items-center gap-4">
+          {feedHer}
+          {soulHug}
+        </div>
 
-        {pasteButton}
-
-        {/* <Pitch /> */}
-
-        {feedHer}
+        <div className="flex items-center gap-4">
+          {rate}
+          {pitch}
+        </div>
       </div>
 
       {meowOnType}

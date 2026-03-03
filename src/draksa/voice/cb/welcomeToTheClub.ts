@@ -6,8 +6,9 @@ import { youAreNotPrepared } from '@/draksa/voice/youAreNotPrepared';
 
 export const welcomeToTheClub = () => {
   const synth = window.speechSynthesis;
-
   synth.cancel();
+
+  if (synth.speaking) synth.cancel();
 
   if (mood.throat.keyboardPasteState.peek() === 'pastingAfterCtrlV') {
     mood.throat.stopKeyboardPasting();
@@ -16,10 +17,12 @@ export const welcomeToTheClub = () => {
   const sentences = youAreNotPrepared();
   if (!sentences?.length) return;
 
+  const isChangingVoice = mood.moans.isChangingVoice.peek() === 'changingVoice';
+
   const chunks = mood.chunks.chunks.peek();
 
-  if (chunks.length) {
-    // TODO: Draksa: DO ME :D, also, please improve this to speak even after new letters added/deleted during current speech isMeowing
+  if (isChangingVoice && chunks.length) {
+    mood.moans.finishVoiceChange();
     speakCurrentChunk();
     return;
   }

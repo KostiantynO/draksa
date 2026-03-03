@@ -13,8 +13,6 @@ const code = new Map<string, string>(
     '==': 'loosely equals',
     '>=': 'greater than or equals',
     '<=': 'less than or equals',
-    '>': 'greater than',
-    '<': 'less than',
     '||': 'or',
     '&&': 'and',
     '!': 'not',

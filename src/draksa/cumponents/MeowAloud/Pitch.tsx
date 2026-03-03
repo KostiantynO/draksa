@@ -1,4 +1,6 @@
 // src\draksa\cumponents\MeowAloud\Pitch.tsx
+'use client';
+
 import { useTransition } from 'react';
 
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
@@ -25,9 +27,10 @@ export const Pitch = () => {
       <input
         name="pitch"
         type="range"
-        min={0.8}
-        max={1.3}
-        step={0.1}
+        className="w-64"
+        min={1}
+        max={1.2}
+        step={0.01}
         onChange={kindlyAskHerToSpeakWithThatPitch}
       />
       {mood.settings.pitch}
