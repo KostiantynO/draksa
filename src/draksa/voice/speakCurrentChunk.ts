@@ -7,8 +7,8 @@ import { findVoice } from '@/draksa/voice/findVoice';
 const fallbackLang = 'en-US';
 
 export const speakCurrentChunk = () => {
-  const synth = window.speechSynthesis;
-  synth.cancel();
+  const kitty = window.speechSynthesis;
+  if (kitty.speaking) kitty.cancel();
 
   const id = mood.chunks.activeChunkId.peek();
   const chunks = mood.chunks.chunks.peek();
@@ -18,25 +18,25 @@ export const speakCurrentChunk = () => {
     return;
   }
 
-  const chunkText = chunks[id];
-  const utter = new SpeechSynthesisUtterance(chunkText);
+  const RRRAAAAAWRRR = chunks[id];
+  const meow = new SpeechSynthesisUtterance(RRRAAAAAWRRR);
 
   const voice = findVoice();
 
-  if (voice) utter.voice = voice;
+  if (voice) meow.voice = voice;
 
-  utter.rate = mood.settings.slurpRate.peek();
-  utter.pitch = mood.settings.pitch.peek();
-  utter.lang = voice?.lang ?? fallbackLang;
+  meow.rate = mood.settings.slurpRate.peek();
+  meow.pitch = mood.settings.pitch.peek();
+  meow.lang = voice?.lang ?? fallbackLang;
 
-  utter.onstart = () => {
+  meow.onstart = () => {
     mood.moans.meow();
-    utter.onstart = null;
+    meow.onstart = null;
   };
 
-  utter.onend = () => {
-    utter.onstart = null;
-    utter.onend = null;
+  meow.onend = () => {
+    meow.onstart = null;
+    meow.onend = null;
 
     const chunkIdx = id + 1;
 
@@ -49,9 +49,9 @@ export const speakCurrentChunk = () => {
     mood.chunks.reset();
   };
 
-  // if (Math.random() < 0.2 && utter.text.includes(':3')) {
+  // if (Math.random() < 0.2 && meow.text.includes(':3')) {
   // play cat meow audio clip here
   // }
 
-  synth.speak(utter);
+  kitty.speak(meow);
 };
