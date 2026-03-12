@@ -6,11 +6,7 @@ import { useSignals } from '@preact/signals-react/runtime';
 import { VoiceOption } from '@/draksa/cumponents/MeowAloud/Voice/VoiceOption';
 import { mood } from '@/draksa/perf/mood/mood';
 
-const makeVoiceOption = ({
-  name,
-  lang,
-  default: isDefaultVoice,
-}: SpeechSynthesisVoice) => {
+const makeOption = ({ name, lang, default: isDefaultVoice }: SpeechSynthesisVoice) => {
   const label = `${name} (${lang}) ${isDefaultVoice ? ' — DEFAULT' : ''}`;
 
   return (
@@ -31,9 +27,10 @@ export const VoiceList = ({ local }: { local: boolean }) => {
 
   if (!voices.length) return <Placeholder />;
 
+  // prettier-ignore
   const arr = voices
     .filter(({ localService }) => localService === local)
-    .map(makeVoiceOption);
+    .map(makeOption);
 
   return <ul className="flex flex-col px-1">{arr}</ul>;
 };

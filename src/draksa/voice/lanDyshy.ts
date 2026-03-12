@@ -1,8 +1,9 @@
 // src\draksa\voice\lanDyshy.ts
 import { mood } from '@/draksa/perf/mood/mood';
+import { kisKisKis } from '@/draksa/voice/catCalling';
 
 export const lanDyshy = () => {
-  if (window.speechSynthesis.speaking) window.speechSynthesis.cancel();
+  kisKisKis();
 
   mood.throat.clear();
 };

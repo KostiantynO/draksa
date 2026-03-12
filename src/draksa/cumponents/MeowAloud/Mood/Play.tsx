@@ -28,7 +28,7 @@ export const Play = () => {
     <button
       type="button"
       name="play"
-      title="play"
+      title="Play"
       className="grow cursor-pointer rounded-full bg-pink-600 px-4 py-2 text-4xl font-bold text-white transition-colors select-none hover:bg-pink-700"
       onTouchStart={petHer}
       onClick={oneButtOnToRuleThemAll}

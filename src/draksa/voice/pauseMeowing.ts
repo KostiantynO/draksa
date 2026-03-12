@@ -4,7 +4,8 @@
 import { mood } from '@/draksa/perf/mood/mood';
 
 export const pauseMeowing = () => {
-  window.speechSynthesis.pause();
+  const kitty = window.speechSynthesis;
+  kitty.pause();
 
   mood.moans.pause();
 };

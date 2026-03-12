@@ -1,14 +1,10 @@
 // src\draksa\cumponents\MeowAloud\Throat\Throat.tsx
 'use client';
 
-import { useSignals } from '@preact/signals-react/runtime';
-
 import { draksaTells } from '@/draksa/cumponents/MeowAloud/draksaTells';
 import { useThroat } from '@/draksa/cumponents/MeowAloud/useThroat';
-import { mood } from '@/draksa/perf/mood/mood';
 
 export const Throat = () => {
-  useSignals();
   const { sheMeows, throatRef } = useThroat();
 
   return (
@@ -20,8 +16,6 @@ export const Throat = () => {
         placeholder={draksaTells.pleaseFeedMe}
         onChange={sheMeows}
       />
-
-      <pre>{mood.throat.polyGlotka}</pre>
     </div>
   );
 };

@@ -17,6 +17,7 @@ const code = new Map<string, string>(
     '&&': 'and',
     '!': 'not',
     ', []);': 'empty deps array, ',
+    '...args': 'restArgs',
   })
 );
 
@@ -33,7 +34,7 @@ const replacer = (maybeCodik: string): string => {
 // single ! only when it's logical not (very approximate)
 // we skip it when followed by = or letter immediately after (basic heuristic)
 const operators =
-  /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|>|<|\|\||&&|!(?!=|\w)/g;
+  /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|>|<|\|\||&&|...args|!(?!=|\w)/g;
 
 // export const codify = (raw: string): string => {
 //   return raw.replace(codeMagic, replacer);

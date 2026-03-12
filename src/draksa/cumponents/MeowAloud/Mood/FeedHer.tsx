@@ -13,7 +13,7 @@ export const FeedHer = () => {
       name="feedHer"
       type="button"
       className="cursor-pointer rounded-full bg-pink-600 px-4 py-2 text-4xl font-bold whitespace-nowrap text-white transition-colors select-none hover:bg-pink-700"
-      title="paste"
+      title="Paste"
       onClick={afterPasteButtonClick}
     >
       FeedHer 📝

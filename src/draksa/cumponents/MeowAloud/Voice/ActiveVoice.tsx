@@ -4,5 +4,5 @@
 import { mood } from '@/draksa/perf/mood/mood';
 
 export const ActiveVoice = () => {
-  return <p className="mb-2">{mood.moans.voice}</p>;
+  return <p>{mood.moans.voice}</p>;
 };

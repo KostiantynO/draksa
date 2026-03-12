@@ -1,14 +1,12 @@
 // src\draksa\voice\cb\welcomeToTheClub.ts
 'use client';
 import { mood } from '@/draksa/perf/mood/mood';
+import { kisKisKis } from '@/draksa/voice/catCalling';
 import { speakCurrentChunk } from '@/draksa/voice/speakCurrentChunk';
 import { youAreNotPrepared } from '@/draksa/voice/youAreNotPrepared';
 
 export const welcomeToTheClub = () => {
-  const synth = window.speechSynthesis;
-  synth.cancel();
-
-  if (synth.speaking) synth.cancel();
+  kisKisKis();
 
   if (mood.throat.keyboardPasteState.peek() === 'pastingAfterCtrlV') {
     mood.throat.stopKeyboardPasting();

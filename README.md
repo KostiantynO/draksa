@@ -288,3 +288,20 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
     ```tsx
     return <Parent>{children}</Parent>;
     ```
+
+---
+
+Software has so much do to improve itself :D
+
+```txt
+In March 2026,
+there is still no single magical button
+in VS Code / Node / React / Next.js
+that spits out exactly
+that pretty numbered list automatically
+for millions-of-calls scenarios...
+but we can get very close
+using tools that lean toward
+"summaries + tables + sorted hot spots"
+instead of pure flamegraph hypnosis.
+```

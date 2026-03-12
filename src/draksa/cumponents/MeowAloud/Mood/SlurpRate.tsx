@@ -26,7 +26,7 @@ const SlurpRateButtons = () => {
       <button
         name="slurpRateOption"
         type="button"
-        className="relative flex cursor-pointer gap-2 rounded-2xl bg-pink-600 px-3 py-2 text-sm font-bold text-white transition-colors duration-100 outline-none select-none hover:bg-pink-700"
+        className="relative flex cursor-pointer gap-2 rounded-full bg-pink-600 px-3 py-2 text-sm font-bold text-white transition-colors duration-100 outline-none select-none hover:bg-pink-700"
         onClick={() => selectSpeed(speed)}
       >
         {speed}
@@ -35,7 +35,7 @@ const SlurpRateButtons = () => {
   ));
 
   return (
-    <ul className="absolute bottom-0 left-0 flex translate-x-1 -translate-y-15 flex-col items-end gap-1 overflow-auto rounded-2xl border bg-black p-2">
+    <ul className="absolute bottom-0 left-0 flex translate-x-1 -translate-y-15 flex-col items-end gap-1 overflow-auto rounded-full border bg-black p-2">
       {buttons}
     </ul>
   );
@@ -54,7 +54,7 @@ export const SlurpRate = () => {
         name="slurpRate"
         type="button"
         title="Slurp rate"
-        className="min-w-21 cursor-pointer rounded-2xl bg-pink-600/90 px-4 py-2 text-xl font-bold text-white transition-colors select-none hover:bg-pink-700"
+        className="min-w-21 cursor-pointer rounded-full bg-pink-600/90 px-4 py-2 text-xl font-bold text-white transition-colors select-none hover:bg-pink-700"
         onClick={showSpeedButtons}
       >
         {mood.settings.slurpRate}

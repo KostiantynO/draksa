@@ -1,10 +1,14 @@
 // src\draksa\voice\purrify\bellie.ts
 
+// TODO Me :) replace with regexp and optimize. make everything in one regexp pass.
+// no need to call so many functions just to prepare text.
+
 // ────────────────────────────────────────────────
 // Things we usually NEVER want to speak aloud
 // ────────────────────────────────────────────────
 const silentTokens = [
   '}',
+  '})',
   '});',
   ');',
   '},',
@@ -21,14 +25,8 @@ const silentTokens = [
   '>',
   '="">',
   '=""',
-  '=" "',
   '="" />',
-  '=""/>',
-  '=""/>',
-  '=""/>',
-  '=" " />',
-  '=""/>',
-  '=" ">',
+
   '=">',
   '="">',
   '=""/>',

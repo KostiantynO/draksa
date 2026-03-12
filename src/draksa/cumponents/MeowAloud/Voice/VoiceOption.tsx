@@ -25,14 +25,14 @@ export const VoiceOption = ({
 
   useEffect(() => openWideAndPuuurrr.cancel, []);
 
-  const isActive = mood.moans.voice.value === voiceName; // ok
+  const isActive = mood.moans.voice.value === voiceName;
 
   return (
     <li>
       <button
         name="voiceOption"
         type="button"
-        className={`w-full cursor-pointer rounded-2xl px-1 py-1 text-left text-sm transition-colors duration-210 hover:bg-pink-700 ${
+        className={`w-full cursor-pointer rounded-full px-1 py-1 text-left text-sm transition-colors duration-210 hover:bg-pink-700 ${
           isActive ? 'bg-pink-600 text-white shadow-lg' : 'hover:bg-zinc-800'
         }`}
         onClick={chooseVoice}

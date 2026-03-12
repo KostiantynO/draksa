@@ -2,13 +2,13 @@
 'use client';
 
 import { mood } from '@/draksa/perf/mood/mood';
+import { kisKisKis } from '@/draksa/voice/catCalling';
 import { findVoice } from '@/draksa/voice/findVoice';
 
 const fallbackLang = 'en-US';
 
 export const speakCurrentChunk = () => {
-  const kitty = window.speechSynthesis;
-  if (kitty.speaking) kitty.cancel();
+  const kitty = kisKisKis();
 
   const id = mood.chunks.activeChunkId.peek();
   const chunks = mood.chunks.chunks.peek();

@@ -15,7 +15,8 @@ const sheMeows = ({
 
   if (!mood.settings.isMeowingOnType.peek()) return;
 
-  openWideAndPuuurrr();
+  // prettier-ignore
+  openWideAndPuuurrr( );
 };
 
 export const useThroat = () => {

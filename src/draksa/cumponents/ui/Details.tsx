@@ -12,11 +12,9 @@ export const Details = ({
   children: ReactNode;
 }) => {
   return (
-    <details className={`group rounded-lg ${className}`}>
-      <summary className="flex cursor-pointer list-none items-center gap-2 font-medium">
-        <span className="z-[-1] transition-transform group-open:translate-y-1 group-open:rotate-90">
-          ▶
-        </span>
+    <details className={`group flex flex-col gap-1 rounded-full ${className}`}>
+      <summary className="flex cursor-pointer list-none gap-2 font-medium">
+        <span className="z-[-1] transition-transform group-open:rotate-90">▶</span>
         <strong>{summary}</strong>
       </summary>
 
