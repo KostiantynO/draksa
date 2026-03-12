@@ -1,8 +1,6 @@
 // src\draksa\voice\purrify\codeHeuristic.ts
+import { onNewLines, parenthesisSemicolonAndComma } from '@/draksa/magic/regexp';
 import { codify } from '@/draksa/voice/purrify/codify';
-
-const onNewLines = /\n/g;
-const parenthesisSemicolonAndComma = /[{};],/;
 
 const looksLikeCode = (text: string): boolean => {
   const lines = text.split(onNewLines);
@@ -33,6 +31,5 @@ const looksLikeCode = (text: string): boolean => {
 export const smartCodify = (raw: string): string => {
   if (!looksLikeCode(raw)) return raw; // prose → pronounce ! normally
 
-  // apply your codify only on "code looking" input
   return codify(raw);
 };

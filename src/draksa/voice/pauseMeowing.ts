@@ -1,11 +1,11 @@
 // src\draksa\voice\pauseMeowing.ts
 'use client';
 
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 
 export const pauseMeowing = () => {
   const kitty = window.speechSynthesis;
   kitty.pause();
 
-  mood.moans.pause();
+  bast.voices.pause();
 };

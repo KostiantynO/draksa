@@ -1,7 +1,7 @@
 // src\draksa\voice\speakCurrentChunk.ts
 'use client';
 
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 import { kisKisKis } from '@/draksa/voice/catCalling';
 import { findVoice } from '@/draksa/voice/findVoice';
 
@@ -10,11 +10,11 @@ const fallbackLang = 'en-US';
 export const speakCurrentChunk = () => {
   const kitty = kisKisKis();
 
-  const id = mood.chunks.activeChunkId.peek();
-  const chunks = mood.chunks.chunks.peek();
+  const id = bast.chunks.activeChunkId.peek();
+  const chunks = bast.chunks.chunks.peek();
 
   if (id >= chunks.length) {
-    mood.moans.stop();
+    bast.voices.stop();
     return;
   }
 
@@ -25,12 +25,12 @@ export const speakCurrentChunk = () => {
 
   if (voice) meow.voice = voice;
 
-  meow.rate = mood.settings.slurpRate.peek();
-  meow.pitch = mood.settings.pitch.peek();
+  meow.rate = bast.settings.slurpRate.peek();
+  meow.pitch = bast.settings.pitch.peek();
   meow.lang = voice?.lang ?? fallbackLang;
 
   meow.onstart = () => {
-    mood.moans.meow();
+    bast.voices.meow();
     meow.onstart = null;
   };
 
@@ -41,12 +41,12 @@ export const speakCurrentChunk = () => {
     const chunkIdx = id + 1;
 
     if (chunkIdx < chunks.length) {
-      mood.chunks.setActiveChunkId(chunkIdx);
+      bast.chunks.setActiveChunkId(chunkIdx);
       speakCurrentChunk();
       return;
     }
 
-    mood.chunks.reset();
+    bast.chunks.reset();
   };
 
   // if (Math.random() < 0.2 && meow.text.includes(':3')) {

@@ -1,8 +1,8 @@
 // src\draksa\cumponents\MeowAloud\ClubEntrance\BouncerWristwatch.tsx
 'use client';
 
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 
 export const BouncerWristwatch = () => {
-  return <p className="mb-2">{mood.settings.speechDebounceForTypingInMs}</p>;
+  return <p className="mb-2">{bast.settings.speechDebounceForTypingInMs}</p>;
 };

@@ -2,6 +2,7 @@
   "cSpell.words": [
     "catgirl",
     "cumponents",
+    "Glotka",
     "meowbe",
     "nekomancy",
     "purrifier",
@@ -10,10 +11,11 @@
   ],
 
   // Force absolute imports (@/...) instead of relative (../)
+  // "#js/ts.preferences.importModuleSpecifier#": "non-relative",
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
 
-  // Make auto-imports and "Organize Imports" actually respect the above
+  // "#js/ts.preferences.importModuleSpecifierEnding#":"minimal",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",
   "javascript.preferences.importModuleSpecifierEnding": "minimal",
 
@@ -22,7 +24,7 @@
     "source.organizeImports": "explicit"
   },
 
-  // Optional but nice: sort imports the way you like
+  // "#js/ts.preferences.organizeImports#": {
   "typescript.preferences.organizeImports": {
     "star": "last",
     "type": "last"

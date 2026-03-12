@@ -1,15 +1,15 @@
 // src\draksa\voice\findVoice.ts
 'use client';
 
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 
 const eng = 'Google US English';
 
 export const findVoice = () => {
-  const moans = mood.moans.moans.peek();
+  const moans = bast.voices.moans.peek();
   if (!moans.length) return;
 
-  const activeVoiceName = mood.moans.voice.peek();
+  const activeVoiceName = bast.voices.voice.peek();
 
   const voice = moans.find(({ name }) => name === activeVoiceName);
 

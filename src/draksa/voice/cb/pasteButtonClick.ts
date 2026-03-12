@@ -1,21 +1,21 @@
 // src\draksa\voice\cb\pasteButtonClick.ts
 'use client';
 
+import { bast } from '@/draksa/heaven';
 import { purrNow } from '@/draksa/perf/club/purrNow';
-import { mood } from '@/draksa/perf/mood/mood';
 
 export const pasteButtonClick = async () => {
-  if (mood.throat.pasteButtonState.peek() === 'pastingAfterButtonClick') return;
-  mood.throat.startButtonPasting();
+  if (bast.throat.pasteButtonState.peek() === 'pastingAfterButtonClick') return;
+  bast.throat.startButtonPasting();
 
   const yogurt = await navigator.clipboard.readText();
 
-  mood.throat.pleaseFeedMe(yogurt);
+  bast.throat.pleaseFeedMe(yogurt);
   console.log({ pasteButtonClick: yogurt });
 
-  if (!mood.settings.isMeowingOnType.peek()) return;
+  if (!bast.settings.isMeowingOnType.peek()) return;
 
   // prettier-ignore
   purrNow( )
-  mood.throat.stopButtonPasting();
+  bast.throat.stopButtonPasting();
 };

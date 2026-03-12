@@ -1,7 +1,7 @@
 // src\draksa\cumponents\MeowAloud\Mood\MeowOnType.tsx
 'use client';
 
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 
 export const MeowOnType = () => {
   return (
@@ -12,8 +12,8 @@ export const MeowOnType = () => {
         name="isMeowingOnType"
         className="w-10"
         type="checkbox"
-        defaultChecked={mood.settings.isMeowingOnType.peek()}
-        onChange={mood.settings.toggleIsMeowingOnType}
+        defaultChecked={bast.settings.isMeowingOnType.peek()}
+        onChange={bast.settings.toggleIsMeowingOnType}
       />
     </label>
   );

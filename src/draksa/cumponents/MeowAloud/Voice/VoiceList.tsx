@@ -4,7 +4,7 @@
 import { useSignals } from '@preact/signals-react/runtime';
 
 import { VoiceOption } from '@/draksa/cumponents/MeowAloud/Voice/VoiceOption';
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 
 const makeOption = ({ name, lang, default: isDefaultVoice }: SpeechSynthesisVoice) => {
   const label = `${name} (${lang}) ${isDefaultVoice ? ' — DEFAULT' : ''}`;
@@ -23,7 +23,7 @@ const Placeholder = () => (
 export const VoiceList = ({ local }: { local: boolean }) => {
   useSignals();
 
-  const voices = mood.moans.moans.value; // ok
+  const voices = bast.voices.moans.value;
 
   if (!voices.length) return <Placeholder />;
 

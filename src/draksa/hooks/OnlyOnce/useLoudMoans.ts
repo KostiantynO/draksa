@@ -3,7 +3,7 @@
 
 import { useEffect } from 'react';
 
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 import { pleaseMakeMyMouthBusy } from '@/draksa/voice/pleaseMakeMyMouthBusy';
 
 pleaseMakeMyMouthBusy();
@@ -45,7 +45,7 @@ export const useLoudMoans = () => {
 
       const onlyFunOnes = voices.filter(({ name }) => blocklist[name] !== 'block');
 
-      mood.moans.setMoans(onlyFunOnes);
+      bast.voices.setMoans(onlyFunOnes);
     };
 
     updateVoiceArrayInSignalsStorage();

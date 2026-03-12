@@ -3,8 +3,8 @@
 
 import { useTransition } from 'react';
 
+import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
-import { mood } from '@/draksa/perf/mood/mood';
 
 import type { ChangeEvent } from 'react';
 
@@ -15,7 +15,7 @@ export const Pitch = () => {
     currentTarget: { value },
   }: ChangeEvent<HTMLInputElement>) =>
     startTransition(() => {
-      mood.settings.setPitch(Number(value));
+      bast.settings.setPitch(Number(value));
 
       //prettier-ignore
       openWideAndPuuurrr( );
@@ -33,7 +33,7 @@ export const Pitch = () => {
         step={0.01}
         onChange={kindlyAskHerToSpeakWithThatPitch}
       />
-      {mood.settings.pitch}
+      {bast.settings.pitch}
     </label>
   );
 };

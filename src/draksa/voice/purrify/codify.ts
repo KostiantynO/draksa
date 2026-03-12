@@ -1,5 +1,7 @@
 // src\draksa\voice\purrify\codify.ts
 
+import { braces, globalMagic, magic, operators } from '@/draksa/magic/regexp';
+
 const code = new Map<string, string>(
   Object.entries({
     '(() => ': 'arrow function callback',
@@ -21,8 +23,6 @@ const code = new Map<string, string>(
   })
 );
 
-const braces = /[{}]/g;
-
 const replacer = (maybeCodik: string): string => {
   if (braces.test(maybeCodik)) return ''; // silent braces most of time
   if (!code.has(maybeCodik)) return maybeCodik;
@@ -31,18 +31,9 @@ const replacer = (maybeCodik: string): string => {
   return codik ? ` ${codik} ` : '';
 };
 
-// single ! only when it's logical not (very approximate)
-// we skip it when followed by = or letter immediately after (basic heuristic)
-const operators =
-  /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|>|<|\|\||&&|...args|!(?!=|\w)/g;
-
 // export const codify = (raw: string): string => {
 //   return raw.replace(codeMagic, replacer);
 // };
-
-const magic = /[([,=;?:]\s*$/;
-
-const globalMagic = /!\s*/g;
 
 export const codify = (raw: string): string => {
   let text = raw;

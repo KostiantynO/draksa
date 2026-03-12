@@ -4,7 +4,7 @@
 import { useSignals } from '@preact/signals-react/runtime';
 
 import { useFeedHerLogic } from '@/draksa/cumponents/MeowAloud/useFeedHerLogic';
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
 import { pauseMeowing } from '@/draksa/voice/pauseMeowing';
 import { resumeMeowing } from '@/draksa/voice/resumeMeowing';
 
@@ -12,7 +12,7 @@ export const Play = () => {
   useSignals();
   const { sllluuuuuuuurp_8p_8P_8o_8O_8, petHer } = useFeedHerLogic();
 
-  const state = mood.moans.state.value;
+  const state = bast.voices.state.value;
   const isIdle = state === 'idle';
   const isPaused = state === 'paused';
 

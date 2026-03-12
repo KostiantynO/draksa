@@ -4,19 +4,19 @@
 import { useSignals } from '@preact/signals-react/runtime';
 import { useEffect } from 'react';
 
+import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
-import { mood } from '@/draksa/perf/mood/mood';
 
 export const BounceOption = ({ label }: { label: number }) => {
   useSignals();
 
   const chooseBounce = () => {
-    mood.settings.setSpeechDebounceForTypingInMs(label);
+    bast.settings.setSpeechDebounceForTypingInMs(label);
   };
 
   useEffect(() => openWideAndPuuurrr.cancel, []);
 
-  const isActive = mood.settings.speechDebounceForTypingInMs.value === label; // ok
+  const isActive = bast.settings.speechDebounceForTypingInMs.value === label; // ok
 
   return (
     <li>

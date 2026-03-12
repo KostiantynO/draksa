@@ -3,17 +3,17 @@
 
 import { useEffect, useRef } from 'react';
 
+import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
-import { mood } from '@/draksa/perf/mood/mood';
 
 import type { ChangeEvent } from 'react';
 
 const sheMeows = ({
   currentTarget: { value: yogurt },
 }: ChangeEvent<HTMLTextAreaElement>) => {
-  mood.throat.pleaseFeedMe(yogurt);
+  bast.throat.pleaseFeedMe(yogurt);
 
-  if (!mood.settings.isMeowingOnType.peek()) return;
+  if (!bast.settings.isMeowingOnType.peek()) return;
 
   // prettier-ignore
   openWideAndPuuurrr( );
@@ -23,7 +23,7 @@ export const useThroat = () => {
   const throatRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
-    const onChangeUpdateTextarea = mood.throat.polyGlotka.subscribe(state => {
+    const onChangeUpdateTextarea = bast.throat.polyGlotka.subscribe(state => {
       const textarea = throatRef.current;
       if (!textarea) return;
       if (textarea.value === state) return;

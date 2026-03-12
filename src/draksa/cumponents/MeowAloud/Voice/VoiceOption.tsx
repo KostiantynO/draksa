@@ -4,8 +4,8 @@
 import { useSignals } from '@preact/signals-react/runtime';
 import { useEffect } from 'react';
 
+import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
-import { mood } from '@/draksa/perf/mood/mood';
 import { selectVoice } from '@/draksa/voice/selectVoice';
 
 import type { ReactNode } from 'react';
@@ -25,7 +25,7 @@ export const VoiceOption = ({
 
   useEffect(() => openWideAndPuuurrr.cancel, []);
 
-  const isActive = mood.moans.voice.value === voiceName;
+  const isActive = bast.voices.voice.value === voiceName;
 
   return (
     <li>

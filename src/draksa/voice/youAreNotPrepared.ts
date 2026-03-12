@@ -1,13 +1,12 @@
 // src\draksa\voice\youAreNotPrepared.ts
-import { mood } from '@/draksa/perf/mood/mood';
+import { bast } from '@/draksa/heaven';
+import { legs } from '@/draksa/magic/regexp';
 import { purrify } from '@/draksa/voice/purrify/purrify';
 
-const legs = /(?<=[\n;.!?])\s+/;
-
 export const youAreNotPrepared = () => {
-  const polyGlotka = mood.throat.polyGlotka.peek().trim();
+  const polyGlotka = bast.throat.polyGlotka.peek();
   if (!polyGlotka.length) {
-    mood.chunks.reset();
+    bast.chunks.reset();
     return;
   }
 
