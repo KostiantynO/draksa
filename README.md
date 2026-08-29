@@ -226,7 +226,7 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
   - call text parser
     - then split new textarea.value into chucks and proceed as usual -> call
       `speakCurrentChunk`
-- [ ] offload main threat from everything:
+- [ ] offload main thread from everything:
   - [ ] add service worker (`Workie`) - async helper-thread is supa-cool! ;D
   - [ ] move text-splitting to the Workie (it totally can be async)
   - [ ] move all speech invoking to the Workie (it is sync, need to will find out if this

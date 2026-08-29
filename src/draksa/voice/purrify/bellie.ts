@@ -32,6 +32,7 @@ const silentTokens = [
   '=""/>',
 
   // very common in chunk example
+  '},\n',
   '"/>\n",',
   '"/>\n"',
   '")\n",',
@@ -58,5 +59,6 @@ const silence = (line: string): boolean => {
   return true;
 };
 
+// TODO ME :D and, pls, remove split by '\n' and replace all of this with one regexp pass, combine with above comment.
 export const yourSilenceIsMyFavoriteSaaaaauuund = (eilish: string): string =>
   eilish.split('\n').filter(silence).join('\n');
