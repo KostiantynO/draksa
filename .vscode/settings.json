@@ -11,21 +11,15 @@
   ],
 
   // Force absolute imports (@/...) instead of relative (../)
-  // "#js/ts.preferences.importModuleSpecifier#": "non-relative",
-  "javascript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "js/ts.preferences.importModuleSpecifier": "non-relative",
+  "js/ts.preferences.importModuleSpecifierEnding": "minimal",
 
-  // "#js/ts.preferences.importModuleSpecifierEnding#":"minimal",
-  "typescript.preferences.importModuleSpecifierEnding": "minimal",
-  "javascript.preferences.importModuleSpecifierEnding": "minimal",
-
-  // Auto-fix imports on save (this is what makes it feel magical)
+  // Auto-fix imports on save (feels magical)
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
 
-  // "#js/ts.preferences.organizeImports#": {
-  "typescript.preferences.organizeImports": {
+  "js/ts.preferences.organizeImports": {
     "star": "last",
     "type": "last"
   }
