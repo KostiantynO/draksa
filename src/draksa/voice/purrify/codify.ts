@@ -41,7 +41,7 @@ export const codify = (raw: string): string => {
   // 1. operators with higher priority / longer length first
   text = text.replace(operators, replacer);
 
-  // 2. single ! only if it looks like logical not
+  // 2. single exclamation mark ! only if it looks like logical not
   // (very crude – after ( or , or => or = etc.)
   text = text.replace(globalMagic, (m, offset: number, s: string) => {
     const before = s.slice(Math.max(0, offset - 8), offset);
