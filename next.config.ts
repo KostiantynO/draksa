@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: { compilationMode: 'infer' },
   },
+
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 };
 
 export default nextConfig;
