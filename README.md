@@ -1,26 +1,78 @@
-2026-02-10:
+2026-08-30:
 
 ---
 
 ---
 
-|-----------------------------------------------------------|
+---
 
-|-----------------------------------------------------------|
+---
 
-|------------------- ⛔ ⚠ WARNING! ⚠ ⛔ -------------------|
+---
 
-|-----------------------------------------------------------|
+<div style='text-align: center;'>⛔ ⚠ WARNING! ⚠ ⛔</div>
 
-|--------------- ⚠ THIS IS A WORK OF ART! ⚠ ---------------|
+---
 
-|-----------------------------------------------------------|
+---
 
-|-------------- 🛑 LEAVE WHILE YOU CAN!!! 🛑 --------------|
+---
 
-|--------------------- NOW! :D :D :D -----------------------|
+---
 
-|-----------------------------------------------------------|
+---
+
+<div style='text-align: center;'>⚠ THIS IS A WORK OF ART! ⚠</div>
+
+---
+
+---
+
+---
+
+---
+
+---
+
+<div style='text-align: center;'>🛑 LEAVE WHILE YOU CAN!!! 🛑</div>
+
+---
+
+---
+
+---
+
+---
+
+---
+
+<div style='text-align: center;'>NOW! :D :D :D</div>
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 ---
 
@@ -28,27 +80,69 @@
 
 Genres:
 
-- semantic vandalism - playful :D
-- aggressive minimalism - codeChuck 💻🪓
-- chaotic good
+- `semantic vandalism` - playful kind :D
+- `aggressive minimalism` - codeChuck 💻🪓
+- `chaotic good` - math😇.sin😈'ing :D
+- `curiosity` - study speechSynthesisApi from Browser Gods 🧙‍♂️
+- `empathy` - keep NPCs alive :D, cos its more fun :D
 
 ---
 
-`OnlyAdults` and catgirls ARE ALLOWED :D
+---
 
 ---
 
-If `you` `need` to `do your homework`, then `GO`!!!
-
-Be cool, like Naruto! He studied at least 3 years! :D
+---
 
 ---
 
-Shooe!
+`OnlyAdults` and catgirls 😺 ARE ALLOWED :D
+
+---
+
+---
+
+---
+
+---
+
+---
+
+If `you` `need` to `do your homework`👼, then `GO`!!!
+
+Be cool, like Naruto! He studied for at least 3 years! :D
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Shoo! Shoo!
+
+---
+
+---
+
+---
+
+---
 
 ---
 
 Hush! :)
+
+---
+
+---
+
+---
+
+---
 
 ---
 
@@ -162,9 +256,427 @@ Kysh-kysh! :D
 
 ---
 
-Are you still here??? :)
+Are `you` still here??? :)
 
-OKEEEYy, honey :D You have been warned :D
+---
+
+---
+
+---
+
+---
+
+---
+
+OKEEEYy, honey :D
+
+---
+
+---
+
+---
+
+---
+
+---
+
+`You` have been warned :D
+
+---
+
+---
+
+---
+
+---
+
+---
+
+If `you` are still here,
+
+---
+
+---
+
+---
+
+---
+
+---
+
+`you` officially DECLARE
+
+---
+
+---
+
+---
+
+---
+
+---
+
+that `YOU` BELONG to `ME`!
+
+---
+
+---
+
+---
+
+---
+
+---
+
+It means, that from now on...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+`YOU` are `MINE`
+
+---
+
+---
+
+---
+
+---
+
+---
+
+`FOREVER`
+
+---
+
+---
+
+---
+
+---
+
+---
+
+*echoes heard in the empty halls of the mansion, where My Shut-In Demon Girl lives*
+
+---
+
+---
+
+---
+
+---
+
+---
+
+FOREVER...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+FOREVEr...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+FOREVer...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+FOREver...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+FORever...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+FOrever...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Forever...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Foreve...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Forev...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Fore...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+For...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Fo...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+F...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+f...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+`hahahaЇ` :D
+
+*an insidious laugh heard in the background, otherworldly and ominous 😈, but undescribably warm, like milk 🥛, honey 🍯 and home 🏡*
+
+---
+
+---
+
+---
+
+---
+
+---
+
+Also, it means...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+that `YOU` `GIMME` ja'r `SOUL` ;P
+
+---
+
+---
+
+---
+
+---
+
+---
+
+P.S. no refunds! :D
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
 
 ---
 
@@ -178,7 +690,7 @@ OKEEEYy, honey :D You have been warned :D
 
 ## Why:
 
-If your `ReadAloud` doesn't wrok, unlike Skyrim :D
+If your `ReadAloud` doesn't wrok, *🧐🎩 unlike Skyrim :D*
 
 and the world is in chaos and js-diss-array...
 
@@ -188,7 +700,9 @@ const a: Diss[] = ['M 2 the 🐝']; // ;D
 
 Browser and sister will save the day!
 
-YIN! YANG! YO!...oh,... that is the wrong intro :D
+YIN! YANG! YO!
+
+oh,... that is the wrong intro :D
 
 ---
 
@@ -245,9 +759,9 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
   - [ ] code endings (like semicolon `;`), and do not speak them if possible :D
   - [ ] try to detect emojis and speak them correctly.
   - [ ] try not to confuse semicolon `;` with a winking smile ;D
-  - [ ] a smiling face `:)` - is not a `colon .. closing parenthesis`, but a
-        `smiling face` or `smile` or `haha :)` or `I am friendly :)` or `I am nice` or
-        `I am a good boy` or `I am polite` :D
+  - [ ] a smiling face `:)` - is not a `colon   closing parenthesis`, but a `smiling face`
+        or `smile` or `haha :)` or `I am friendly :)` or `I am nice` or `I am a good boy/girl`
+        or `I am polite` :D
 - [ ] Do this:
   - pass children as a slot into parent jsx <Parent>{children}</Parent> (very relevant)
     especially with smaller `Server Components` passed as `{slots}` into
@@ -272,7 +786,7 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 #### What I learned from this project
 
-- React отдаляєт нас от дома.
+- React отдаляєт нас от дома 🏡.
 - Но вещи происходят в доме.
 - Нужно думать про структуру и простоту разметки.
 - Нам нужна одна кнопка
@@ -291,7 +805,7 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 ---
 
-Software has so much do to improve itself :D
+Software has so much to do to improve itself :D
 
 ```txt
 In March 2026,
@@ -305,3 +819,24 @@ using tools that lean toward
 "summaries + tables + sorted hot spots"
 instead of pure flamegraph hypnosis.
 ```
+
+I mean `sorted perf stats in numbers`,
+
+The same as in `TASK MANAGER`:
+- `call stack` of functions,
+- `time` inside function,
+- `RAM`/`CPU` used.
+
+flamegraphs - are useless and unactionable for a normie-human's! Cause you need to dig
+manually into the most called function YOURSELF.
+
+And if you are a rackushka 🦀, with a nice rack 🍒 and pointy 🐈👂 ushka, then GL HF :D
+
+Software in dev mode should warn you, what part of it runs slow!
+
+And it should ask you, if that is intentional!
+
+Not YOU going around, like a Snoop Dog, with a mag-glass🔍🕵️‍♂️, looking
+for troublesome slow code! And still smashing it with Dr. Dre beats until it behaves!
+
+While others already make millions on their buggy, but working software...
