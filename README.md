@@ -10,7 +10,7 @@
 
 ---
 
-<center>⛔ ⚠ WARNING! ⚠ ⛔</center>
+<p align="center">⛔ ⚠ WARNING! ⚠ ⛔</p>
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-<center>⚠ THIS IS A WORK OF ART! ⚠</center>
+<p align="center">⚠ THIS IS A WORK OF ART! ⚠</p>
 
 ---
 
@@ -34,7 +34,7 @@
 
 ---
 
-<center>🛑 LEAVE WHILE YOU CAN!!! 🛑</center>
+<p align="center">🛑 LEAVE WHILE YOU CAN!!! 🛑</p>
 
 ---
 
@@ -46,7 +46,7 @@
 
 ---
 
-<center>NOW! :D :D :D</center>
+<p align="center">NOW! :D :D :D</p>
 
 ---
 
