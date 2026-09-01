@@ -4,15 +4,16 @@ import { nekomancy } from '@/draksa/magic/regexp';
 // src\draksa\voice\purrify\ca.ts
 const cats = new Map<string, string>(
   Object.entries({
-    ':3': 'happy cat face',
-    ';3': 'winking cat face',
-    '>:3': 'mischievous cat face',
-    uwu: 'cute cat face',
+    ':3': 'happy cat',
+    '83': 'pleading cat eyes',
+    ';3': 'winking cat',
+    '>:3': 'mischievous cat',
+    uwu: 'cute cat',
     UwU: 'cute catgirl with big eyes',
-    owo: 'excited cat face',
+    owo: 'excited cat',
     OwO: "NonSummerJack Bast'et me ancient egyptian temple priestess excited catgirl with big eyes ",
 
-    ᓚᘏᗢ: 'small curled sitting cat',
+    ᓚᘏᗢ: 'small curled cat',
     'ლ^•ᴥ•^ლ': 'cute cat with big softy paws',
 
     'ฅ^•ﻌ•^ฅ': 'super-cute cat with paws',

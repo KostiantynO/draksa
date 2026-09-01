@@ -32,5 +32,9 @@ export const VoiceList = ({ local }: { local: boolean }) => {
     .filter(({ localService }) => localService === local)
     .map(makeOption);
 
-  return <ul className="flex flex-col px-1">{arr}</ul>;
+  return (
+    <ul className="grid grid-cols-[repeat(auto-fit,minmax(305px,1fr))] gap-x-4 gap-y-1">
+      {arr}
+    </ul>
+  );
 };

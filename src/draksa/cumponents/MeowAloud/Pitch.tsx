@@ -27,7 +27,7 @@ export const Pitch = () => {
       <input
         name="pitch"
         type="range"
-        className="w-64"
+        className="min-w-36"
         min={1}
         max={1.2}
         step={0.01}

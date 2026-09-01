@@ -1,9 +1,9 @@
-// src\draksa\cumponents\MeowAloud\Mood\MeowOnType.tsx
+// src\draksa\cumponents\MeowAloud\Mood\TickleHer.tsx
 'use client';
 
 import { bast } from '@/draksa/heaven';
 
-export const MeowOnType = () => {
+export const TickleHer = () => {
   return (
     <label className="flex gap-3">
       <span>Meow on type</span>

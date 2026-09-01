@@ -29,7 +29,7 @@ export const Play = () => {
       type="button"
       name="play"
       title="Play"
-      className="grow cursor-pointer rounded-full bg-pink-600 px-4 py-2 text-4xl font-bold text-white transition-colors select-none hover:bg-pink-700"
+      className="w-21 cursor-pointer rounded-full bg-pink-600 px-4 py-2 text-4xl font-bold text-white transition-colors select-none hover:bg-pink-700"
       onTouchStart={petHer}
       onClick={oneButtOnToRuleThemAll}
     >
