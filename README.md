@@ -693,7 +693,7 @@ P.S. no refunds! :D
 
 ## Why:
 
-If your `ReadAloud` doesn't wrok, *🧐🎩 unlike Skyrim :D*
+If your `ReadAloud` doesn't work, *🎩🧐 unlike Skyrim :D*
 
 and the world is in chaos and js-diss-array...
 
@@ -701,11 +701,13 @@ and the world is in chaos and js-diss-array...
 const a: Diss[] = ['M 2 the 🐝']; // ;D
 ```
 
-Browser and sister will save the day!
+Browser💻👦 and sister👧 will save the day!
 
-YIN! YANG! YO!
+YIN🐇💖! YANG🐇💙! YO🐼⚪⚫!
 
-oh,... that is the wrong intro :D
+Інь, Ян, Йо!   Інь, Ян, Йо!   ІНЬ, ЯН, ЙО! ☯
+
+ouuh,... that is the wrong intro :D :D :D
 
 ---
 
@@ -725,15 +727,16 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 
 #### Normal
 
-- [ ] add paste button (from clipboard)
+- [x] add paste button (from clipboard)
 - [ ] add custom dragon/naga/kitty purring ancient language :D
 - [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :D
 - [ ] bug - fix lint warning
       [`⚠ The Next.js plugin was not detected in your ESLint configuration.`](https://nextjs.org/docs/app/api-reference/config/eslint#migrating-existing-config)
-- [ ] use 1s debounce timer onKeyUp, so it will not fire speech/text parse so many times -
+- [x] use 1s debounce timer onKeyUp, so it will not fire speech/text parse so many times -
       fans will be more silent.
-- [ ] use 50ms debounce timer onPaste
-- [ ] make her speak new added information, after you type smth at the end.
+  - Bouncer has a `Wristwatch` to select bounce time you wish.
+- [x] use 50ms debounce timer onPaste
+- [x] make her speak new added information, after you type smth at the end.
   - if old textarea.value.length is bigger than the its length from the previous call of
     `openWideAndPurr`.
     - and it is usually almost always bigger then before
@@ -765,8 +768,7 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
   - [ ] a smiling face `:)` - is not a `colon   closing parenthesis`, but a `smiling face`
         or `smile` or `haha :)` or `I am friendly :)` or `I am nice` or `I am a good boy/girl`
         or `I am polite` :D
-- [ ] Do this:
-  - pass children as a slot into parent jsx <Parent>{children}</Parent> (very relevant)
+- [x] Pass children as a slot into parent jsx <Parent>{children}</Parent> (very relevant)
     especially with smaller `Server Components` passed as `{slots}` into
     `Client Components`, but only when `imported` and called `inside` the big wrapping
     `Server Component parent` like below:
