@@ -1,4 +1,5 @@
 // src\draksa\cumponents\MeowAloud\Lips.tsx
+import { LetsGoToTheClub } from '@/draksa/cumponents/MeowAloud/ClubEntrance/LetsGoToTheClub';
 import { FeedHer } from '@/draksa/cumponents/MeowAloud/Mood/FeedHer';
 import { Mood } from '@/draksa/cumponents/MeowAloud/Mood/Mood';
 import { Play } from '@/draksa/cumponents/MeowAloud/Mood/Play';
@@ -19,6 +20,7 @@ export const Lips = () => {
         energetic={<SlurpRate />}
         excited={<Pitch />}
         ticklish={<TickleHer />}
+        wannaDance={<LetsGoToTheClub />}
       />
     </div>
   );

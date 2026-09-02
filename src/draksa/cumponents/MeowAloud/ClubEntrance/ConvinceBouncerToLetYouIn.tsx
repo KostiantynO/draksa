@@ -6,8 +6,8 @@ import type { ReactNode } from 'react';
 
 export const ConvinceBouncerToLetYouIn = ({ children }: { children: ReactNode }) => {
   return (
-    <Details summary={<BouncerWristwatch />}>
-      <div className="flex flex-col gap-2">{children}</div>
+    <Details className="flex p-2" summary={<BouncerWristwatch />}>
+      {children}
     </Details>
   );
 };
