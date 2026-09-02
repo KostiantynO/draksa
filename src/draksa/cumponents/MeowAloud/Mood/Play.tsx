@@ -4,6 +4,7 @@
 import { useSignals } from '@preact/signals-react/runtime';
 
 import { useFeedHerLogic } from '@/draksa/cumponents/MeowAloud/useFeedHerLogic';
+import { Button } from '@/draksa/cumponents/ui/Button';
 import { bast } from '@/draksa/heaven';
 import { pauseMeowing } from '@/draksa/voice/pauseMeowing';
 import { resumeMeowing } from '@/draksa/voice/resumeMeowing';
@@ -25,15 +26,14 @@ export const Play = () => {
       : pauseMeowing;
 
   return (
-    <button
-      type="button"
+    <Button
       name="play"
       title="Play"
-      className="w-21 cursor-pointer rounded-full bg-pink-600 px-4 py-2 text-4xl font-bold text-white transition-colors select-none hover:bg-pink-700"
+      className="w-35 rounded-full"
       onTouchStart={petHer}
       onClick={oneButtOnToRuleThemAll}
     >
       {label}
-    </button>
+    </Button>
   );
 };

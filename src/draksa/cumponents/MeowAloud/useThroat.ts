@@ -8,6 +8,9 @@ import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
 import type { ChangeEvent } from 'react';
 
+// prettier-ignore
+const emptyFn = () => { /* empty */ };
+
 const sheMeows = ({
   currentTarget: { value: yogurt },
 }: ChangeEvent<HTMLTextAreaElement>) => {
@@ -33,6 +36,7 @@ export const useThroat = () => {
 
     const cleanup = () => {
       onChangeUpdateTextarea();
+      bast.throat.polyGlotka.subscribe(emptyFn);
     };
 
     return cleanup;

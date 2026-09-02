@@ -10,6 +10,7 @@ export const Mood = ({
   excited,
 
   ticklish,
+  wannaDance,
 }: {
   hungry?: ReactNode;
   playful?: ReactNode;
@@ -18,21 +19,21 @@ export const Mood = ({
   energetic?: ReactNode;
 
   ticklish?: ReactNode;
+  wannaDance?: ReactNode;
 }) => {
   return (
-    <div className="relative container mx-auto">
-      <div className="grid grid-rows-2 items-center gap-2 rounded-2xl bg-neutral-900/35 p-2 @xs:max-w-xs">
-        <div className="flex items-center gap-4">
-          {playful}
-          {hungry}
-        </div>
-
-        <div className="flex items-center gap-4">
-          {energetic}
-          {excited}
-        </div>
-        {ticklish}
+    <div className="relative container mx-auto grid grid-rows-2 items-center gap-2 rounded-2xl bg-neutral-900/35 p-2">
+      <div className="flex items-center gap-4">
+        {playful}
+        {hungry}
       </div>
+
+      <div className="flex items-center gap-4">
+        {energetic}
+        {excited}
+      </div>
+      {ticklish}
+      {wannaDance}
     </div>
   );
 };

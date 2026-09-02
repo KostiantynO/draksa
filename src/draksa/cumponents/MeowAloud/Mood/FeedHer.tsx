@@ -3,20 +3,19 @@
 
 import { useEffect } from 'react';
 
+import { Button } from '@/draksa/cumponents/ui/Button';
 import { afterPasteButtonClick } from '@/draksa/perf/club/afterPasteButtonClick';
 
 export const FeedHer = () => {
   useEffect(() => afterPasteButtonClick.cancel, []);
 
   return (
-    <button
+    <Button
       name="feedHer"
-      type="button"
-      className="cursor-pointer rounded-full bg-pink-600 px-4 py-2 text-4xl font-bold whitespace-nowrap text-white transition-colors select-none hover:bg-pink-700"
       title="Paste"
       onClick={afterPasteButtonClick}
     >
       FeedHer 📝
-    </button>
+    </Button>
   );
 };
