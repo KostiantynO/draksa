@@ -3,6 +3,7 @@
 
 import { useSignals } from '@preact/signals-react/runtime';
 
+import { LoadVoicesButton } from '@/draksa/cumponents/MeowAloud/Voice/LoadVoicesButton';
 import { VoiceOption } from '@/draksa/cumponents/MeowAloud/Voice/VoiceOption';
 import { bast } from '@/draksa/heaven';
 
@@ -17,7 +18,10 @@ const makeOption = ({ name, lang, default: isDefaultVoice }: SpeechSynthesisVoic
 };
 
 const Placeholder = () => (
-  <div className="text-sm opacity-60">woading voicef… meow :3</div>
+  <div className="relative text-sm opacity-60">
+    <LoadVoicesButton />
+    woading voicef… meow :3
+  </div>
 );
 
 export const VoiceList = ({ local }: { local: boolean }) => {
