@@ -25,3 +25,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@theme {
+  --animate-ripple: ripple 0.6s linear forwards;
+
+  @keyframes ripple {
+    from {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0.5;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(18);
+      opacity: 0;
+    }
+  }
+}

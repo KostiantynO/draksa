@@ -750,6 +750,11 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 - [ ] `!` - reads wrongly as `not`, do exclamation `!` detection only for code like `!==` or none at all.
 - [ ] Replace `less than <` and `greater than >` with silent `empty string ''` in html/JSX/TSX code
 
+- Do not read aloud markdown escape chars basically:
+  - [ ] backquote
+  - [ ] asterisk
+  - [ ] read `right pointing arrow →` as `is`
+
 `Mobile`:
 - [ ] Center bg on Draksa eyes
 - [ ] Background is squeezed on mobile when <320px, because of overflow (fix buttons width, and flex-wrap lists).
@@ -761,7 +766,7 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 - [ ] add more sound names for components. More logical. `Mood` is not in `Lips`. `Mood` is `Emotions`.
 - [ ] Add Controls button for `Play` and `FeedHer`.
 - [ ] Hide mood under Mood button.
-- [ ] add Ripple Button
+- [x] add Ripple Button
 - [x] add paste button (from clipboard)
 - [ ] add custom dragon/naga/kitty purring ancient language :D
 - [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :D
