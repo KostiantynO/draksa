@@ -29,7 +29,7 @@ export const Play = () => {
     <Button
       name="play"
       title="Play"
-      className="w-35 rounded-full"
+      className="grow rounded-full"
       onTouchStart={petHer}
       onClick={oneButtOnToRuleThemAll}
     >

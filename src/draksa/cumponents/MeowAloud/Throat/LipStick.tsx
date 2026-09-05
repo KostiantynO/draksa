@@ -10,7 +10,7 @@ export const LipStick = () => {
       name="lanDyshy"
       type="button"
       title="Clear"
-      className="absolute -top-4 right-0 text-xl"
+      className="absolute contain-content -top-6 -right-1 text-xl"
       onClick={lanDyshy}
     >
       💄

@@ -35,6 +35,7 @@ export const useThroat = () => {
     });
 
     const cleanup = () => {
+      openWideAndPuuurrr.cancel();
       onChangeUpdateTextarea();
       bast.throat.polyGlotka.subscribe(emptyFn);
     };

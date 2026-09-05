@@ -701,7 +701,7 @@ and the world is in chaos and js-diss-array...
 const a: Diss[] = ['M 2 the 🐝']; // ;D
 ```
 
-Browser💻👦 and sister👧 will save the day!
+SteppeBrowser🌾🐴🐎🏇🏹🎯👦💻 and sister👧 will save the day!
 
 YIN🐇💖! YANG🐇💙! YO🐼⚪⚫!
 
@@ -724,15 +724,50 @@ When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is bo
 #### Critical:
 
 - [ ] Add Language autodetect per word/or even character. For puns recognition. :D
+- [ ] extract `text massaging logic` into a separate module folder.
+  - [ ] So it can be used elsewhere, like a local Chrome Extension.
+  - [ ] MUST be in LOCAL in browser tab
+  - [ ] NO server, NO network trip, unlike `ReadAloud`
+  - [ ] MUST BE FAST, not slow useless like built-in chrome `readaloud` on mobile.
+
+#### Bugs
+
+`Editor - Dev exp`:
+- [ ] Make click to definition work correctly for `openWideAndPuuurrr`.
+  - [ ] Either move debounced callbacks from `perf/club` to their place of use fo colocation of the code.
+  - [ ] Or improve my VSCode settings. There is a difference and inconsistences between two clicks
+    - [ ] If I click on the function name inside import statement `import { openWideAndPuuurrr }`, then VSCode opens up a file in editor mode correctly, where the const arrow function declaration is - `export const openWideAndPuuurrr = bounce(`
+    - [ ] If I click directly on a function name inside a call site
+      ```tsx
+        // prettier-ignore
+        openWideAndPuuurrr( );
+      ```
+      then it does not open a file, but shows some small modal below the function call and inside that modal it shows a wrapper const arrow function declaration - `export const bounce = (cb: () => unknown, ms: number)`.
+      Which is useless to me, cause I wanna jump the definition of the openWideAndPuuurrr, not to the `bounce` definition.
+
+
+`Logic`:
+- [ ] `!` - reads wrongly as `not`, do exclamation `!` detection only for code like `!==` or none at all.
+- [ ] Replace `less than <` and `greater than >` with silent `empty string ''` in html/JSX/TSX code
+
+`Mobile`:
+- [ ] Center bg on Draksa eyes
+- [ ] Background is squeezed on mobile when <320px, because of overflow (fix buttons width, and flex-wrap lists).
+- [ ] voices load too slowly.
+- [ ] when pressing `Play`, nothing happens, because default voice is not selected. Cause in mobile default voice name depends on locale (eng,cz,ukr,etc.). And it differs widely from PC voice names. Need to select default lang, when it has a `en_US` string in its name.
+- [ ] make possible to see whole background image.
 
 #### Normal
-
+- [ ] add more sound names for components. More logical. `Mood` is not in `Lips`. `Mood` is `Emotions`.
+- [ ] Add Controls button for `Play` and `FeedHer`.
+- [ ] Hide mood under Mood button.
+- [ ] add Ripple Button
 - [x] add paste button (from clipboard)
 - [ ] add custom dragon/naga/kitty purring ancient language :D
 - [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :D
 - [ ] bug - fix lint warning
       [`⚠ The Next.js plugin was not detected in your ESLint configuration.`](https://nextjs.org/docs/app/api-reference/config/eslint#migrating-existing-config)
-- [x] use 1s debounce timer onKeyUp, so it will not fire speech/text parse so many times -
+- [x] use 0.5s debounce timer onKeyUp, so it will not fire speech/text parse so many times -
       fans will be more silent.
   - Bouncer has a `Wristwatch` to select bounce time you wish.
 - [x] use 50ms debounce timer onPaste

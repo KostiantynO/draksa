@@ -16,7 +16,6 @@ type KeyboardPasteState = 'idle' | 'pastingAfterCtrlV';
 export const bast = {
   throat: {
     polyGlotka: signal<string>(draksaTells.pleaseFeedMe),
-    // polyGlotka: signal<string>(''),
     pleaseFeedMe: (yogurt: string) => { bast.throat.polyGlotka.value = yogurt; },
 
     clear: () => {

@@ -1,7 +1,7 @@
 // src\draksa\cumponents\MeowAloud\Pitch.tsx
 'use client';
 
-import { useTransition } from 'react';
+import { useEffect, useTransition } from 'react';
 
 import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
@@ -21,8 +21,10 @@ export const Pitch = () => {
       openWideAndPuuurrr( );
     });
 
+  useEffect(() => openWideAndPuuurrr.cancel, []);
+
   return (
-    <label>
+    <label className="flex items-center gap-2">
       Pitch
       <input
         name="pitch"

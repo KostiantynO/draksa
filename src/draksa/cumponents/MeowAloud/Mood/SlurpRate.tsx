@@ -26,7 +26,7 @@ const SlurpRateButtons = ({ open }: { open: boolean }) => {
     <li key={speed}>
       <Button
         name="slurpRateOption"
-        className="px-3 text-lg"
+        className="px-3 text-sm"
         onClick={() => selectSpeed(speed)}
       >
         {speed}
@@ -36,7 +36,7 @@ const SlurpRateButtons = ({ open }: { open: boolean }) => {
 
   return (
     <ul
-      className={`absolute bottom-12 left-0 flex origin-bottom-left transform-gpu gap-1 rounded-3xl border bg-black p-2 transition-[scale,opacity] duration-210 ${
+      className={`absolute bottom-12 left-0 grid origin-bottom-left transform-gpu gap-1 rounded-3xl border bg-black p-2 transition-[scale,opacity] duration-210 ${
         open ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'
       }`}
     >
@@ -57,7 +57,7 @@ export const SlurpRate = () => {
       <Button
         name="slurpRate"
         title="Slurp rate"
-        className="min-w-21 cursor-pointer rounded-full bg-pink-600/90 px-4 py-2 text-xl font-bold text-white transition-colors select-none hover:bg-pink-700"
+        className="min-w-21 text-xl"
         onClick={showSpeedButtons}
       >
         {bast.settings.slurpRate}

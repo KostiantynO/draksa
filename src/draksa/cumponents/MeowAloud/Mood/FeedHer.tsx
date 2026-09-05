@@ -10,11 +10,7 @@ export const FeedHer = () => {
   useEffect(() => afterPasteButtonClick.cancel, []);
 
   return (
-    <Button
-      name="feedHer"
-      title="Paste"
-      onClick={afterPasteButtonClick}
-    >
+    <Button name="feedHer" title="Paste" className="grow" onClick={afterPasteButtonClick}>
       FeedHer 📝
     </Button>
   );

@@ -18,5 +18,5 @@ export const BounceList = () => {
 
   const arr = bounceTimeoutsMs.map(makeBounceOption);
 
-  return <ul className="flex px-1">{arr}</ul>;
+  return <ul className="grid px-1">{arr}</ul>;
 };
