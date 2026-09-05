@@ -33,8 +33,6 @@ export const useRipples = () => {
 
       setRipples(p => p.filter(r => r.id !== id));
     }, RIPPLE_DURATION_MS);
-
-    // console.log({ ripples });
   };
 
   useEffect(() => {

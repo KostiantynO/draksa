@@ -62,8 +62,10 @@ const onRender = (
 
   history.push(row);
 
-  console.log(`🐱 GHOST-BUSTER PROFILER — ${history.length} renders captured`);
-  console.table(history);
+  if (process.env.NODE_ENV === 'development') {
+    console.log(`🐱 GHOST-BUSTER PROFILER — ${history.length} renders captured`);
+    console.table(history);
+  }
 };
 
 export const Measurements = () => {

@@ -13,7 +13,6 @@ export const youAreNotPrepared = () => {
   const draksa = purrify(polyGlotka);
 
   const catPoseYoga = draksa.split(legs);
-  console.log(catPoseYoga);
 
   return catPoseYoga;
 };

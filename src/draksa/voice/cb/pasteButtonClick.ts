@@ -11,7 +11,6 @@ export const pasteButtonClick = async () => {
   const yogurt = await navigator.clipboard.readText();
 
   bast.throat.pleaseFeedMe(yogurt);
-  console.log({ pasteButtonClick: yogurt });
 
   if (!bast.settings.isMeowingOnType.peek()) return;
 

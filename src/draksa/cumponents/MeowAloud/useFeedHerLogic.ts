@@ -13,9 +13,6 @@ export const useFeedHerLogic = () => {
 
   const petHer = () => {
     //
-    console.log(
-      "Totally wholesome 'head-pats' commencing: *pat* *pat* ... *pet* *pet* ... :D :D :D"
-    );
   };
 
   useEffect(() => openWideAndPuuurrr.cancel, []);
