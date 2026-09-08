@@ -11,7 +11,7 @@ const Placeholder = () => (
   <div className="text-sm opacity-60">woading bouncef, meow :3</div>
 );
 
-const bounceTimeoutsMs = [50, 100, 200, 300, 400, 500, 600, 1000];
+const bounceTimeoutsMs = [50, 100, 200, 300, 400, 500, 600, 1000, 5000];
 
 export const BounceList = () => {
   if (!bounceTimeoutsMs.length) return <Placeholder />;

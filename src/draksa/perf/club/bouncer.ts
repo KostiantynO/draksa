@@ -2,7 +2,7 @@
 
 /**
  * @param cb callback function
- * @param ms calls callback not earlier than a `ms` delay in milliseconds
+ * @param getDelayMs reads the current delay when the `cb` is called.
  * @returns
  * Every call to debounce will create a new function -> will force a rerender
  * Is there a function pulling?
@@ -16,22 +16,21 @@
  *
  * But if used in useCallback, it may rerun cause of unstable deps.
  */
-export const bounce = (cb: () => unknown, ms: number) => {
+export const bounce = (cb: () => unknown, getDelayMs: () => number) => {
   let id: undefined | ReturnType<typeof setTimeout>; // browser timeout
 
   const curried = () => {
     if (id) clearTimeout(id);
 
     id = setTimeout(() => {
+      id = void 0;
+
       try {
         cb();
       } catch (error) {
         console.error(error);
-        id = void 0;
-      } finally {
-        id = void 0;
       }
-    }, ms);
+    }, getDelayMs());
   };
 
   curried.cancel = () => {
