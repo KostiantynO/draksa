@@ -11,7 +11,7 @@ const meowItButtonClick = () => {
 
   bast.throat.pleaseFeedMe(yogurt);
 
-  if (!bast.settings.isMeowingOnType.peek()) return;
+  if (!bast.mood.isMeowingOnType.peek()) return;
 
   // prettier-ignore
   purrNow( )

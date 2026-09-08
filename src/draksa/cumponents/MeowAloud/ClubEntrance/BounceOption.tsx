@@ -12,12 +12,12 @@ export const BounceOption = ({ label }: { label: number }) => {
   useSignals();
 
   const chooseBounce = () => {
-    bast.settings.setSpeechDebounceForTypingInMs(label);
+    bast.mood.setHowLongSheWaitsBeforeSpeaking(label);
   };
 
   useEffect(() => openWideAndPuuurrr.cancel, []);
 
-  const isActive = bast.settings.speechDebounceForTypingInMs.value === label; // ok
+  const isActive = bast.mood.howLongSheWaitsBeforeSpeakingMs.value === label; // ok
 
   return (
     <li>

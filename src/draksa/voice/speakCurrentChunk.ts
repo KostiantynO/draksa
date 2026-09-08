@@ -25,8 +25,8 @@ export const speakCurrentChunk = () => {
 
   if (voice) meow.voice = voice;
 
-  meow.rate = bast.settings.slurpRate.peek();
-  meow.pitch = bast.settings.pitch.peek();
+  meow.rate = bast.mood.slurpRate.peek();
+  meow.pitch = bast.mood.pitch.peek();
   meow.lang = voice?.lang ?? fallbackLang;
 
   meow.onstart = () => {

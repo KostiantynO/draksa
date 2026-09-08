@@ -15,7 +15,7 @@ export const Pitch = () => {
     currentTarget: { value },
   }: ChangeEvent<HTMLInputElement>) =>
     startTransition(() => {
-      bast.settings.setPitch(Number(value));
+      bast.mood.setPitch(Number(value));
 
       //prettier-ignore
       openWideAndPuuurrr( );
@@ -35,7 +35,7 @@ export const Pitch = () => {
         step={0.01}
         onChange={kindlyAskHerToSpeakWithThatPitch}
       />
-      {bast.settings.pitch}
+      {bast.mood.pitch}
     </label>
   );
 };

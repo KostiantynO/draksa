@@ -4,5 +4,5 @@
 import { bast } from '@/draksa/heaven';
 
 export const BouncerWristwatch = () => {
-  return <p>{bast.settings.speechDebounceForTypingInMs} ms</p>;
+  return <p>{bast.mood.howLongSheWaitsBeforeSpeakingMs} ms</p>;
 };

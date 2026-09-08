@@ -12,8 +12,8 @@ export const TickleHer = () => {
         name="isMeowingOnType"
         className="w-10"
         type="checkbox"
-        defaultChecked={bast.settings.isMeowingOnType.peek()}
-        onChange={bast.settings.toggleIsMeowingOnType}
+        defaultChecked={bast.mood.isMeowingOnType.peek()}
+        onChange={bast.mood.toggleIsMeowingOnType}
       />
     </label>
   );

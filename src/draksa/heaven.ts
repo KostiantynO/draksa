@@ -34,18 +34,18 @@ export const bast = {
     startKeyboardPasting: () => { bast.throat.keyboardPasteState.value = 'pastingAfterCtrlV'; },
   },
 
-  settings: {
+  mood: {
     slurpRate: signal(1.21),
-    setSlurpRate: (value: number) => { bast.settings.slurpRate.value = value;  },
+    setSlurpRate: (value: number) => { bast.mood.slurpRate.value = value;  },
 
     pitch: signal(1.15),
-    setPitch: (value: number) => { bast.settings.pitch.value = value; },
+    setPitch: (value: number) => { bast.mood.pitch.value = value; },
 
     isMeowingOnType: signal(true),
-    toggleIsMeowingOnType: () => { bast.settings.isMeowingOnType.value = !bast.settings.isMeowingOnType.peek(); },
+    toggleIsMeowingOnType: () => { bast.mood.isMeowingOnType.value = !bast.mood.isMeowingOnType.peek(); },
 
-    speechDebounceForTypingInMs: signal(500),
-    setSpeechDebounceForTypingInMs: (ms:number) => { bast.settings.speechDebounceForTypingInMs.value = ms },
+    howLongSheWaitsBeforeSpeakingMs: signal(500),
+    setHowLongSheWaitsBeforeSpeaking: (ms:number) => { bast.mood.howLongSheWaitsBeforeSpeakingMs.value = ms },
   },
 
   voices: {

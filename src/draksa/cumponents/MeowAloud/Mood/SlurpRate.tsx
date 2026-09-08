@@ -14,7 +14,7 @@ const SlurpRateButtons = ({ open }: { open: boolean }) => {
 
   const selectSpeed = (value: number) =>
     startTransition(() => {
-      bast.settings.setSlurpRate(value);
+      bast.mood.setSlurpRate(value);
 
       // prettier-ignore
       openWideAndPuuurrr( );
@@ -60,7 +60,7 @@ export const SlurpRate = () => {
         className="min-w-21 text-xl"
         onClick={showSpeedButtons}
       >
-        {bast.settings.slurpRate}
+        {bast.mood.slurpRate}
       </Button>
     </div>
   );
