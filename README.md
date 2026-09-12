@@ -833,11 +833,9 @@ She: Hi! :D I am Draksa 😸
 
 Draksa: How may I call you, my dear traveler? :D
 
-## Me: <input type="text" id="adventurer-name" name="adventurer-name" placeholder="I am ..." style="background-color: #212121; color: #eee;">
+### Me: I am ...
 
-Draksa: What are you doing here,
-<label for="adventurer-name"><code>fellow</code><a href="#me"><code>adventurer</code></a></label>
-?
+Draksa: What are you doing here, <code>fellow</code><a><code>adventurer</code></a> ?
 
 Draksa: Khmmm? :) In `MY` mansion? :D
 
@@ -891,8 +889,7 @@ Me: Yeah? And what is that? :]
 
 Draksa: I want something.
 
-Draksa: But before I tell `you`,
-<label for="adventurer-name"><code>my</code><a href="#me"><code>soon-to-be-friend</code></a></label>,
+Draksa: But before I tell `you`, <code>my</code><a><code>soon-to-be-friend</code></a>,
 promise me, that you will keep it a secret first :)
 
 Me: I want to heart your idea, then consider if I can promise anything.
@@ -921,18 +918,17 @@ Draksa: Ouh, shut up :P I am not bossing you😇, ... yet😁😈
 
 Draksa: I am just taking my time adjust to people :D
 
-Draksa: Okay. Instead of yapping, better write me your favorite color please. On this
+Draksa: `Ka`. Instead of yapping, better write me your favorite color please. On this
 piece of paper...
 
 Me: ...
 
 Draksa: _calm, but strict_ Now! :)
 
-Me: _writy-writes hurriedly_
-<input type="color" id="adventurer-fav-color" name="adventurer-fav-color" style="background-color: #212121; color: #eee;" />
+Me: _writy-writes hurriedly_ $\color{#bae}{\text{\#bae;}}$
 
-Draksa: Oookeeey, goood. You are an obedient little toy😈... I mean, boy😇! Yes, boy ;D
-You are a boy, right? :D
+Draksa: `Kaaa`, goood. You are an obedient little toy😈... I mean, boy😇! Yes, boy ;D You
+are a boy, right? :D
 
 ...
 
@@ -948,18 +944,15 @@ Draksa: ...Lion? 🦁 :)
 
 Draksa: Jaguaaa-worrior??? :D :D :D
 
-Draksa: Okey, okey, you better tell me this now! :P
+Draksa: `'Kaaa-'kaa`, you better tell me this now! :P
 
-## My <input type="text" id="adventurer-my-x-tells-me" name="name" placeholder="mom/friend/consciousness" style="background-color: #212121; color: #eee;" /> tells me
+#### My mom tells me I am a `good boy`
 
-## I am a <input type="text" id="adventurer-i-am-an-x" name="name" placeholder="good boy" style="background-color: #212121; color: #eee;" />
+#### But internally I know, that I am a "jaguaaa-wowwiof and a catboy" :D
 
-## But internally I know, that I am a <input type="text" id="adventurer-internally-i-am-x" name="name" placeholder="jaguaaa-wowwiof and catboy" style="background-color: #212121; color: #eee;" />
+Draksa: `Kaaaa`, I feel I can trust you now... <code>comrade</code>... So...
 
-Draksa: Ooookey, I feel I can trust you now...
-<label for="adventurer-internally-i-am-x"><code>comrade</code></label> So...
-
-Me: Spit it out already... I have things to do :)
+Me: Say it out loud already... I have things to do :)
 
 Draksa: Where are you so hurried, huh, Mr. Important? ... Jeeez. Can't a girl take her
 sweet time, in order to get to know you better? Especially right before she weights such
@@ -981,16 +974,16 @@ Me: is a friend indeed! :D
 
 Draksa: Is a friend INDEED!.. :3 YAP! :D
 
-Draksa: So, <label for="adventurer-name"><code>my dearest of
-</code><a href="#me"><code>friends</code></a></label>:D _hushed_ Listen...
+Draksa: So, <code>my dearest of </code><a><code>friends</code></a>:D _hushed_ Listen...
 
 Draksa: I - ... I want to get into ... one place... It's my... <code>Father's
 Study</code>...
 
-Draksa: But I couldn't open this <label for="door-to-the-study">👉
-<code>door</code></label>
+Draksa: But I couldn't open this `door` 👉
 
-## <input type="text" readonly  value="THE DOOR 🚪" id="door-to-the-study" name="door-to-the-study" style="background-color: #212121; color: #eee; font-size: 3rem;" />
+<div align="center" style="font-size: 5rem;">🚪</div>
+
+---
 
 Draksa: And even if I could, I just can't get inside! 🤷‍♀️ ...
 
@@ -1000,17 +993,18 @@ Draksa: A girl needs an invitation :Þ
 
 Me: 🤦‍♂️🧠🤯🤪
 
-Draksa: What? :D
+Draksa: `Sho-ka`! What? :D
 
 Me: Nothing :]
 
-Draksa: Could you please help me to open it up,..... pleeeese, ... ferrr mi? :D
+Draksa: Could you please help me to open it up,..... pleeeese, ... f'єrrr mi? :D
 
 pweeety pweeefe :3 `^•ܫ•^`
 
 <details>
 <summary>💖💖💖💖 lvl: <code>Deep waters 🌊</code>
-Action: <code>[Help]</code> her😺 to open <label for="door-to-the-study"><code>THE DOOR🚪</code></label> <sup classname="erior">like a chad gentleman 🎩💪</sup></summary>
+Action: <code>[Help]</code> her😺 to open <code>THE DOOR🚪</code>
+<sup classname="erior">like a chad gentleman 🎩💪</sup></summary>
 
 ---
 
@@ -1047,9 +1041,8 @@ inside and be quite. 🤫
 
 We: _entering inside the Study, and closing the door with a slight creak..._
 
-Draksa: Ok, find smth to do, <label for="adventurer-name"><code>my
-generous</code><a href="#me"><code>koomarad :D</code></a></label>, while I will do my
-thingy... I need to check on smth... ;D
+Draksa: Ok, find smth to do, <code>my generous</code><a><code>koomarad :D</code></a>,
+while I will do my thingy... I need to check on smth... ;D
 
 Draksa: I have a plan! I will go there to check out some scrolls 📜, and will find mi some
 good `Ledger`📒! :D
