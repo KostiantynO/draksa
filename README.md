@@ -925,8 +925,6 @@ Me: ...
 
 Draksa: _calm, but strict_ Now! :)
 
-Me: _writy-writes_ $\color{#bae}{\textsf{\#bae}}$
-
 Me: _writy-writes_ # $\color{#bae}{\textsf{bae}}$
 
 Draksa: `Kaaa`, goood. You are an obedient little toy😈... I mean, boy😇! Yes, boy ;D You
