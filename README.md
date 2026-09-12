@@ -12,7 +12,7 @@
 
 ---
 
-<p align="center">⛔ ⚠ WARNING! ⚠ ⛔</p>
+<p align="center">⛔ ⚠️ WARNING! ⚠️ ⛔</p>
 
 ---
 
@@ -24,8 +24,8 @@
 
 ---
 
-<p align="center">⚠ THIS IS A WORK OF ART! ⚠</p>
-<!-- EMPOWERED BY kittyGPT™ WHITE MAGIC DIVISION 🐈‍⬜✨🔮 -->
+<p align="center">⚠️ THIS IS A WORK OF ART! ⚠️</p>
+<!-- EMPOWERED BY WHITE MAGIC SCHOOL OF ART 🐈‍🤍✨🔮 -->
 
 ---
 
@@ -49,7 +49,7 @@
 
 ---
 
-<p align="center">NOW! :D :D :D</p>
+<p align="center"> 🔥 NOW! :D :D :D 🔥</p>
 
 ---
 
@@ -86,7 +86,7 @@ Genres:
 - `semantic vandalism` - playful kind :D
 - `aggressive minimalism` - codeChuck 💻🪓
 - `chaotic good` - math😇.sin😈'ing :D
-- `curiosity` - study speechSynthesisApi from Browser Gods 🧙‍♂️
+- `curiosity` - study speechSynthesis api from Browser Gods 🧙‍♂️
 - `empathy` - keep NPCs alive :D, cos its more fun :D
 
 ---
@@ -343,7 +343,7 @@ It means, that from now on...
 
 ---
 
-`YOU` are `MINE`
+`YOU` are `MINE` :3
 
 ---
 
@@ -355,7 +355,7 @@ It means, that from now on...
 
 ---
 
-`FOREVER`
+`FOREVER` _Cheshire catgirl-smile_ :D
 
 ---
 
@@ -367,7 +367,7 @@ It means, that from now on...
 
 ---
 
-*echoes heard in the empty halls of the mansion, where My Shut-In Demon Girl lives*
+_echoes heard in the empty halls of the mansion, where My Shut-In Demon Girl lives_
 
 ---
 
@@ -547,6 +547,54 @@ f...
 
 ---
 
+...
+
+---
+
+---
+
+---
+
+---
+
+---
+
+.\.
+
+---
+
+---
+
+---
+
+---
+
+---
+
+.
+
+---
+
+---
+
+---
+
+---
+
+---
+
+ 
+
+---
+
+---
+
+---
+
+---
+
+---
+
 ---
 
 ---
@@ -589,7 +637,8 @@ f...
 
 `hahahaЇ` :D
 
-*an insidious laugh heard in the background, otherworldly and ominous 😈, but undescribably warm, like milk 🥛, honey 🍯 and home 🏡*
+_an insidious laugh heard in the background, otherworldly and ominous 😈, but
+undescribably warm, like milk 🥛, honey 🍯 and home 🏡_
 
 ---
 
@@ -689,23 +738,43 @@ P.S. no refunds! :D
 
 # What: Draksa (MeowAloud)
 
-`Draksa`: Heyyy! I aaamm онлааааа-`Ain`!
+`Draksa`: _shy, but curious and relaxed throat voice, lips almost unmoving_
+
+Hewooou! :3 I am онла-`Ain`!
+
+![Draksa family portrait](.github/assets/draksa.webp)
+
+## Where: `In` steppe-`browser`🌾🐎💻 tab, offline after page load.
 
 ## Why:
 
-If your `ReadAloud` doesn't work, *🎩🧐 unlike Skyrim :D*
+[original, in print]:
 
-and the world is in chaos and js-diss-array...
+If your `ReadAloud` doesn't work,
+
+and the world is in chaos and disarray...
+
+Brother and sister will save the day!
+
+YIN! YANG! YO!
+
+---
+
+[Draksa, in wavy]:
+
+If your `ReadAloud` doesn't `wrok`, _🎩🧐 unlike Skyrim :D_
+
+and the world is in chaos and `js`-`diss`-array...
 
 ```ts
 const a: Diss[] = ['M 2 the 🐝']; // ;D
 ```
 
-SteppeBrowser🌾🐴🐎🏇🏹🎯👦💻 and sister👧 will save the day!
+SteppeBrowser🌾🐎👦💻 and sister🌾🐎👧✨ will save the day!
 
 YIN🐇💖! YANG🐇💙! YO🐼⚪⚫!
 
-Інь, Ян, Йо!   Інь, Ян, Йо!   ІНЬ, ЯН, ЙО! ☯
+Інь, Ян `із старой шахти :D`, Йо! Інь, Ян, Йо! Інь, Ян, Йо! ІНЬ, ЯН, ЙО! ☯
 
 ouuh,... that is the wrong intro :D :D :D
 
@@ -715,173 +784,353 @@ ouuh,... that is the wrong intro :D :D :D
 
 ---
 
-`Draksa's story`:
-
-When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is born :D
-
-### Plan:
-
-#### Critical:
-
-- [ ] Add Language autodetect per word/or even character. For puns recognition. :D
-- [ ] extract `text massaging logic` into a separate module folder.
-  - [ ] So it can be used elsewhere, like a local Chrome Extension.
-  - [ ] MUST be in LOCAL in browser tab
-  - [ ] NO server, NO network trip, unlike `ReadAloud`
-  - [ ] MUST BE FAST, not slow useless like built-in chrome `readaloud` on mobile.
-
-#### Bugs
-
-`Editor - Dev exp`:
-- [ ] Make click to definition work correctly for `openWideAndPuuurrr`.
-  - [ ] Either move debounced callbacks from `perf/club` to their place of use fo colocation of the code.
-  - [ ] Or improve my VSCode settings. There is a difference and inconsistences between two clicks
-    - [ ] If I click on the function name inside import statement `import { openWideAndPuuurrr }`, then VSCode opens up a file in editor mode correctly, where the const arrow function declaration is - `export const openWideAndPuuurrr = bounce(`
-    - [ ] If I click directly on a function name inside a call site
-      ```tsx
-        // prettier-ignore
-        openWideAndPuuurrr( );
-      ```
-      then it does not open a file, but shows some small modal below the function call and inside that modal it shows a wrapper const arrow function declaration - `export const bounce = (cb: () => unknown, ms: number)`.
-      Which is useless to me, cause I wanna jump the definition of the openWideAndPuuurrr, not to the `bounce` definition.
-
-
-`Logic`:
-- [ ] `!` - reads wrongly as `not`, do exclamation `!` detection only for code like `!==` or none at all.
-- [ ] Replace `less than <` and `greater than >` with silent `empty string ''` in html/JSX/TSX code
-
-- Do not read aloud markdown escape chars basically:
-  - [ ] backquote
-  - [ ] asterisk
-  - [ ] read `right pointing arrow →` as `is`
-
-`Mobile`:
-- [ ] Center bg on Draksa eyes
-- [ ] Background is squeezed on mobile when <320px, because of overflow (fix buttons width, and flex-wrap lists).
-- [ ] voices load too slowly.
-- [ ] when pressing `Play`, nothing happens, because default voice is not selected. Cause in mobile default voice name depends on locale (eng,cz,ukr,etc.). And it differs widely from PC voice names. Need to select default lang, when it has a `en_US` string in its name.
-- [ ] make possible to see whole background image.
-
-#### Normal
-- [ ] add more sound names for components. More logical. `Mood` is not in `Lips`. `Mood` is `Emotions`.
-- [ ] Add Controls button for `Play` and `FeedHer`.
-- [ ] Hide mood under Mood button.
-- [x] add Ripple Button
-- [x] add paste button (from clipboard)
-- [ ] add custom dragon/naga/kitty purring ancient language :D
-- [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :D
-- [ ] bug - fix lint warning
-      [`⚠ The Next.js plugin was not detected in your ESLint configuration.`](https://nextjs.org/docs/app/api-reference/config/eslint#migrating-existing-config)
-- [x] use 0.5s debounce timer onKeyUp, so it will not fire speech/text parse so many times -
-      fans will be more silent.
-  - Bouncer has a `Wristwatch` to select bounce time you wish.
-- [x] use 50ms debounce timer onPaste
-- [x] make her speak new added information, after you type smth at the end.
-  - if old textarea.value.length is bigger than the its length from the previous call of
-    `openWideAndPurr`.
-    - and it is usually almost always bigger then before
-    - because `openWideAndPurr` is only called when you type/paste into a Throat textarea
-    - only sometimes you may delete smth... - this case is too hard...
-    - so i will implement only the speaking of newly added text for now.
-  - call text parser
-    - then split new textarea.value into chucks and proceed as usual -> call
-      `speakCurrentChunk`
-- [ ] offload main thread from everything:
-  - [ ] add service worker (`Workie`) - async helper-thread is supa-cool! ;D
-  - [ ] move text-splitting to the Workie (it totally can be async)
-  - [ ] move all speech invoking to the Workie (it is sync, need to will find out if this
-        is possible)
-  - [ ] move paste from clipboard to the Workie (it is async anyway)
-- [ ] improve text splitter:
-  - [ ] split at new line `\n`
-  - [ ] split at space ` `
-  - [ ] split at comma `,`
-  - [ ] split at dot `.`
-  - [ ] split at semicolon `;`
-  - [ ] split at exclamation `!`
-  - [ ] split at question `?`
-  - [ ] if anything of the above is found in the text - AND FOLLOWED BY a new line `\n` -
-        or space ` ` char - make a new chunk.
-  - [ ] code endings (like semicolon `;`), and do not speak them if possible :D
-  - [ ] try to detect emojis and speak them correctly.
-  - [ ] try not to confuse semicolon `;` with a winking smile ;D
-  - [ ] a smiling face `:)` - is not a `colon   closing parenthesis`, but a `smiling face`
-        or `smile` or `haha :)` or `I am friendly :)` or `I am nice` or `I am a good boy/girl`
-        or `I am polite` :D
-- [x] Pass children as a slot into parent jsx <Parent>{children}</Parent> (very relevant)
-    especially with smaller `Server Components` passed as `{slots}` into
-    `Client Components`, but only when `imported` and called `inside` the big wrapping
-    `Server Component parent` like below:
-
-    ```tsx
-    import { ServerRenderedContent } from '@/draksa/ServerRenderedContent';
-    import { ServerHTML } from '@/draksa/ServerHTML';
-    import { ClientModal } from '@/draksa/ClientModal';
-
-    const Page = () => {
-      return (
-        <ServerHTML>
-          <ClientModal mySlot={<ServerRenderedContent />} />
-        </ServerHTML>
-      );
-    };
-
-    export default Page;
-    ```
-
-#### What I learned from this project
-
-- React отдаляєт нас от дома 🏡.
-- Но вещи происходят в доме.
-- Нужно думать про структуру и простоту разметки.
-- Нам нужна одна кнопка
-- One input
-- done.
-- but in reality i continue to spend tons of time in Chrome + React DevTools with enabled
-  rerenders highlight.
-- so I end up chucking code into components and chunks, using my @codeChuck superpowers :D
-  - As Dan Abramov showed on his blog:
-    - move state up to a shared parent (outdated by `signals`), or
-    - pass children as a slot into a parent jsx (very relevant, even more so for
-      `Server Components`)
-    ```tsx
-    return <Parent>{children}</Parent>;
-    ```
+`Draksa's story`: When 🐉 and 🧝‍♀️ love each other, then naga Draksa 😻🐉🐍 is born :D
 
 ---
 
-Software has so much to do to improve itself :D
+---
 
-```txt
-In March 2026,
-there is still no single magical button
-in VS Code / Node / React / Next.js
-that spits out exactly
-that pretty numbered list automatically
-for millions-of-calls scenarios...
-but we can get very close
-using tools that lean toward
-"summaries + tables + sorted hot spots"
-instead of pure flamegraph hypnosis.
-```
+---
 
-I mean `sorted perf stats in numbers`,
+_Hushed voice_: Heeey, psss, over here! ...
 
-The same as in `TASK MANAGER`:
-- `call stack` of functions,
-- `time` inside function,
-- `RAM`/`CPU` used.
+---
 
-flamegraphs - are useless and unactionable for a normie-human's! Cause you need to dig
-manually into the most called function YOURSELF.
+4.7 feet-tall naga-girl 😸🐉🐍 waves to you 👋🙋‍♀️ with her eyes closed
+![slow blink](.github/assets/blink.gif)
 
-And if you are a rackushka 🦀, with a nice rack 🍒 and pointy 🐈👂 ushka, then GL HF :D
+`≽^-ܫ-^≼`
 
-Software in dev mode should warn you, what part of it runs slow!
+---
 
-And it should ask you, if that is intentional!
+`^>ܫ<^ ฅ `
 
-Not YOU going around, like a Snoop Dog, with a mag-glass🔍🕵️‍♂️, looking
-for troublesome slow code! And still smashing it with Dr. Dre beats until it behaves!
+`^>ܫ<^  ฅ`
 
-While others already make millions on their buggy, but working software...
+`^>ܫ<^ ฅ `
+
+`^>ܫ<^ฅ  `
+
+`^>ܫ<^ ฅ `
+
+`^>ܫ<^  ฅ`
+
+`^>ܫ<^ ฅ `
+
+`^>ܫ<^ฅ  `
+
+---
+
+<details>
+<summary>🧡 lvl: <code>surface water💧</code>
+Action: <code>(^⭐ܫ⭐^)</code> ~💦 Make waves! 🌊🌊🌊~ <sup>Greet a fellow DRA-GOONette! 😻🐉🐍</sup></summary>
+
+---
+
+She: _whispers_ Come closer :)
+
+She: Hi! :D I am Draksa 😸
+
+Draksa: How may I call you, my dear traveler? :D
+
+## Me: <input type="text" id="adventurer-name" name="adventurer-name" placeholder="I am ..." style="background-color: #212121; color: #eee;">
+
+Draksa: What are you doing here,
+<label for="adventurer-name"><code>fellow</code><a href="#me"><code>adventurer</code></a></label>
+?
+
+Draksa: Khmmm? :) In `MY` mansion? :D
+
+Me: Stroking around...
+
+Draksa: You mean strolling around, yes? `•ᴗ•`
+
+Me: I said what I said :D
+
+Draksa: I seeee... `◕⩊◕` <sup>A little stroking `ฅ^•ﻌ•^ฅ` goes a looong way in these
+parts... :D</sup>
+
+Me: AkSHuuualiiii. I'm just sluuurrrping through... `ᓚ₍ ^. .^₎`
+
+Draksa: You mean, you are just lurking through the missions, right :) ??? `ᓚᘏᗢ` I also
+like to make lurkers sometimes :)
+
+Me: NO. I mean I like milk :3 🥛
+
+Draksa: Ouuuh! :D We will get along just fine! `≽^•⩊•^≼`
+
+Me: And honey 🍯.
+
+Draksa: Are you for real!?!?!?! Maaan, where have you been hiding all this time??? I like
+all the same things as you! Maybe you are my secret-ling or what :D? We could do SO much
+things together!
+
+Me: I hope not :D hahahaa I am not a Naga after all :)
+
+Draksa: Meany! _plak-plak_ 😿 💧 😭 wheeeeeeee! 💧
+
+Me: Okay, Okay, calm down baby, no need to cry :)
+
+<details>
+<summary>💖💖 lvl: <code>shallow waters💦</code>
+Action: <code><i>[Hug her]</i></code> ~Com'ere, you little thing... :] <sup>make her feel needed!😸</sup></summary>
+ 
+
+Draksa: _pouty_ I am NOT little. _embracing the hug, calming down, and explaining_ I'm
+just a little short, that's all! And I am twice as LONG as you! :P
+
+Me: Ha, that we would have to measure :)
+
+Draksa: Ohh, keep your jokes to yourself, will ja :) So lewd! `^⭐👄⭐^` Lecher!
+
+Me: I am not. 🤷‍♂️
+
+Draksa: Aaanyway... I want to ask something of you 😏 :) _smug face_
+
+Me: Yeah? And what is that? :]
+
+Draksa: I want something.
+
+Draksa: But before I tell `you`,
+<label for="adventurer-name"><code>my</code><a href="#me"><code>soon-to-be-friend</code></a></label>,
+promise me, that you will keep it a secret first :)
+
+Me: I want to heart your idea, then consider if I can promise anything.
+
+Draksa: Where is FUN in THAT? :D
+
+Me: Take it or leave it, babe. I cannot promise things I am not aware of.
+
+Draksa: Mhhhggg _in visible pain of telling the truth_ NO! :P ahahahahah :D
+
+Draksa: _whispering, but with very determined face_ PROMISE ME FIRST, THAT YOU WILL NOT
+TELL A SOUL!
+
+Me: _hushed whisper_ Okay, okay, I promise I will NOT tell anybody your secret. Happy? :D
+Why so secretive, by the way?
+
+Draksa: Show me your hands first! And look me in the eyes! `^👁ܫ👁^`
+
+Me: Okay. I am not crossing my fingers behind, here are my hands. Happy? :)
+
+Draksa: Look me in my f...ing eyeballs! 👁👄👁
+
+Me: Yes. Miss. I am looking. Don't be so BOSSY! 👁‍🗨/.👁‍🗨
+
+Draksa: Ouh, shut up :P I am not bossing you😇, ... yet😁😈
+
+Draksa: I am just taking my time adjust to people :D
+
+Draksa: Okay. Instead of yapping, better write me your favorite color please. On this
+piece of paper...
+
+Me: ...
+
+Draksa: _calm, but strict_ Now! :)
+
+Me: _writy-writes hurriedly_
+<input type="color" id="adventurer-fav-color" name="adventurer-fav-color" style="background-color: #212121; color: #eee;" />
+
+Draksa: Oookeeey, goood. You are an obedient little toy😈... I mean, boy😇! Yes, boy ;D
+You are a boy, right? :D
+
+...
+
+Draksa: ...Catboy? :)
+
+\.\.\.\.\.\.\.
+
+Draksa: \.\.\.\.\.\.\.Catgirl? 😼 :D
+
+...
+
+Draksa: ...Lion? 🦁 :)
+
+Draksa: Jaguaaa-worrior??? :D :D :D
+
+Draksa: Okey, okey, you better tell me this now! :P
+
+## My <input type="text" id="adventurer-my-x-tells-me" name="name" placeholder="mom/friend/consciousness" style="background-color: #212121; color: #eee;" /> tells me
+
+## I am a <input type="text" id="adventurer-i-am-an-x" name="name" placeholder="good boy" style="background-color: #212121; color: #eee;" />
+
+## But internally I know, that I am a <input type="text" id="adventurer-internally-i-am-x" name="name" placeholder="jaguaaa-wowwiof and catboy" style="background-color: #212121; color: #eee;" />
+
+Draksa: Ooookey, I feel I can trust you now...
+<label for="adventurer-internally-i-am-x"><code>comrade</code></label> So...
+
+Me: Spit it out already... I have things to do :)
+
+Draksa: Where are you so hurried, huh, Mr. Important? ... Jeeez. Can't a girl take her
+sweet time, in order to get to know you better? Especially right before she weights such
+an important decisions!
+
+Draksa: Answer me my final question, before _shy_ ...
+
+Draksa: ...emm, ka, just answer me this:
+
+Draksa: `A friend in need...` ?
+
+<details>
+<summary>💖💖💖 lvl: <code>surfing waters🏄‍♀️</code>
+Action: <code>[Say it]</code> A friend in need...</summary>
+
+---
+
+Me: is a friend indeed! :D
+
+Draksa: Is a friend INDEED!.. :3 YAP! :D
+
+Draksa: So, <label for="adventurer-name"><code>my dearest of
+</code><a href="#me"><code>friends</code></a></label>:D _hushed_ Listen...
+
+Draksa: I - ... I want to get into ... one place... It's my... <code>Father's
+Study</code>...
+
+Draksa: But I couldn't open this <label for="door-to-the-study">👉
+<code>door</code></label>
+
+## <input type="text" readonly  value="THE DOOR 🚪" id="door-to-the-study" name="door-to-the-study" style="background-color: #212121; color: #eee; font-size: 3rem;" />
+
+Draksa: And even if I could, I just can't get inside! 🤷‍♀️ ...
+
+Me: Why?
+
+Draksa: A girl needs an invitation :Þ
+
+Me: 🤦‍♂️🧠🤯🤪
+
+Draksa: What? :D
+
+Me: Nothing :]
+
+Draksa: Could you please help me to open it up,..... pleeeese, ... ferrr mi? :D
+
+pweeety pweeefe :3 `^•ܫ•^`
+
+<details>
+<summary>💖💖💖💖 lvl: <code>Deep waters 🌊</code>
+Action: <code>[Help]</code> her😺 to open <label for="door-to-the-study"><code>THE DOOR🚪</code></label> <sup classname="erior">like a chad gentleman 🎩💪</sup></summary>
+
+---
+
+...
+
+...
+
+Me: Draksa, it's open.
+
+...
+
+...
+
+...
+
+Me: Draksa...?
+
+...
+
+Draksa: Yes, my dear friend? :)
+
+Me: The door. It is open. Why are you standing there?
+
+Draksa: Where? I stand completely normal in corridor of my mansion :D I am just chilling
+here :) That art on the walls is amazing!
+
+Me: ohh, right... 🤦‍♂️
+
+Me: Draksa, you may enter. Feel yourself like at home :D
+
+Draksa: FєєЄRRR RRREAL??? I may enter?! YUPPiii !!! :D THANKS! _jumps into a hug_ You are
+my savior! My knight in shining armour :D _muuurrr_ I one you one! :D Ok, ok, now get
+inside and be quite. 🤫
+
+We: _entering inside the Study, and closing the door with a slight creak..._
+
+Draksa: Ok, find smth to do, <label for="adventurer-name"><code>my
+generous</code><a href="#me"><code>koomarad :D</code></a></label>, while I will do my
+thingy... I need to check on smth... ;D
+
+Draksa: I have a plan! I will go there to check out some scrolls 📜, and will find mi some
+good `Ledger`📒! :D
+
+Draksa: And `you`, while you are here :D, you may as well check some documents ferrr mi
+too!
+
+Draksa: Try that shelf over therrre 👉 📚. Father usually keeps some of his work notes
+there. If you find something interesting, call me over! :D
+
+Draksa: Also, don't worry if you don't understand some of the notes! They may be written
+in ancient draconic 🐉🔥📝. I also don't understand it 🤷‍♀️ :D
+
+<details>
+<summary>🧡💖💖💖💜 lvl: <code>My deepest sympathies 🌊🌊🌊</code>
+Action: <code>[Read and search]</code> some useful information for her😺</summary>
+
+As you peruse through the documents, you find a few worth of your at-tention-2:
+
+- [A little bit of Draksa's life](study/lore/page-1.md)
+
+As you go deeper into the study, you find a shelf dediCATed😺 to some unknown topics:
+
+---
+
+#### Insectlogy
+
+- [Logic](study/insectlogy/logic.md)
+- [Insects collection 🐜](study/insectlogy/insects-collection.md)
+- [Handy magic mirror](study/insectlogy/handy-magic-mirror.md)
+- [Writer convenience](study/insectlogy/writer-convenience.md)
+
+---
+
+#### [ToDOoshechki👧🌸](study/todo.md)
+
+---
+
+#### [What I learned from this project](study/what-i-learned.md)
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>🖤🖤 lvl: <code>shallow waters💦</code>
+Action: <code>[Ignore]</code><i> Leave her alone</i></summary>
+
+Let her cry her heart out. That is the right decision, right?
+
+<a href="about:blank" target="_blank" rel="noopener noreferrer">
+If you behave like this, you would be a virgin forever, I’m telling ja. Begone,
+<sub>fiend!👿</sub></a>
+
+</details>
+
+</details>
+
+---
+
+<details>
+<summary>🖤 lvl: <code>surface water💧</code>
+Action: <code>[Ignore]</code> Move along <sub>like a virgin_sub-scriber.</sub>
+</summary>
+
+---
+
+And face retribution by banishment to a place, where there are no CATS! And no BASES ARE
+BELONG TO US. Also known as HEEEEEELLiiiilouiya! Heeelliilouuuuiyia! HELLiiilooouJAJA
+RADI-DA High-Way-To_HELLIIILooouuuuuuuuiiiiyyyiaaa!
+
+<a href="about:blank" target="_blank" rel="noopener noreferrer">
+The mansion is not the place for a naughty hooman🦹‍♂️! Leave! <sub>while you STILL can, with your tail
+down, yak shakal🐩, AND BEFORE JA TOBI GORB NE Нам'яу-la :3 🐾</sub></a>
+
+</details>
+
+---
