@@ -40,7 +40,7 @@ Ma taught me how to clean the house 🧹, and during this she often sings for me
 She told me that her mother sang to her those elven and nordic songs, about her home lands.
 Also she taught me how to dance like a lady! :D But I also dance hip-hop with friends! :D
 She also taught me to read books and cook meals. Which helps when we make potions! It's similar!
-We often are cooking or reading 📚 together!
+We often are cooking or reading 📚 together! I can read in many languages :) I am a polyGlotka! :3
 Ma also teaches me charm spells, and how to be agile like a cat! :3
 And daddy trains me, so I become strong and stoic!
 `,

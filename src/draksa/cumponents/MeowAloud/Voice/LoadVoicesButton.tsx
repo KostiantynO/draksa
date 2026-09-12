@@ -2,6 +2,7 @@
 'use client';
 
 import { useSignals } from '@preact/signals-react/runtime';
+import { useEffect } from 'react';
 
 import { Button } from '@/draksa/cumponents/ui/Button';
 import { bast } from '@/draksa/heaven';
@@ -10,6 +11,10 @@ import { loadMoans } from '@/draksa/voice/loudMoans';
 export const LoadVoicesButton = () => {
   useSignals();
   const show = bast.voices?.moans.value.length === 0;
+
+  useEffect(() => {
+    loadMoans(); // just to reload voices after hrm breaks the page in dev.
+  }, []);
 
   return show ? (
     <Button

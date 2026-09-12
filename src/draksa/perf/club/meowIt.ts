@@ -17,4 +17,6 @@ const meowItButtonClick = () => {
   purrNow( )
 };
 
-export const meowIt = bounce(meowItButtonClick, 210);
+const mediumDelay = () => 210;
+
+export const meowIt = bounce(meowItButtonClick, mediumDelay);

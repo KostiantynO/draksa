@@ -4,4 +4,6 @@
 import { bounce } from '@/draksa/perf/club/bouncer';
 import { pasteButtonClick } from '@/draksa/voice/cb/pasteButtonClick';
 
-export const afterPasteButtonClick = bounce(pasteButtonClick, 50);
+const shortDelay = () => 50;
+
+export const afterPasteButtonClick = bounce(pasteButtonClick, shortDelay);
