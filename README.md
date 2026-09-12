@@ -925,7 +925,9 @@ Me: ...
 
 Draksa: _calm, but strict_ Now! :)
 
-Me: _writy-writes_ $\color{#BAE}{\text{\#bae}}$
+Me: _writy-writes_ $\color{#bae}{\textsf{\#bae}}$
+
+Me: _writy-writes_ # $\color{#bae}{\textsf{bae}}$
 
 Draksa: `Kaaa`, goood. You are an obedient little toy😈... I mean, boy😇! Yes, boy ;D You
 are a boy, right? :D
@@ -934,9 +936,8 @@ are a boy, right? :D
 
 Draksa: ...Catboy😼:) ?
 
-Draksa:
-...\.\.$\color{#bae}{\textsf{Cheshire }}\color{magenta}{\textsf{cat}}\color{violet}{\textsf{bae}}$😻💜:D
-?
+Draksa: ...\.\. $\color{#bae}{\textsf{Cheshire}}$
+$\color{magenta}{\textsf{cat}}\color{violet}{\textsf{bae}}$😻💜:D ?
 
 ..\.\.\.\.\.
 
