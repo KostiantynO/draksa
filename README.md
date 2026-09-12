@@ -925,30 +925,42 @@ Me: ...
 
 Draksa: _calm, but strict_ Now! :)
 
-Me: _writy-writes hurriedly_ $\color{#bae}{\text{\#bae;}}$
+Me: _writy-writes_ $\color{#BAE}{\text{\#bae}}$
 
 Draksa: `Kaaa`, goood. You are an obedient little toy😈... I mean, boy😇! Yes, boy ;D You
 are a boy, right? :D
 
 ...
 
-Draksa: ...Catboy? :)
+Draksa: ...Catboy😼:) ?
 
-\.\.\.\.\.\.\.
+Draksa:
+...\.\.$\color{#bae}{\textsf{Cheshire }}\color{magenta}{\textsf{cat}}\color{violet}{\textsf{bae}}$😻💜:D
+?
 
-Draksa: \.\.\.\.\.\.\.Catgirl? 😼 :D
+..\.\.\.\.\.
+
+Draksa: Don't tell me you are \.\.\.\.\.\.\. a
+$\color{cyan}{\textsf{Cat}}\color{lightpink}{\textsf{girl}}$😺:P ?
 
 ...
 
-Draksa: ...Lion? 🦁 :)
+Draksa: ...No way, a ${\color{orange}\textsf{Lion}}$🦁:) ?
 
-Draksa: Jaguaaa-worrior??? :D :D :D
+..\.\.\.\.\.
+
+Draksa: Ohh, I know! A
+${\color{darkorange}\textsf{Jaguaaa}\color{red}\textsf{-worrior}}$🐅:D :D :D ???
+
+...
 
 Draksa: `'Kaaa-'kaa`, you better tell me this now! :P
 
+---
+
 #### My mom tells me I am a `good boy`
 
-#### But internally I know, that I am a "jaguaaa-wowwiof and a catboy" :D
+#### But internally I know, that I am a "a wi-fi wifoo woo-foo catboy in training to become the fifth hok...-jaguaaa-wowwiof" :D
 
 Draksa: `Kaaaa`, I feel I can trust you now... <code>comrade</code>... So...
 
