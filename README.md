@@ -81,13 +81,27 @@
 
 ---
 
+~~[print] Core:~~
+
+\[wavy\] `My` <sub>solarite</sub> `Core values` <sup>of `\[T]/ 🌞`</sup> :
+
+- `empathy 🤝💞` - keep NPCs alive :D, cos it's more fun :D
+- `curiosity 🐈` - study speechSynthesis api from Browser Gods 🧙‍♂️
+- `playfulness 💜:D` - semantic vandalism :D
+
 Genres:
 
-- `semantic vandalism` - playful kind :D
-- `aggressive minimalism` - codeChuck 💻🪓
-- `chaotic good` - math😇.sin😈'ing :D
-- `curiosity` - study speechSynthesis api from Browser Gods 🧙‍♂️
-- `empathy` - keep NPCs alive :D, cos its more fun :D
+- aggressive minimalism - codeChuck 💻🪓
+- chaotic good - math😇.sin😈'ing :D but🍑 notice the order :D
+  - First you do a good thing 😇, like doing your mathematics 👩‍🔬 and calcs 🧮.
+  - Then, you are allowed to be playful Miss-Chief :D
+  - We are extending `sin` from `Math`.
+  - `Math` is THE ROOT and good.
+  - `sin` is NOT the source :D It is just the most PHYSICALLY IMPORTANT part of it,
+    required for us to be who we ARE :D
+  - but🍑 `Math` is eternal, encoded into the rules of our SERVER.
+  - `sin` is temporary and fleeting :D but it's fun :D ~~~~~~~
+  - So you need to kinda... Balance :D Like a Scion of Balance :D 🏛🏛🏛🏛 `🏛` 🏛🏛🏛🏛
 
 ---
 
@@ -748,15 +762,15 @@ Hewooou! :3 I am онла-`Ain`!
 
 ## Why:
 
-[original, in print]:
+~~[original, in print]:~~
 
-If your `ReadAloud` doesn't work,
+~~If your `ReadAloud` doesn't work,~~
 
-and the world is in chaos and disarray...
+~~and the world is in chaos and disarray...~~
 
-Brother and sister will save the day!
+~~Brother and sister will save the day!~~
 
-YIN! YANG! YO!
+~~YIN! YANG! YO!~~
 
 ---
 
@@ -774,7 +788,7 @@ SteppeBrowser🌾🐎👦💻 and sister🌾🐎👧✨ will save the day!
 
 YIN🐇💖! YANG🐇💙! YO🐼⚪⚫!
 
-Інь, Ян `із старой шахти :D`, Йо! Інь, Ян, Йо! Інь, Ян, Йо! ІНЬ, ЯН, ЙО! ☯
+Інь, Ян `із старої шахти :D`, Йо! Інь, Ян, Йо! Інь, Ян, Йо! ІНЬ, ЯН, ЙО! ☯
 
 ouuh,... that is the wrong intro :D :D :D
 
@@ -823,7 +837,7 @@ _Hushed voice_: Heeey, psss, over here! ...
 
 <details>
 <summary>🧡 lvl: <code>surface water💧</code>
-Action: <code>(^⭐ܫ⭐^)</code> ~💦 Make waves! 🌊🌊🌊~ <sup>Greet a fellow DRA-GOONette! 😻🐉🐍</sup></summary>
+Action: <code>(^⭐ܫ⭐^)</code> ~💦 Make waves!👋 🌊🌊🌊~ <sup>Greet a fellow DRA-GOONette! 😻🐉🐍</sup></summary>
 
 ---
 
@@ -959,13 +973,13 @@ Draksa: `'Kaaa-'kaa`, you better tell me this now! :P
 
 #### My mom tells me I am a `good boy`
 
-#### But internally I know, that I am a "a wi-fi wifoo woo-foo catboy in training to become the fifth hok...-jaguaaa-wowwiof" :D
+#### But internally I know, that I am a "a wi-fi waifoo woo-foo catboy in training to become the fifth hok...-jaguaaa-wowwiof" :D
 
-Draksa: `Kaaaa`, I feel I can trust you now... <code>comrade</code>... So...
+Draksa: `Kaaaa`, somehow, I feel... I can trust you now... <code>comrade</code>... So...
 
 Me: Say it out loud already... I have things to do :)
 
-Draksa: Where are you so hurried, huh, Mr. Important? ... Jeeez. Can't a girl take her
+Draksa: Where are you so hurried, huh, Mr Important? ... Jeeez. Can't a girl take her
 sweet time, in order to get to know you better? Especially right before she weights such
 an important decisions!
 
@@ -1015,7 +1029,7 @@ pweeety pweeefe :3 `^•ܫ•^`
 <details>
 <summary>💖💖💖💖 lvl: <code>Deep waters 🌊</code>
 Action: <code>[Help]</code> her😺 to open <code>THE DOOR🚪</code>
-<sup classname="erior">like a chad gentleman 🎩💪</sup></summary>
+<sup>like a chad gentleman 🎩💪</sup></summary>
 
 ---
 
@@ -1127,13 +1141,13 @@ Action: <code>[Ignore]</code> Move along <sub>like a virgin_sub-scriber.</sub>
 
 ---
 
-And face retribution by banishment to a place, where there are no CATS! And no BASES ARE
-BELONG TO US. Also known as HEEEEEELLiiiilouiya! Heeelliilouuuuiyia! HELLiiilooouJAJA
-RADI-DA High-Way-To_HELLIIILooouuuuuuuuiiiiyyyiaaa!
+And face retribution by banishment to a place, where there are no CATS! Also known as
+HEEEEEELLiiiilouiya! Heeelliilouuuuiyia! HELLiiilooouJAJA RADI-DA
+High-Way-To_HELLIIILooouuuuuuuuiiiiyyyiaaa!
 
-<a href="about:blank" target="_blank" rel="noopener noreferrer">
-The mansion is not the place for a naughty hooman🦹‍♂️! Leave! <sub>while you STILL can, with your tail
-down, yak shakal🐩, AND BEFORE JA TOBI GORB NE Нам'яу-la :3 🐾</sub></a>
+<a href="https://example.net/" target="_blank" rel="noopener noreferrer nofollow">
+The mansion is not the place for a naughty hooman🦹‍♂️! Leave! <sub>while you still can, with your tail
+down, yak shakal🐩, and before ja tobi gorb ne нам'яу-la :3 🐾</sub></a>
 
 </details>
 
