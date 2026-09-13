@@ -1093,12 +1093,12 @@ As you go deeper into the study, you find a shelf dediCATed😺 to some unknown 
 
 ---
 
-#### Insectlogy
+#### Insectology
 
-- [Logic](study/insectlogy/logic.md)
-- [Insects collection 🐜](study/insectlogy/insects-collection.md)
-- [Handy magic mirror](study/insectlogy/handy-magic-mirror.md)
-- [Writer convenience](study/insectlogy/writer-convenience.md)
+- [Logic](study/insectology/logic.md)
+- [Insects collection 🐜](study/insectology/insects-collection.md)
+- [Handy magic mirror](study/insectology/handy-magic-mirror.md)
+- [Writer convenience](study/insectology/writer-convenience.md)
 
 ---
 
