@@ -21,6 +21,6 @@
        three characters followed by args”, not literal ...args. For example, abcargs
        becomes restArgs. [regexp.ts (line 22)]
 
-6. [ ] The pitch slider’s visual value can disagree with application state. The signal
+6. [x] The pitch slider’s visual value can disagree with application state. The signal
        starts at 1.15, but the range input has no value or defaultValue. The browser can
        initially render the thumb at a different position. [Pitch.tsx (line 29)]

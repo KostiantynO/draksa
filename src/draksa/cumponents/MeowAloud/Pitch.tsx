@@ -33,6 +33,7 @@ export const Pitch = () => {
         min={1}
         max={1.2}
         step={0.01}
+        defaultValue={bast.mood.pitch.peek()}
         onChange={kindlyAskHerToSpeakWithThatPitch}
       />
       {bast.mood.pitch}
