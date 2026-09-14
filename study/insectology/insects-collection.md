@@ -9,7 +9,7 @@
        correctly unsubscribed on line 39, but line 40 creates a new subscription and
        discards its cleanup function. [useThroat.ts (line 37)]
 
-3. [ ] Ripple timers are never added to the cleanup set. The cleanup code looks
+3. [x] Ripple timers are never added to the cleanup set. The cleanup code looks
        responsible, but timeOuts.current.add(timeoutId) is missing. Unmounting therefore
        does not cancel active timers. [useRipples.ts (line 29)]
 

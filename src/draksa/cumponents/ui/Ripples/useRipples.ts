@@ -33,6 +33,7 @@ export const useRipples = () => {
 
       setRipples(p => p.filter(r => r.id !== id));
     }, RIPPLE_DURATION_MS);
+    timeOuts.current.add(timeoutId);
   };
 
   useEffect(() => {
