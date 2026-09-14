@@ -20,7 +20,7 @@ export const globalMagic = /!\s*/g;
  * single ! only when it's logical not (approximate), we skip it when followed by = or letter immediately after (heuristic)
  * Don't ask what that is :D Cause IDK :D */
 export const operators =
-  /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|>|<|\|\||&&|...args|!(?!=|\w)/g;
+  /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|>|<|\|\||&&|\.\.\.args|!(?!=|\w)/g;
 
 export const nekomancy =
   /(:3|83|;3|>:3|\^\^|\^_\^|\^\+_\+\^|uwu|UwU|owo|OwO|ᓚᘏᗢ|ლ\^•ᴥ•\^ლ|ฅ\^•ﻌ•\^ฅ|\^•ﻌ•\^|•ﻌ•|\^•w•\^|m\^•w•\^m|ฅ|\^|•|ﻌ)/g;

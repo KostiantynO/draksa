@@ -17,7 +17,7 @@
        remains pastingAfterButtonClick. If “meow on type” is disabled, the early return
        also skips stopButtonPasting(). [pasteButtonClick.ts (line 7)]
 
-5. [ ] The code pronunciation regex is incorrect. ...args is unescaped, so it means “any
+5. [x] The code pronunciation regex is incorrect. ...args is unescaped, so it means “any
        three characters followed by args”, not literal ...args. For example, abcargs
        becomes restArgs. [regexp.ts (line 22)]
 
