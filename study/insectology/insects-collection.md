@@ -13,7 +13,7 @@
        responsible, but timeOuts.current.add(timeoutId) is missing. Unmounting therefore
        does not cancel active timers. [useRipples.ts (line 29)]
 
-4. [ ] Clipboard paste can permanently lock itself. If clipboard access rejects, the state
+4. [x] Clipboard paste can permanently lock itself. If clipboard access rejects, the state
        remains pastingAfterButtonClick. If “meow on type” is disabled, the early return
        also skips stopButtonPasting(). [pasteButtonClick.ts (line 7)]
 

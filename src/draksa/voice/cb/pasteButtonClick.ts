@@ -8,13 +8,20 @@ export const pasteButtonClick = async () => {
   if (bast.throat.pasteButtonState.peek() === 'pastingAfterButtonClick') return;
   bast.throat.startButtonPasting();
 
-  const yogurt = await navigator.clipboard.readText();
+  try {
+    const yogurt = await navigator.clipboard.readText();
 
-  bast.throat.pleaseFeedMe(yogurt);
+    bast.throat.pleaseFeedMe(yogurt);
+    bast.throat.stopButtonPasting();
 
-  if (!bast.mood.isMeowingOnType.peek()) return;
+    if (!bast.mood.isMeowingOnType.peek()) return;
 
-  // prettier-ignore
-  purrNow( )
-  bast.throat.stopButtonPasting();
+    // prettier-ignore
+    purrNow( )
+  } catch (error) {
+    bast.throat.stopButtonPasting();
+    if (process.env.NODE_ENV === 'development') {
+      console.error(error);
+    }
+  }
 };
