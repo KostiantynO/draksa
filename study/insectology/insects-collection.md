@@ -5,7 +5,7 @@
        Changing the setting only changes the displayed signal; it does not recreate or
        reconfigure the debouncer. [openWideAndPuuurrr.ts and BounceOption.tsx]
 
-2. [ ] useThroat leaks a useless subscription during cleanup. The real subscription is
+2. [x] useThroat leaks a useless subscription during cleanup. The real subscription is
        correctly unsubscribed on line 39, but line 40 creates a new subscription and
        discards its cleanup function. [useThroat.ts (line 37)]
 
