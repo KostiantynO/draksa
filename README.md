@@ -758,6 +758,14 @@ Hewooou! :3 I am онла-`Ain`!
 
 ![Draksa family portrait](.github/assets/draksa.webp)
 
+Just me:
+
+https://github.com/user-attachments/assets/96745b5d-cf8f-4407-b7c2-71bb7d0c9335
+
+Old vid of me visiting my shut-in friend :D
+
+https://github.com/user-attachments/assets/86a18037-ca6a-4d89-8c53-9234c001e39f
+
 ## Where: `In` steppe-`browser`🌾🐎💻 tab, offline after page load.
 
 ## Why:
@@ -1107,6 +1115,10 @@ As you go deeper into the study, you find a shelf dediCATed😺 to some unknown 
 ---
 
 #### [What I learned from this project](study/what-i-learned.md)
+
+---
+
+#### [magica-style](study/magica-style.md)
 
 </details>
 
