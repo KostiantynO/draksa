@@ -133,6 +133,9 @@ Magi-Кастілья 🧙‍♀️✨🏰
 |                                                 |                                                           | Me: Is it procrastination?                                                                                                        |
 |                                                 |                                                           | Me: Maybe I need to focus on writing code more, than .md files :)                                                                 |
 |                                                 |                                                           | Me: Time to do smth else. Well, it's night time, I am exhausted. Better to sleep.                                                 |
+|                                                 |                                                           | After some sleep: 🌃🛌💤😴🕑💪 :D                                                                                                 |
+|                                                 |                                                           | Me: Well, it is good to have some `pet`, even if she is a project :D                                                              |
+|                                                 |                                                           | Draksa: Who do you call a project, huh?                                                                                           |
 
 ## I like:
 
