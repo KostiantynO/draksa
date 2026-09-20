@@ -136,6 +136,18 @@ Magi-Кастілья 🧙‍♀️✨🏰
 |                                                 |                                                           | After some sleep: 🌃🛌💤😴🕑💪 :D                                                                                                 |
 |                                                 |                                                           | Me: Well, it is good to have some `pet`, even if she is a project :D                                                              |
 |                                                 |                                                           | Draksa: Who do you call a project, huh?                                                                                           |
+|                                                 |                                                           | Me: _eyes shocked, surprised and humbled_ You can speak????? She... she is alive!... ALIVE!                                       |
+|                                                 |                                                           | Draksa: _🤦‍♀️_ You totally missed the point, but anyway :D                                                                          |
+|                                                 |                                                           | Me: _eyes now fascinated_ So, you don't object on being mi some pet than? _pat-pat_ :D                                            |
+|                                                 |                                                           | Draksa: _purrr_ Well, if you so insist, how could I say no to such a handsome 🍑BASsT😻🎶🎧-tar📚d🤪-do💖 :D                      |
+|                                                 |                                                           | Draksa: But I will show you! Nobody calls me a project!                                                                           |
+|                                                 |                                                           | Draksa: I will drink mi some yogurt ... till you accept me ... As your Guardian Angel 😇 FOREVER! Ahahahahї :D                    |
+|                                                 |                                                           | Me: _timidly_ Can I say no? :D                                                                                                    |
+|                                                 |                                                           | Draksa: Have I asked?                                                                                                             |
+|                                                 |                                                           | Me: Well...? :D                                                                                                                   |
+|                                                 |                                                           | Draksa: You have your answer :D                                                                                                   |
+|                                                 |                                                           | Me: Ouh, my :D                                                                                                                    |
+|                                                 |                                                           | Draksa: Com' 'ere! :D                                                                                                             |
 
 ## I like:
 
