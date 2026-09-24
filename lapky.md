@@ -1,4 +1,4 @@
-// lapky.md
+<!-- lapky.md -->
 
 <!-- Не залишати слідів! 🐾 -->
 
@@ -26,5 +26,6 @@ pnpm create @eslint/config@latest
 # better to use next.js eslint flat config, than to init it yourself
 
 ea @preact/signals-react
+ea -D tsx
 
 ```
