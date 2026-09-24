@@ -1,3 +1,5 @@
+<!-- study\insectology\logic.md -->
+
 # Logic:
 
 - [ ] `!` - reads wrongly as `not`. Perform exclamation `!` detection only for code like
@@ -19,8 +21,19 @@
 - [ ] do not announce the beginning and end of the 'quote' blocks, like catGPT's `TTS`
       does.
 - [ ] read `right pointing arrow →` as `is`
+- [ ] read `down pointing arrow  ↓` as something shorter, like `down` or `then`, or let it
+      be empty string `''`.
 
 - Do not read aloud markdown escape chars:
   - [ ] back quote `` ` ``
   - [ ] asterisk `*`
   - [ ] underscore `_`
+  - [ ] dash `-`
+  - [ ] dot dot dot `...`
+  - [ ] hash `#`
+  - [ ] hash hash `##`
+  - [ ] hash hash hash `###`
+
+- [ ] after click on pause button, Draksa stops meowing. Then I write smth into input.
+      Pause button should become 'play button', not stay frozen forever in 'continue'
+      mode. Because I overwritten the old text already with my slight edits.

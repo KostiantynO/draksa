@@ -1110,7 +1110,7 @@ As you go deeper into the study, you find a shelf dediCATed😺 to some unknown 
 
 ---
 
-#### [ToDOoshechki👧🌸](study/todo.md)
+#### ~~[print] ToDOoshechki👧🌸~~ [[wavy] 😻Draksiny hotelki :D](study/todo.md)
 
 ---
 
