@@ -17,8 +17,16 @@ export const magic = /[([,=;?:]\s*$/;
 export const globalMagic = /!\s*/g;
 
 /**
- * single ! only when it's logical not (approximate), we skip it when followed by = or letter immediately after (heuristic)
- * Don't ask what that is :D Cause IDK :D */
+ * single ! only when it's logical not (approximate),
+ *
+ * // why it is approximate and not EXACT??? This is CODE!
+ * // Not divination on tea leaves.
+ *
+ * we skip it when followed by = or letter immediately after (heuristic)
+ * Don't ask what that is :D Cause IDK :D
+ *
+ * // Then FIND OUT!
+ * */
 export const operators =
   /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|>|<|\|\||&&|\.\.\.args|!(?!=|\w)/g;
 

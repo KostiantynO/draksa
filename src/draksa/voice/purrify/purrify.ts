@@ -9,7 +9,7 @@ const opts = {
   oneBy_OneBy_OneBite_OneByte: true,
   whitespace: true,
   catMagic: true,
-  codeHeuristic: true,
+  codeHeuristic: false,
 };
 
 export const purrify = (catting: string): string => {
