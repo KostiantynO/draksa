@@ -1,4 +1,4 @@
-# ~~[print] TODO~~ [wavy]😻Drak~sin😈~y ho.t🔥elki🌲 ≽^•⩊•^≼
+# ~~[print] TODO~~ [wavy]😻Drak\~sin😈\~y ho.t🔥elki🌲 ≽^•⩊•^≼
 
 ~~[print] Motivation: My dear dev😇, please do all my todos :D Make my UI appear in the
 DOM with love and React⚛ (u know the drill :D) Because deep reconciliation prevents

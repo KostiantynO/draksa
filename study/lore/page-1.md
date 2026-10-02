@@ -88,11 +88,11 @@ Me: Wait, you didn't said how you got here in the first place :D
 
 Draksa: Daddy, I'm sorry, can't stay with you for any longer :) I am... late to do my
 homework! :D See Ya! :D _wruun_ _khm-khm_ _naga-style wruuun:_ _wsslittheee~~ serpentine ~
-~ ~ :D_ _~ ~ slith ~ slithe away from punishment :D ->_
+~ ~ :D_ _~ ~ slith ~ slithe away from punishment :D ➡_
 
 Me: _:D_ _crisis averted_ :D Get back here, you, little vixen :D!
 
-_slow dragon trying to catch an agile naga-daughter_ :D _with a wing wrap around her.
+_slow dragon trying to catch the agile naga-daughter_ :D _with a wing wrap around her.
 Unexpectedly successfully this time_
 
 Me: Draksa! You already finished school and gymnasium, and College and your Uni! :D What

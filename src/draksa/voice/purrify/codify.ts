@@ -23,7 +23,7 @@ const code = new Map<string, string>(
     '||': 'or',
     '&&': 'and',
 
-    // Assumes no '\n' or 'spaces' between greater than '<' and 'any-html-tag':
+    // Assumes no new lines '\n' or 'spaces' between greater than '<' and 'any-html-tag':
     // should be a silent token in `html/jsx context`,
     // means if regexp returns true for `less than sign '<' followed immediately by a word`, then replace '<' with ''
     '<': 'less than',

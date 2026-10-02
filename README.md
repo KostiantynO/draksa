@@ -853,7 +853,7 @@ She: _whispers_ Come closer :)
 
 She: Hi! :D I am Draksa 😸
 
-Draksa: How may I call you, my dear traveler? :D
+Draksa: How may I call you, my dear traveller? :D
 
 ### Me: I am ...
 
@@ -920,7 +920,9 @@ Draksa: Where is FUN in THAT? :D
 
 Me: Take it or leave it, babe. I cannot promise things I am not aware of.
 
-Draksa: Mhhhggg _in visible pain of telling the truth_ NO! :P ahahahahah :D
+Draksa: Mhhhggg _squirming and restless when she needs to say the truth_
+
+Draksa: NO! :P ahahahahah :D
 
 Draksa: _whispering, but with very determined face_ PROMISE ME FIRST, THAT YOU WILL NOT
 TELL A SOUL!
@@ -1024,13 +1026,18 @@ Me: Why?
 
 Draksa: A girl needs an invitation :Þ
 
-Me: 🤦‍♂️🧠🤯🤪
+Me: Just an invitation? :)
 
-Draksa: `Sho-ka`! What? :D
+Draksa: Yeeeess :)
 
-Me: Nothing :]
+Me: khmmm... 🧐 a little suspicious :D
 
-Draksa: Could you please help me to open it up,..... pleeeese, ... f'єrrr mi? :D
+Draksa: `Sho-ka 😵`! What? You don't believe me? :D
+
+Me: I do! :]
+
+Draksa: Then... could you please help me to open it up?..... Pleeeese :), ... f'єrrr mi?
+:D
 
 pweeety pweeefe :3 `^•ܫ•^`
 
