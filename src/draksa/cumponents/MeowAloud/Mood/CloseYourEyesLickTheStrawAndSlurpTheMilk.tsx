@@ -9,8 +9,8 @@ export const CloseYourEyesLickTheStrawAndSlurpTheMilk = ({
   playful: ReactNode;
 }) => {
   return (
-    <div className="relative container mx-auto flex max-w-3xl gap-2 rounded-2xl p-2">
-      <div className="grid gap-4">
+    <div className="relative container mx-auto flex max-w-3xl justify-center gap-2 rounded-2xl p-2">
+      <div className="grid grid-cols-2 gap-4">
         {hungry}
         {playful}
       </div>
