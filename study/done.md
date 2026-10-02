@@ -1,8 +1,12 @@
+## UI (easy)
+
+- [x] Make `Play/FeedHer` buttons UI smaller.
+- [x] remove network trip for `Geist`.
+
 #### Normal
 
 - [x] add more sound names for components. More logical. `Mood` is not in `Lips`. `Mood`
       is `Emotions`.
-- [ ] Make `Play/FeedHer` buttons UI smaller, absolute positioned.
 - [x] Hide mood under Mood button.
 - [x] add Ripple Button
 - [x] add paste button (from clipboard)

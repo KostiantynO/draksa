@@ -16,9 +16,6 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 
 ## UI (easy)
 
-- [x] Make `Play/FeedHer` buttons UI smaller.
-- [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :)
-
 ## UI (hard)
 
 - [ ] show which line she is currently reading. (highlight the currently-reading line). Or
