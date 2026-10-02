@@ -16,7 +16,7 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 
 ## UI (easy)
 
-- [ ] Make `Play/FeedHer` buttons UI smaller, absolute positioned.
+- [x] Make `Play/FeedHer` buttons UI smaller.
 - [ ] remove network trip for `Geist`. Replace it with a local catgirl-smth-named font :)
 
 ## UI (hard)
