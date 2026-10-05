@@ -37,7 +37,7 @@ export const useThroat = () => {
     };
 
     return cleanup;
-  }, []);
+  }, [throatRef]);
 
   return { sheMeows, throatRef };
 };

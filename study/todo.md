@@ -80,6 +80,28 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 - [ ] bug - fix lint warning
       [`⚠ The Next.js plugin was not detected in your ESLint configuration.`](https://nextjs.org/docs/app/api-reference/config/eslint#migrating-existing-config)
 
+## PERF (easy)
+
+- [ ] use `FOR` component from `preact` to render `lists` of `languages` and
+      `debounce delay`.
+
+- [ ] Use signals `Model` as a replacement for a God object. To me it is the same thing,
+      don't know if it will improve any perf.
+- [ ] Use `computed` to buffer updates -> react diff only if `computed` value changes. But
+      for react
+      [computed](https://github.com/preactjs/signals/blob/main/packages/core/README.md#computedfn)
+
+## PERF (normal)
+
+- [ ] Check compatibility, if all my packages will play nice if I upgrade to
+      [Next.js v16](https://nextjs.org/blog/next-16) specifically SWC and react-compiler.
+- [ ] `add Next.js 16 + SWC`/rust
+- [ ] Read and check if turbopack is working with SWC in dev, or is it separate thing?
+- [ ] Check why next.js v16 recommends the `babel plugin` for `react compiler`.
+- [ ] Try to add `SWC plugin` for `react compiler` `instead` of `babel` one and see if it
+      works, because build time is annoyingly long with babel in dev (on cold start
+      sometimes it is ~5,~10,~20s). After that ~1.5s and below, usually below 0.2s
+
 ## PERF (hard)
 
 - [ ] Measure how long it takes for the algorithm to split a small, medium and big text,
