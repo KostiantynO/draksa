@@ -13,19 +13,19 @@
     "lint": "eslint .",
     "test": "tsx src/draksa/voice/purrify/not.test.whatsoever.ts"
   },
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@12.9.1",
   "engines": {
     "node": "v24.13.0"
   },
   "dependencies": {
     "@preact/signals-react": "^3.8.0",
-    "next": "15.3.8",
+    "next": "~15.5.27",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
-    "@next/eslint-plugin-next": "^16.1.6",
+    "@next/eslint-plugin-next": "^16.3.8",
     "@tailwindcss/postcss": "^4",
     "@types/eslint": "^9.6.1",
     "@types/node": "^20",
@@ -35,7 +35,6 @@
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.6",
     "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prefer-arrow-functions": "^3.4.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",

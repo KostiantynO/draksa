@@ -28,4 +28,15 @@ pnpm create @eslint/config@latest
 ea @preact/signals-react
 ea -D tsx
 
+npm update -g pnpm
+
+node -v
+npm -v
+pnpm -v
+where.exe pnpm
+pnpm store path
+pnpm store status
+
+e audit -i
+
 ```

@@ -1,0 +1,1 @@
+- [ ] How does that direct-signal-to-DOM subscription actually work?

@@ -9,8 +9,6 @@ import nextConfig from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
 
 // butPlugIns
-// import butPluginNext from '@next/eslint-plugin-next';
-// import butPlugInImport from 'eslint-plugin-import';
 import butPlugInHooks from 'eslint-plugin-react-hooks';
 
 // @ts-expect-error Lib does not export types
