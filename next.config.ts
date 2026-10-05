@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
 
   experimental: {
     reactCompiler: { compilationMode: 'infer' },
+    // swcPlugins: [['@preact-signals/safe-react/swc', { mode: 'auto' }]],
   },
 
   compiler: {
