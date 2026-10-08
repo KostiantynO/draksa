@@ -44,7 +44,7 @@ const withTheirMeaning = (raw: string): string =>
         ? (overLOADedSymbolsMoaning.get(raw) ?? '')
         : raw;
 
-const jsNot = /!(?:[a-zA-Z]+)/g;
+const jsNot = /!(?=[a-zA-Z]+)/g;
 
 export const codify = (rawCode: string): string =>
   rawCode.replace(jsOperators, withTheirMeaning).replace(jsNot, 'not ');
