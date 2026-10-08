@@ -7,6 +7,8 @@
 // Things we usually NEVER want to speak aloud
 // ────────────────────────────────────────────────
 const silentTokens = [
+  '{',
+  '}',
   '}',
   '})',
   '});',
