@@ -16,6 +16,11 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 
 ## UI (easy)
 
+- [ ] Create 5 UI checkboxes to toggle internal parsing options:
+  - [ ] silence
+  - [ ] codify
+  - [ ] purrify
+
 ## UI (hard)
 
 - [ ] show which line she is currently reading. (highlight the currently-reading line). Or

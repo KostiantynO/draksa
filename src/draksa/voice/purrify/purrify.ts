@@ -6,18 +6,25 @@ import { smartCodify } from '@/draksa/voice/purrify/codeHeuristic';
 import { wipeFace } from '@/draksa/voice/purrify/wipeFace';
 
 const opts = {
-  oneBy_OneBy_OneBite_OneByte: true,
-  whitespace: true,
-  catMagic: true,
-  codeHeuristic: false,
+  oneBy_OneBy_OneBite_OneByte: false,
+  humanize: true,
+  whitespace: false,
+  catMagic: false,
+  codeHeuristic: true,
 };
+
+const hollow = /\}\)|\);/g;
+const withHumanity = '';
+
+const removeAnnoyance = (zerglingOn_Char_acter: string): string =>
+  zerglingOn_Char_acter.replace(hollow, withHumanity);
 
 export const purrify = (catting: string): string => {
   let raw = catting;
-  // 1. Remove silent tokens
   if (opts.oneBy_OneBy_OneBite_OneByte) raw = yourSilenceIsMyFavoriteSaaaaauuund(raw);
-  if (opts.catMagic) raw = purrifier(raw); // 2. Cat faces → cute descriptions
-  if (opts.whitespace) raw = wipeFace(raw); // 3. Collapse excessive whitespace (optional)
-  if (opts.codeHeuristic) raw = smartCodify(raw); // 4. Speak arrows functions correctly and smartly
+  if (opts.humanize) raw = removeAnnoyance(raw);
+  if (opts.catMagic) raw = purrifier(raw);
+  if (opts.whitespace) raw = wipeFace(raw);
+  if (opts.codeHeuristic) raw = smartCodify(raw);
   return raw;
 };
