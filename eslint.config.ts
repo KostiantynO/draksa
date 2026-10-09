@@ -11,7 +11,6 @@ import nextTs from 'eslint-config-next/typescript';
 // butPlugIns
 import butPlugInHooks from 'eslint-plugin-react-hooks';
 
-// @ts-expect-error Lib does not export types
 import preferArrowFunctions from 'eslint-plugin-prefer-arrow-functions';
 
 const eslintConfig = defineConfig([

@@ -39,4 +39,20 @@ pnpm store status
 
 e audit -i
 
+ea next@latest react@latest react-dom@latest
+ea -D @types/react@latest @types/react-dom@latest
+pnpm dlx @next/codemod@canary upgrade latest
+rm -rf .next
+e i
+en
+ea -D babel-plugin-react-compiler@latest
+
+pnpm dev --internal-trace
+
+# unusable. Idea is good. Execution and insights lack any humanity. :D
+pnpm next internal trace .next-profiles/trace-turbopack.bin
+
+pnpm dlx @next/codemod@canary next-lint-to-eslint-cli .
+ea -D @types/node@latest
+
 ```
