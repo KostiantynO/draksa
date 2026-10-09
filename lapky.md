@@ -53,5 +53,6 @@ pnpm dev --internal-trace
 pnpm next internal trace .next-profiles/trace-turbopack.bin
 
 pnpm dlx @next/codemod@canary next-lint-to-eslint-cli .
+ea -D @types/node@latest
 
 ```
