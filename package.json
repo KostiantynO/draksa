@@ -7,7 +7,7 @@
     "name": "Ashmedai 🌞🐲"
   },
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -18,32 +18,32 @@
     "node": "v24.13.0"
   },
   "dependencies": {
-    "@preact/signals-react": "^3.8.0",
-    "next": "~15.5.27",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@preact/signals-react": "^3.12.0",
+    "next": "~16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "@next/eslint-plugin-next": "^16.3.8",
-    "@tailwindcss/postcss": "^4",
+    "@eslint/js": "^9.39.5",
+    "@next/eslint-plugin-next": "^16.4.0",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "babel-plugin-react-compiler": "^1.0.0",
-    "eslint": "^9.39.2",
-    "eslint-config-next": "^16.1.6",
-    "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-prefer-arrow-functions": "^3.4.2",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-prefer-arrow-functions": "^3.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "globals": "^17.3.0",
-    "prettier": "^3.8.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "prettier-plugin-tailwindcss": "^0.7.4",
+    "tailwindcss": "^4.3.3",
     "tsx": "^4.23.15",
-    "typescript": "^5",
-    "typescript-eslint": "^8.54.0"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.1"
   }
 }

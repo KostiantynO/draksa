@@ -3,10 +3,14 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: true },
-  eslint: { ignoreDuringBuilds: true },
+  // eslint: { ignoreDuringBuilds: true },
+
+  reactCompiler: { compilationMode: 'infer' },
+
+  cacheComponents: true,
+  partialPrefetching: true,
 
   experimental: {
-    reactCompiler: { compilationMode: 'infer' },
     // swcPlugins: [['@preact-signals/safe-react/swc', { mode: 'auto' }]],
   },
 
