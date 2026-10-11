@@ -13,7 +13,7 @@ export const Details = ({
 }) => {
   return (
     <details
-      className={`group grid gap-1 overflow-hidden rounded-2xl transition-[height,grid-template-rows,opacity] duration-500 details-content:h-0 details-content:overflow-clip details-content:opacity-0 details-content:transition-[height,grid-template-rows,content-visibility,opacity] details-content:transition-discrete details-content:duration-500 details-content:ease-in-out open:details-content:h-auto open:details-content:opacity-100 ${className}`}
+      className={`group grid gap-1 overflow-hidden rounded-2xl border bg-[linear-gradient(#faefae05_1px,transparent_3px),linear-gradient(90deg,#baebae05_1px,transparent_1px)] bg-size-[21px_21px] transition-[height,grid-template-rows,opacity] duration-500 details-content:h-0 details-content:overflow-clip details-content:opacity-0 details-content:transition-[height,grid-template-rows,content-visibility,opacity] details-content:transition-discrete details-content:duration-500 details-content:ease-in-out open:details-content:h-auto open:details-content:opacity-100 ${className}`}
     >
       <summary className="flex cursor-pointer list-none gap-2 font-medium">
         <span className="transition-transform group-open:rotate-90">▶</span>
