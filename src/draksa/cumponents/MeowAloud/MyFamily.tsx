@@ -11,6 +11,7 @@ export const MyFamily = () => {
       title="Ashmedai, Draksa, and Heloїse"
       sizes="(max-width: 1920px) 100vw, 1920px"
       fill
+      loading="lazy"
       decoding="async"
       placeholder="blur"
       unoptimized

@@ -10,7 +10,7 @@ export const Throat = () => {
     <textarea
       name="polyGlotka"
       ref={throatRef}
-      className="container mx-auto flex h-57 w-full max-w-3xl gap-2 rounded-2xl border border-pink-600/30 bg-black/35 p-3 text-base"
+      className="container mx-auto flex h-57 w-full max-w-3xl rounded-2xl border bg-[linear-gradient(#faefae05_1px,transparent_3px),linear-gradient(90deg,#baebae05_1px,transparent_1px)] bg-size-[21px_21px] p-3 text-base"
       placeholder="Please feed me..."
       onChange={sheMeows}
     />

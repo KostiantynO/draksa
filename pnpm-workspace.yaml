@@ -17,3 +17,10 @@ overrides:
   picomatch@<2.3.2: ^2.3.2
   picomatch@>=4.0.0 <4.0.4: ^4.0.4
   postcss@<=8.5.22: ^8.5.23
+
+# These plugin releases run successfully with ESLint 10, but their published
+# peer ranges still stop at ESLint 9. Keep this scoped to the affected plugins.
+peerDependencyRules:
+  allowedVersions:
+    'eslint-plugin-jsx-a11y@6>eslint': ^10.0.0
+    'eslint-plugin-react@7>eslint': ^10.0.0

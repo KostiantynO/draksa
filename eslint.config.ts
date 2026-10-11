@@ -1,6 +1,8 @@
 // eslint.config.ts
 
 import js from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+import { importX } from 'eslint-plugin-import-x';
 import { defineConfig, globalIgnores } from 'eslint/config';
 import ts from 'typescript-eslint';
 
@@ -30,12 +32,20 @@ const eslintConfig = defineConfig([
     files: ['src/**/*.{ts,tsx}'],
 
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         typescript: {}, // SEVERITY: 7/10 Removes squiggly lines under imports in <Draksa />, for absolute imports
       },
+
+      // don't know if that is needed
+      // 'import-x/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+      // 'import-x/parsers': {
+      //   '@typescript-eslint/parser': ['.ts', '.tsx'],
+      // },
     },
 
     plugins: {
+      '@stylistic': stylistic,
+      'import-x': importX,
       'prefer-arrow-functions': preferArrowFunctions,
     },
 
@@ -48,6 +58,8 @@ const eslintConfig = defineConfig([
     },
 
     rules: {
+      '@typescript-eslint/no-redeclare': ['error', { ignoreDeclarationMerge: false }],
+
       '@typescript-eslint/consistent-type-assertions': [
         'error',
         { assertionStyle: 'never' },
@@ -61,7 +73,7 @@ const eslintConfig = defineConfig([
       ],
 
       // personal
-      'linebreak-style': ['error', 'unix'],
+      '@stylistic/linebreak-style': ['error', 'unix'],
       'prefer-arrow-callback': ['error', { allowUnboundThis: false }],
       'func-style': 'error',
 
@@ -103,15 +115,15 @@ const eslintConfig = defineConfig([
       //   },
       // },
 
-      'import/no-default-export': 'error',
-      'import/no-unresolved': 'error',
-      'import/newline-after-import': 'error',
+      'import-x/no-default-export': 'error',
+      'import-x/no-unresolved': 'error',
+      'import-x/newline-after-import': 'error',
 
       // this is *magic*
-      'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+      'import-x/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
       // ahhh, bliss :D
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           'newlines-between': 'always',
@@ -152,7 +164,7 @@ const eslintConfig = defineConfig([
   // ignore next.js 'app router' page default export
   {
     files: ['src/**/{page,layout,not-found,error}.tsx'],
-    rules: { 'import/no-default-export': 'off' },
+    rules: { 'import-x/no-default-export': 'off' },
   },
 
   // SEVERITY: 10/10 - disable linting for the config file itself

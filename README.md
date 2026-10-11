@@ -818,28 +818,40 @@ _Hushed voice_: Heeey, psss, over here! ...
 
 ---
 
-4.7 feet-tall naga-girl 😸🐉🐍 waves to you 👋🙋‍♀️ with her eyes closed
-![slow blink](.github/assets/blink.gif)
+4.7 feet-tall naga-girl 😸🐉🐍 OwOaves to you 👋🙋‍♀️ with her eyes closed in a sloo-w- blink
+<img src="./.github/assets/blink.gif" align="center" alt="slow blink" width="121" />
 
 `≽^-ܫ-^≼`
 
 ---
 
-`^>ܫ<^ ฅ `
+`^-ܫ-^ ฅ `
 
-`^>ܫ<^  ฅ`
+`^-ܫ-^  ฅ`
 
-`^>ܫ<^ ฅ `
+`^•ܫ•^ ฅ `
 
-`^>ܫ<^ฅ  `
+`^⋆ܫ⋆^ฅ  `
 
-`^>ܫ<^ ฅ `
+`^+ܫ+^ ฅ `
 
-`^>ܫ<^  ฅ`
+`^*ܫ*^  ฅ`
 
-`^>ܫ<^ ฅ `
+`^oܫo^ ฅ :D` Cheshire 💜 - as alOwOys :3 - having a blast in her meOwOn OwOrld :D
 
-`^>ܫ<^ฅ  `
+`^*ܫ*^ฅ  `
+
+`^+ܫ+^ ฅ `
+
+`^⋆ܫ⋆^  ฅ`
+
+`^•ܫ•^ ฅ `
+
+`^-ܫ-^ฅ  `
+
+`^-ܫ-^ ฅ `
+
+`^>ܫ<^  ฅ`
 
 ---
 
@@ -849,7 +861,7 @@ Action: <code>(^⭐ܫ⭐^)</code> ~💦 Make waves!👋 🌊🌊🌊~ <sup>Greet
 
 ---
 
-She: _whispers_ Come closer :)
+She 😻🐉🐍: _whispers_ Come closer :)
 
 She: Hi! :D I am Draksa 😸
 
@@ -956,10 +968,10 @@ are a boy, right? :D
 
 ...
 
-Draksa: ...Catboy😼:) ?
+Draksa: ... $\color{#afc}{\text{Cat}}\color{#dad}{\text{boy}}$😼:) ?
 
-Draksa: ...\.\. $\color{#bae}{\textsf{Cheshire}}$
-$\color{magenta}{\textsf{cat}}\color{violet}{\textsf{bae}}$😻💜:D ?
+Draksa: ...\.\. $\color{#fae}{\textsf{Cheshire}}$
+$\color{#fac}{\textsf{cat}}\color{#bae}{\textsf{bae}}$😻💜:D ?
 
 ..\.\.\.\.\.
 
@@ -973,7 +985,8 @@ Draksa: ...No way, a ${\color{orange}\textsf{Lion}}$🦁:) ?
 ..\.\.\.\.\.
 
 Draksa: Ohh, I know! A
-${\color{darkorange}\textsf{Jaguaaa}\color{red}\textsf{-worrior}}$🐅:D :D :D ???
+${\color{darkorange}\textsf{Jaguaaa}\color{#dad}\textsf{-OwO}\color{red}\textsf{rrior}}$🐅:D
+:D :D ???
 
 ...
 
