@@ -1,6 +1,16 @@
 // src\draksa\cumponents\MeowAloud\Face.tsx
-import type { ReactNode } from 'react';
+import slowBlink from '@/draksa/art/blink.gif';
+import Image from 'next/image';
 
-export const Face = ({ children }: { children: ReactNode }) => {
-  return <div className="flex-col gap-4 bg-red-500 px-1 pt-4 pb-21">{children}</div>;
+export const Face = () => {
+  return (
+    <Image
+      src={slowBlink}
+      alt="slow blink"
+      title="Draksa"
+      decoding="async"
+      unoptimized
+      className="inline w-30.25"
+    />
+  );
 };
