@@ -819,7 +819,7 @@ _Hushed voice_: Heeey, psss, over here! ...
 ---
 
 4.7 feet-tall naga-girl 😸🐉🐍 OwOaves to you 👋🙋‍♀️ with her eyes closed in a sloo-w- blink
-<img src="./src/draksa/art/blink.gif" align="center" alt="slow blink" width="121" />
+<img src="./.github/assets/blink.gif" align="center" alt="slow blink" width="121" />
 
 `≽^-ܫ-^≼`
 
