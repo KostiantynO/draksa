@@ -22,6 +22,5 @@ overrides:
 # peer ranges still stop at ESLint 9. Keep this scoped to the affected plugins.
 peerDependencyRules:
   allowedVersions:
-    'eslint-plugin-import@2>eslint': ^10.0.0
     'eslint-plugin-jsx-a11y@6>eslint': ^10.0.0
     'eslint-plugin-react@7>eslint': ^10.0.0
