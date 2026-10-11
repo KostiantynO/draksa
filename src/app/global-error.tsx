@@ -1,5 +1,27 @@
+// src\app\global-error.tsx
 'use client';
 
-export const GlobalError = () => {
-  return <div>Error in app</div>;
+interface ErrorDigest extends Error {
+  digest?: string;
+}
+
+const GlobalError = ({
+  // error,
+  reset,
+}: {
+  error: ErrorDigest;
+  reset: () => void;
+}) => {
+  return (
+    <html>
+      <body>
+        <div>
+          <h2>Something went wrong</h2>
+          <button onClick={() => reset()}>Try again</button>
+        </div>
+      </body>
+    </html>
+  );
 };
+
+export default GlobalError;
