@@ -8,6 +8,7 @@ export const Face = () => {
       src={slowBlink}
       alt="slow blink"
       title="Draksa"
+      loading="lazy"
       decoding="async"
       unoptimized
       className="inline w-30.25"

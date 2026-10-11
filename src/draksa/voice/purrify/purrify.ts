@@ -3,6 +3,7 @@
 import { yourSilenceIsMyFavoriteSaaaaauuund } from '@/draksa/voice/purrify/bellie';
 import { purrifier } from '@/draksa/voice/purrify/ca';
 import { smartCodify } from '@/draksa/voice/purrify/codeHeuristic';
+import { removeAnnoyance } from '@/draksa/voice/purrify/silence';
 import { wipeFace } from '@/draksa/voice/purrify/wipeFace';
 
 const opts = {
@@ -12,12 +13,6 @@ const opts = {
   catMagic: false,
   codeHeuristic: true,
 };
-
-const hollow = /\}\)|\);/g;
-const withHumanity = '';
-
-const removeAnnoyance = (zerglingOn_Char_acter: string): string =>
-  zerglingOn_Char_acter.replace(hollow, withHumanity);
 
 export const purrify = (catting: string): string => {
   let raw = catting;
