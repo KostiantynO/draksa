@@ -1,25 +1,18 @@
 // src\draksa\voice\purrify\purrify.ts
 
+import { bast } from '@/draksa/heaven';
 import { yourSilenceIsMyFavoriteSaaaaauuund } from '@/draksa/voice/purrify/bellie';
 import { purrifier } from '@/draksa/voice/purrify/ca';
 import { smartCodify } from '@/draksa/voice/purrify/codeHeuristic';
 import { removeAnnoyance } from '@/draksa/voice/purrify/silence';
 import { wipeFace } from '@/draksa/voice/purrify/wipeFace';
 
-const opts = {
-  oneBy_OneBy_OneBite_OneByte: false,
-  humanize: true,
-  whitespace: false,
-  catMagic: false,
-  codeHeuristic: true,
-};
-
 export const purrify = (catting: string): string => {
   let raw = catting;
-  if (opts.oneBy_OneBy_OneBite_OneByte) raw = yourSilenceIsMyFavoriteSaaaaauuund(raw);
-  if (opts.humanize) raw = removeAnnoyance(raw);
-  if (opts.catMagic) raw = purrifier(raw);
-  if (opts.whitespace) raw = wipeFace(raw);
-  if (opts.codeHeuristic) raw = smartCodify(raw);
+  if (bast.parsing.silence.peek()) raw = yourSilenceIsMyFavoriteSaaaaauuund(raw);
+  if (bast.parsing.humanize.peek()) raw = removeAnnoyance(raw);
+  if (bast.parsing.purrify.peek()) raw = purrifier(raw);
+  if (bast.parsing.whitespace.peek()) raw = wipeFace(raw);
+  if (bast.parsing.codify.peek()) raw = smartCodify(raw);
   return raw;
 };

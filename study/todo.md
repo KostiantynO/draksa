@@ -16,10 +16,7 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 
 ## UI (easy)
 
-- [ ] Create 5 UI checkboxes to toggle internal parsing options:
-  - [ ] silence
-  - [ ] codify
-  - [ ] purrify
+- [x] whitespace - combined humanize and whitespace with silence later.
 
 ## UI (hard)
 

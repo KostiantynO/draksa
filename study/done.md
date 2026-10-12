@@ -2,6 +2,12 @@
 
 - [x] Make `Play/FeedHer` buttons UI smaller.
 - [x] remove network trip for `Geist`.
+- [x] Create 5 UI checkboxes to toggle internal parsing options:
+  - [x] silence
+  - [x] codify
+  - [x] purrify
+  - [x] humanize
+  - [x] whitespace
 
 #### Normal
 

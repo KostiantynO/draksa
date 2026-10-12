@@ -6,6 +6,7 @@ import { MilkAndHoney } from '@/draksa/cumponents/MeowAloud/Mood/MilkAndHoney';
 import { MyFamily } from '@/draksa/cumponents/MeowAloud/MyFamily';
 import { MyStory } from '@/draksa/cumponents/MeowAloud/MyStory/MyStory';
 import { Name } from '@/draksa/cumponents/MeowAloud/Name';
+import { ParsingOptions } from '@/draksa/cumponents/MeowAloud/ParsingOptions';
 import { Voice } from '@/draksa/cumponents/MeowAloud/Voice/Voice';
 
 export const Draksa = () => {
@@ -16,6 +17,7 @@ export const Draksa = () => {
       <Lips />
       <MilkAndHoney />
       <Emotions />
+      <ParsingOptions />
       <Voice />
       <MyStory />
     </main>

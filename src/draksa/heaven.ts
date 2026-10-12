@@ -48,6 +48,23 @@ export const bast = {
     setHowLongSheWaitsBeforeSpeaking: (ms:number) => { bast.mood.howLongSheWaitsBeforeSpeakingMs.value = ms },
   },
 
+  parsing: {
+    silence: signal(false),
+    toggleSilence: () => { bast.parsing.silence.value = !bast.parsing.silence.peek(); },
+
+    humanize: signal(true),
+    toggleHumanize: () => { bast.parsing.humanize.value = !bast.parsing.humanize.peek(); },
+
+    purrify: signal(true),
+    togglePurrify: () => { bast.parsing.purrify.value = !bast.parsing.purrify.peek(); },
+
+    whitespace: signal(false),
+    toggleWhitespace: () => { bast.parsing.whitespace.value = !bast.parsing.whitespace.peek(); },
+
+    codify: signal(true),
+    toggleCodify: () => { bast.parsing.codify.value = !bast.parsing.codify.peek(); },
+  },
+
   voices: {
     voice: signal<string>('Google US English'),
     setVoice: (newVoice: string) => { bast.voices.voice.value = newVoice; },

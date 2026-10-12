@@ -1,7 +1,4 @@
 // src\draksa\voice\purrify\ca.ts
-import { nekomancy } from '@/draksa/magic/regexp';
-
-// src\draksa\voice\purrify\ca.ts
 const cats = new Map<string, string>(
   Object.entries({
     ':3': 'happy cat',
@@ -37,6 +34,9 @@ const withMeows = (meowbeCat: string): string => {
   const cat = cats.get(meowbeCat);
   return cat ? ` ${cat} ` : '';
 };
+
+const nekomancy =
+  /(:3|83|;3|>:3|\^\^|\^_\^|\^\+_\+\^|uwu|UwU|owo|OwO|ᓚᘏᗢ|ლ\^•ᴥ•\^ლ|ฅ\^•ﻌ•\^ฅ|\^•ﻌ•\^|•ﻌ•|\^•w•\^|m\^•w•\^m|ฅ|\^|•|ﻌ)/g;
 
 export const purrifier = (raaawr: string): string => raaawr.replace(nekomancy, withMeows);
 

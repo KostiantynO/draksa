@@ -1,7 +1,5 @@
 // src\draksa\voice\purrify\codify.ts
 
-import { curlyBraces, jsOperators } from '@/draksa/magic/regexp';
-
 const jsOperator = new Map<string, string>(
   Object.entries({
     '(() => ': 'arrow function callback',
@@ -35,6 +33,8 @@ const overLOADedSymbolsMoaning = new Map<string, string>(
   })
 );
 
+export const curlyBraces = /[{}]/g;
+
 const withTheirMeaning = (raw: string): string =>
   curlyBraces.test(raw)
     ? ''
@@ -43,6 +43,9 @@ const withTheirMeaning = (raw: string): string =>
       : overLOADedSymbolsMoaning.has(raw)
         ? (overLOADedSymbolsMoaning.get(raw) ?? '')
         : raw;
+
+export const jsOperators =
+  /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|\|\||&&|\.\.\.args|''|""|(?<!`)``(?!`)|\?\?|>|<|'!'|"!"|`!`|\/g/g;
 
 const jsNot = /!(?=[a-zA-Z]+)/g;
 
