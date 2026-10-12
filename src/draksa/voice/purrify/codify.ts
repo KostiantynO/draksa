@@ -33,7 +33,7 @@ const overLOADedSymbolsMoaning = new Map<string, string>(
   })
 );
 
-export const curlyBraces = /[{}]/g;
+const curlyBraces = /[{}]/g;
 
 const withTheirMeaning = (raw: string): string =>
   curlyBraces.test(raw)
@@ -44,7 +44,7 @@ const withTheirMeaning = (raw: string): string =>
         ? (overLOADedSymbolsMoaning.get(raw) ?? '')
         : raw;
 
-export const jsOperators =
+const jsOperators =
   /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|\|\||&&|\.\.\.args|''|""|(?<!`)``(?!`)|\?\?|>|<|'!'|"!"|`!`|\/g/g;
 
 const jsNot = /!(?=[a-zA-Z]+)/g;

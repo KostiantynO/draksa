@@ -11,8 +11,6 @@ export const MyFamily = () => {
       title="Ashmedai, Draksa, and Heloїse"
       sizes="(max-width: 1920px) 100vw, 1920px"
       fill
-      loading="lazy"
-      decoding="async"
       placeholder="blur"
       unoptimized
       className="absolute -z-10 h-auto min-h-dvh w-full bg-linear-0 from-indigo-700 via-purple-300 to-pink-600 object-cover object-[50%_21%]"
