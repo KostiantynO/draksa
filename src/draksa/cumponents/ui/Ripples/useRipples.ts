@@ -14,6 +14,11 @@ export const useRipples = () => {
   const willUnmount = useRef<boolean>(false);
   const timeOuts = useRef(new Set<ReturnType<typeof setTimeout>>());
 
+  const timeOutCleanup = () => {
+    timeOuts.current.forEach(clearTimeout);
+    timeOuts.current.clear();
+  };
+
   const makeWaves = ({
     clientX,
     clientY,
@@ -24,26 +29,30 @@ export const useRipples = () => {
     const y = clientY - top;
 
     const id = nextId.current++;
+
+    if (id > 1000) {
+      timeOutCleanup();
+      nextId.current = 0;
+      setRipples([]);
+      return;
+    }
+
     setRipples(prev => [...prev, { id, x, y }]);
 
     const timeoutId = setTimeout(() => {
       timeOuts.current.delete(timeoutId);
 
-      if (willUnmount.current) return;
-
       setRipples(p => p.filter(r => r.id !== id));
     }, RIPPLE_DURATION_MS);
+
     timeOuts.current.add(timeoutId);
   };
 
   useEffect(() => {
-    const cleanup = () => {
+    return () => {
       willUnmount.current = true;
-      timeOuts.current.forEach(clearTimeout);
-      timeOuts.current.clear();
+      timeOutCleanup();
     };
-
-    return cleanup;
   }, []);
 
   return { ripples, makeWaves };

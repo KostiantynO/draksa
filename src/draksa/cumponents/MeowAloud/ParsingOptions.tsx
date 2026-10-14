@@ -26,36 +26,34 @@ const ParsingOption = ({ checked, label, toggle }: ParsingOptionProps) => {
 
 export const ParsingOptions = () => {
   return (
-    <fieldset className="container mx-auto max-w-3xl rounded-2xl bg-neutral-900/35 p-2">
+    <fieldset>
       <Details
-        className="grid gap-2"
-        summary={
-          <legend className="inline-flex px-2 text-lg font-bold">Text normalize:</legend>
-        }
+        className="container mx-auto max-w-3xl rounded-2xl bg-neutral-900/35 p-2"
+        summary={<legend>Text normalize</legend>}
       >
         <ParsingOption
           checked={bast.parsing.silence.peek()}
-          label="Silence"
+          label="Silence - remove json symbols"
           toggle={bast.parsing.toggleSilence}
         />
         <ParsingOption
           checked={bast.parsing.humanize.peek()}
-          label="Humanize"
+          label="Humanize - remove annoying symbols, like < > in markup"
           toggle={bast.parsing.toggleHumanize}
         />
         <ParsingOption
           checked={bast.parsing.purrify.peek()}
-          label="Purrify"
+          label="Purrify - recognize :3 as `happy cat` :D"
           toggle={bast.parsing.togglePurrify}
         />
         <ParsingOption
           checked={bast.parsing.whitespace.peek()}
-          label="Whitespace"
+          label="Whitespace - remove spaces"
           toggle={bast.parsing.toggleWhitespace}
         />
         <ParsingOption
           checked={bast.parsing.codify.peek()}
-          label="Codify"
+          label="Codify - speak `=>` as arrow function"
           toggle={bast.parsing.toggleCodify}
         />
       </Details>

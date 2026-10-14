@@ -2,8 +2,10 @@
 
 const jsOperator = new Map<string, string>(
   Object.entries({
-    '(() => ': 'arrow function callback',
+    '(() =>': 'arrow function callback',
     '=>': 'arrow function',
+    '() => {}': 'empty arrow',
+    '{}': 'object',
     '= /': 'equals regular expression',
     '!==': 'strictly not equals',
     '!=': 'loosely not equals',
@@ -25,8 +27,10 @@ const jsOperator = new Map<string, string>(
 const overLOADedSymbolsMoaning = new Map<string, string>(
   Object.entries({
     '??': 'nullish coalescing',
-    '<': 'less than',
-    '>': 'greater than',
+    '!!': 'double NOT',
+
+    // '<': 'less than',
+    // '>': 'greater than',
     '"!"': 'exclamation mark',
     "'!'": 'exclamation mark',
     '`!`': 'exclamation mark',
@@ -39,15 +43,15 @@ const withTheirMeaning = (raw: string): string =>
   curlyBraces.test(raw)
     ? ''
     : jsOperator.has(raw)
-      ? (jsOperator.get(raw) ?? '')
+      ? ` ${jsOperator.get(raw) ?? ''} `
       : overLOADedSymbolsMoaning.has(raw)
-        ? (overLOADedSymbolsMoaning.get(raw) ?? '')
+        ? ` ${overLOADedSymbolsMoaning.get(raw) ?? ''} `
         : raw;
 
 const jsOperators =
-  /\(\(\) => |, \[\]\);|= \/|!==|!=|===|==|=>|>=|<=|\|\||&&|\.\.\.args|''|""|(?<!`)``(?!`)|\?\?|>|<|'!'|"!"|`!`|\/g/g;
+  /\(\(\) =>|=>|\(\s*\)\s*=>\s*\{\s*\}|\{\}|, \[\]\);|= \/|!==|!=|===|==|>=|<=|\|\||&&|\.\.\.args|''|""|(?<!`)``(?!`)|(?<= )\?\?|!!|>|<|'!'|"!"|`!`|\/g/g;
 
-const jsNot = /!(?=[a-zA-Z]+)/g;
+const jsNot = /!(?=[\w|"'])/g;
 
 export const codify = (rawCode: string): string =>
   rawCode.replace(jsOperators, withTheirMeaning).replace(jsNot, 'not ');

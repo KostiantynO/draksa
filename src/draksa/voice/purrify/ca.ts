@@ -38,7 +38,7 @@ const withMeows = (meowbeCat: string): string => {
 const nekomancy =
   /(:3|83|;3|>:3|\^\^|\^_\^|\^\+_\+\^|uwu|UwU|owo|OwO|ᓚᘏᗢ|ლ\^•ᴥ•\^ლ|ฅ\^•ﻌ•\^ฅ|\^•ﻌ•\^|•ﻌ•|\^•w•\^|m\^•w•\^m|ฅ|\^|•|ﻌ)/g;
 
-export const purrifier = (raaawr: string): string => raaawr.replace(nekomancy, withMeows);
+export const purrifae = (raaawr: string): string => raaawr.replace(nekomancy, withMeows);
 
 // const kitties = [
 //   '𑄝',

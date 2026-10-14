@@ -1,5 +1,5 @@
-// src\draksa\voice\purrify\silence.ts
-const hollow = /\}\)|\);|\};|\}|(?<=\b)<(?={)|(?<=})>|<(?=\/?\b)|(?<=\b"?)>/g;
+// src\draksa\voice\purrify\humanize.ts
+const hollow = /\}\)|\);|\};|(?<=\b)<(?={)|(?<=})>|<\/?(?=\b)|(?<=\b"?)>/g;
 
 const withHumanity = '';
 

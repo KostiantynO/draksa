@@ -1,7 +1,10 @@
 // src\draksa\voice\youAreNotPrepared.ts
 import { bast } from '@/draksa/heaven';
-import { legs } from '@/draksa/magic/regexp';
 import { purrify } from '@/draksa/voice/purrify/purrify';
+
+export const unwrapLongLine = /(?<=[\n;.!?])\s+/g;
+
+export const legs = /\n/g;
 
 export const youAreNotPrepared = () => {
   const polyGlotka = bast.throat.polyGlotka.peek();
@@ -11,6 +14,10 @@ export const youAreNotPrepared = () => {
   }
 
   const draksa = purrify(polyGlotka);
+
+  if (!legs.test(polyGlotka) && polyGlotka.length > 100) {
+    return draksa.split(unwrapLongLine);
+  }
 
   const catPoseYoga = draksa.split(legs);
 

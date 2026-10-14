@@ -8,7 +8,7 @@ import type { ComponentProps } from 'react';
 
 interface RipplesProps extends ComponentProps<'div'> {}
 
-export const Ripples = ({ className = '', children, ...props }: RipplesProps) => {
+export const Ripples = ({ className = '', children }: RipplesProps) => {
   const { ripples, makeWaves } = useRipples();
 
   const ripplesArray = ripples.map(({ id, x, y }) => <RippleSpan key={id} x={x} y={y} />);
@@ -17,7 +17,6 @@ export const Ripples = ({ className = '', children, ...props }: RipplesProps) =>
     <div
       className={`relative grid h-full w-full px-4 py-2 ${className}`}
       onPointerDown={makeWaves}
-      {...props}
     >
       {children}
       <div className="pointer-events-none absolute">{ripplesArray}</div>

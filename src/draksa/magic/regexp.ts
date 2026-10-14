@@ -1,5 +1,4 @@
 // src\draksa\magic\regexp.ts
-export const legs = /(?<=[\n;.!?])\s+/g;
 
 export const max2Newlines = /\n{3,}/g;
 export const collapseHorizontalWhitespace = /[ \t]+/g;

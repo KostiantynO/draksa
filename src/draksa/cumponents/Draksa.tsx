@@ -1,6 +1,7 @@
 // src\draksa\cumponents\Draksa.tsx
 
 import { Emotions } from '@/draksa/cumponents/MeowAloud/Emotions';
+import { HerMind } from '@/draksa/cumponents/MeowAloud/HerMind';
 import { Lips } from '@/draksa/cumponents/MeowAloud/Lips';
 import { MilkAndHoney } from '@/draksa/cumponents/MeowAloud/Mood/MilkAndHoney';
 import { MyFamily } from '@/draksa/cumponents/MeowAloud/MyFamily';
@@ -16,6 +17,7 @@ export const Draksa = () => {
       <Name />
       <Lips />
       <MilkAndHoney />
+      <HerMind />
       <Emotions />
       <ParsingOptions />
       <Voice />
