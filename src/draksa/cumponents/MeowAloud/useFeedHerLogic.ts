@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
 export const useFeedHerLogic = () => {
-  const sllluuuuuuuurp_8p_8P_8o_8O_8 = () => {
+  const sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8 = () => {
     // prettier-ignore
     openWideAndPuuurrr( );
   };
@@ -19,9 +19,10 @@ export const useFeedHerLogic = () => {
 
   return {
     /** itsSoMajesticThatJavaScriptGirlAcceptsSuchFunnyFunctionNamesAsAWorkingReferences
+     *
      * Ahhh, javascript... perfectly balanced™ ⚖ 🎩🧐 :D
      */
-    sllluuuuuuuurp_8p_8P_8o_8O_8,
+    sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8,
     petHer,
   };
 };

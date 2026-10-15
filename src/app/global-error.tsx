@@ -17,7 +17,7 @@ const GlobalError = ({
       <body>
         <div>
           <h2>Something went wrong</h2>
-          <button onClick={() => reset()}>Try again</button>
+          <button onClick={reset}>Slurp again :3</button>
         </div>
       </body>
     </html>

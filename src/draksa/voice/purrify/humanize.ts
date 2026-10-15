@@ -1,5 +1,19 @@
 // src\draksa\voice\purrify\humanize.ts
-const hollow = /\}\)|\);|\};|(?<=\b)<(?={)|(?<=})>|<\/?(?=\b)|(?<=\b"?)>/g;
+
+/**
+
+Remove JS brackets that Draksa speaks:
+\}\)|\);|\};
+
+Remove HTML angle brackets:
+(?<=\b)<(?={)|(?<=})>|<\/?(?=\b)|(?<=\b"?)>
+
+Remove markdown characters:
+```|`|\*|_|---|\.\.\.|#
+
+*/
+const hollow =
+  /\}\)|\);|\};|(?<=\b)<(?={)|(?<=})>|<\/?(?=\b)|(?<=\b"?)>|```|`|\*|_|---|\.\.\.|#/g;
 
 const withHumanity = '';
 

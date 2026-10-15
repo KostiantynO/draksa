@@ -11,7 +11,7 @@ import { resumeMeowing } from '@/draksa/voice/resumeMeowing';
 
 export const Play = () => {
   useSignals();
-  const { sllluuuuuuuurp_8p_8P_8o_8O_8, petHer } = useFeedHerLogic();
+  const { sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8, petHer } = useFeedHerLogic();
 
   const state = bast.voices.state.value;
   const isIdle = state === 'idle';
@@ -20,7 +20,7 @@ export const Play = () => {
   const label = isIdle ? '▶' : isPaused ? '⏯' : '⏸';
 
   const oneButtOnToRuleThemAll = isIdle
-    ? sllluuuuuuuurp_8p_8P_8o_8O_8
+    ? sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8
     : isPaused
       ? resumeMeowing
       : pauseMeowing;
