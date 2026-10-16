@@ -7,10 +7,7 @@ import { Footer } from '@/draksa/cumponents/MeowAloud/Footer/Footer';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
-const siteUrl =
-  process.env.NODE_ENV === 'production'
-    ? (process.env.NEXT_PUBLIC_SITE_URL ?? '')
-    : 'http://localhost:3000/';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://draksa.vercel.app';
 
 const description = 'MeowAloud to read your text :D';
 
