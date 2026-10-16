@@ -1,0 +1,25 @@
+import type { MetadataRoute } from 'next';
+
+const manifest = (): MetadataRoute.Manifest => ({
+  name: 'Draksa',
+  short_name: 'Draksa',
+  description: 'Draksa’s home on the web.',
+  start_url: '/',
+  display: 'standalone',
+  background_color: '#20090b',
+  theme_color: '#20090b',
+  icons: [
+    {
+      src: '/icon-192.webp',
+      sizes: '192x192',
+      type: 'image/webp',
+    },
+    {
+      src: '/icon-512.webp',
+      sizes: '512x512',
+      type: 'image/webp',
+    },
+  ],
+});
+
+export default manifest;

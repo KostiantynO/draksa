@@ -3,7 +3,6 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   typescript: { ignoreBuildErrors: true },
-  // eslint: { ignoreDuringBuilds: true },
 
   reactCompiler: { compilationMode: 'infer' },
 
@@ -17,6 +16,21 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+
+  headers: async () => [
+    {
+      source: '/llms.md',
+      headers: [{ key: 'Cache-Control', value: 'public, max-age=604800' }],
+    },
+    {
+      source: '/llms.txt',
+      headers: [{ key: 'Cache-Control', value: 'public, max-age=604800' }],
+    },
+  ],
+
+  rewrites: async () => ({
+    beforeFiles: [{ source: '/llms.txt', destination: '/llms.md' }],
+  }),
 };
 
 export default nextConfig;

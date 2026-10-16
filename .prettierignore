@@ -1,0 +1,10 @@
+# Ignore built files and dependencies
+dist/
+build/
+node_modules/
+.next/
+.github/
+pub
+
+pnpm-lock.yaml
+**/*.svg

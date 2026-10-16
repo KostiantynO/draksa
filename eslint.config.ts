@@ -163,7 +163,10 @@ const eslintConfig = defineConfig([
 
   // ignore next.js 'app router' page default export
   {
-    files: ['src/**/{page,layout,not-found,error,global-error}.tsx'],
+    files: [
+      'src/**/{page,layout,not-found,error,global-error}.tsx',
+      'src/app/manifest.ts',
+    ],
     rules: { 'import-x/no-default-export': 'off' },
   },
 

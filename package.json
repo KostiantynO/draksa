@@ -10,8 +10,12 @@
     "dev": "next dev",
     "build": "NEXT_DISABLE_ESLINT=1 next build",
     "start": "next start",
-    "lint": "eslint . --cache --cache-strategy content --cache-location ./.next/cache/.eslintcache",
-    "test": "tsx src/draksa/voice/purrify/not.test.whatsoever.ts"
+    "lint-check": "eslint . --cache --cache-strategy content --cache-location ./.next/cache/.eslintcache",
+    "test": "tsx src/draksa/voice/purrify/not.test.whatsoever.ts && tsx src/agentic/contentNegotiation.test.ts",
+    "ts-check": "next typegen && tsc",
+    "format": "prettier --check .",
+    "format-fix": "prettier --write .",
+    "lint": "pnpm ts-check && pnpm lint-check && pnpm format"
   },
   "packageManager": "pnpm@12.9.1",
   "engines": {
