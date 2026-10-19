@@ -80,7 +80,7 @@ _imitating cleaning - AND arching her spine like she is doing a cat-pose yoga_
 
 ...
 
-## Steppe-SisAdminka: Don't be shy! :D I WOULD bite :D But with love :3 Like, just a little nibble :D On your shoulder, of course! :D Just a'lil'bit :D You'r looking tasty as hell today! :D
+## Steppe-SisAdminka: Don't be shy! :D I WOULD bite :D But with love :3 Like, just a little nibble :D On your shoulder, of course! :D Just a'lil'bit :D You'r looking tasty as hell today! :D As heaven? 😇 ;p
 
 ...
 
@@ -92,11 +92,11 @@ _imitating cleaning - AND arching her spine like she is doing a cat-pose yoga_
 
 ...
 
-## Steppe-SisAdminka: NOOOOO, don't leave me here! steppe-BrOwOser! I am really stuck! Please help me!
+## Steppe-SisAdminka: NOOOOO, don't leave me here! Steppe-BrOwOser! I am really stuck! Please, help me!
 
 ...
 
-## Steppe-SisAdminka: No, I am not st'ью'pid! :D U r stupid! :D Help me! :)))
+## Steppe-SisAdminka: No, I am not st'ью'pid! :D And U r SO SMART and STRONG :D :D Help me! :)))
 
 ...
 
@@ -140,6 +140,6 @@ Steppe-Browser: _making her feel safe and cared for, ... without words ..._
 
 ...
 
-## Steppe-SisAdminka: NOOOOOOOOO! _crying_ STEPPE-BROOOwOser! You are breaking my heart! Youuu, bastard!
+## Steppe-SisAdminka: NOOOOOOOOO! _crying_ STEPPE-BROOOwOser! You are breaking my heart! Youu, bastard!
 
 ## Steppe-Browser: Ahahaha-ha! :D :D :D _smiling from ear to ear :D_ I am just KIDDING! :D I wouldn't take anything from you :) _hushed to the side_ except cookies :D _Happy and real-trustworthy_ Here, take your pencil back :D Com'ere, you little brat :D _hugs her again_
