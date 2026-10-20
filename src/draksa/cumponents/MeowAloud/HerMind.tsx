@@ -18,7 +18,7 @@ export const HerMind = () => {
   return (
     <div className="relative container mx-auto max-w-3xl">
       <Details className="p-2" summary={<p>Her mind</p>}>
-        <div className="bg-black/50 p-3">{lines}</div>
+        <div className="rounded-2xl bg-black/35 p-3">{lines}</div>
       </Details>
     </div>
   );

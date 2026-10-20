@@ -28,7 +28,7 @@ export const ParsingOptions = () => {
   return (
     <fieldset>
       <Details
-        className="container mx-auto max-w-3xl rounded-2xl bg-neutral-900/35 p-2"
+        className="container mx-auto max-w-3xl p-2"
         summary={<legend>Text normalize</legend>}
       >
         <ParsingOption
