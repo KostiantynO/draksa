@@ -819,41 +819,82 @@ _Hushed voice_: Heeey, psss, over here! ...
 ---
 
 4.7 feet-tall naga-girl 😸🐉🐍 OwOaves to you 👋🙋‍♀️ with her eyes closed in a sloo-w- blink
-<img src="./.github/assets/blink.gif" align="center" alt="slow blink" width="121" />
+<img src="./.github/assets/blink.gif" align="center" alt="slow blink" width="210" />
 
-`≽^-ܫ-^≼`
-
+`≽^-ܫ-^≼` `ฅ`
 ---
 
-`^-ܫ-^ ฅ `
-
-`^-ܫ-^  ฅ`
-
-`^•ܫ•^ ฅ `
-
-`^⋆ܫ⋆^ฅ  `
-
-`^+ܫ+^ ฅ `
-
-`^*ܫ*^  ฅ`
-
-`^oܫo^ ฅ :D` Cheshire 💜 - as alOwOys :3 - having a blast in her meOwOn OwOrld :D
-
-`^*ܫ*^ฅ  `
-
-`^+ܫ+^ ฅ `
-
-`^⋆ܫ⋆^  ฅ`
-
-`^•ܫ•^ ฅ `
-
-`^-ܫ-^ฅ  `
-
-`^-ܫ-^ ฅ `
-
-`^>ܫ<^  ฅ`
-
+`≽^-ܫ-^≼`  `ฅ`
 ---
+
+`≽^-ܫ-^≼`   `ฅ`
+---
+
+`≽^-ܫ-^≼`    `ฅ`
+---
+
+`≽^-ܫ-^≼`   `ฅ`
+---
+
+`≽^-ܫ-^≼`  `ฅ`
+---
+
+`≽^-ܫ-^≼` `ฅ`
+---
+
+`≽^•ܫ•^≼`  `ฅ`
+---
+
+`≽^⋆ܫ⋆^≼`   `ฅ`
+---
+
+`≽^+ܫ+^≼`    `ฅ`
+---
+
+`≽^*ܫ*^≼`   `ฅ`
+---
+
+<br />
+
+`≽^oܫo^≼`  `ฅ` :D
+---
+
+<br />
+
+Me: Cheshire 💜, kitty, you are standing out of order :) Look, all other kitties are on
+the right :) Please, be near other kittens, so I can show how Draksa waves to her new
+friend :)
+
+Cheshire: Nope :3 I like it here :D It is THEM who are standing out of order :D
+
+<br />
+
+As alOwOys :3 She is having a blast in her meOwOn OwOrld :D
+
+<br />
+
+`≽^*ܫ*^≼` `ฅ`
+---
+
+`≽^+ܫ+^≼`  `ฅ`
+---
+
+`≽^⋆ܫ⋆^≼`   `ฅ`
+---
+
+`≽^•ܫ•^≼`    `ฅ`
+---
+
+`≽^-ܫ-^≼`   `ฅ`
+---
+
+`≽^-ܫ-^≼`  `ฅ`
+---
+
+`≽^>ܫ<^≼` `ฅ`
+---
+
+<br />
 
 <details>
 <summary>🧡 lvl: <code>surface water💧</code>
@@ -863,13 +904,15 @@ Action: <code>(^⭐ܫ⭐^)</code> ~💦 Make waves!👋 🌊🌊🌊~ <sup>Greet
 
 She 😻🐉🐍: _whispers_ Come closer :)
 
+...
+
 She: Hi! :D I am Draksa 😸
 
-Draksa: How may I call you, my dear traveller? :D
+Draksa: What is your name, my dear traveller? :D
 
 ### Me: I am ...
 
-Draksa: What are you doing here, <code>fellow</code><a><code>adventurer</code></a> ?
+Draksa: What are you doing here, <code>fellow</code><code>adventurer</code>?
 
 Draksa: Khmmm? :) In `MY` mansion? :D
 
@@ -884,8 +927,8 @@ parts... :D</sup>
 
 Me: AkSHuuualiiii. I'm just sluuurrrping through... `ᓚ₍ ^. .^₎`
 
-Draksa: You mean, you are just lurking through the missions, right :) ??? `ᓚᘏᗢ` I also
-like to make lurkers sometimes :)
+Draksa: You mean, you are just lurking through? Through the missions, right :) ??? `ᓚᘏᗢ` I
+also like to make lurkers sometimes :)
 
 Me: NO. I mean I like milk :3 🥛
 
