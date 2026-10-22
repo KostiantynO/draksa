@@ -59,14 +59,13 @@ const eslintConfig = defineConfig([
 
     rules: {
       '@typescript-eslint/no-redeclare': ['error', { ignoreDeclarationMerge: false }],
-
       '@typescript-eslint/consistent-type-assertions': [
         'error',
         { assertionStyle: 'never' },
       ],
 
       '@typescript-eslint/consistent-type-imports': 'warn',
-
+      '@typescript-eslint/no-non-null-assertion': 'error',
       '@typescript-eslint/no-empty-object-type': [
         'warn',
         { allowInterfaces: 'with-single-extends' },
