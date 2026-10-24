@@ -59,4 +59,6 @@ ea -D eslint@latest
 
 pnpm peers check
 
+ea next@latest react@latest react-dom@latest
+
 ```
