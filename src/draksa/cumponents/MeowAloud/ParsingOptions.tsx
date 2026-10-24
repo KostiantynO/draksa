@@ -38,23 +38,23 @@ export const ParsingOptions = () => {
         />
         <ParsingOption
           checked={bast.parsing.humanize.peek()}
-          label="Humanize - remove annoying symbols, like < > in markup"
+          label="Humanize - remove annoying symbols, like brackets < > in HTML"
           toggle={bast.parsing.toggleHumanize}
         />
         <ParsingOption
           checked={bast.parsing.purrify.peek()}
-          label="Purrify - recognize :3 as `happy cat` :D"
+          label="Purrify - say :3 as `happy cat` :D"
           toggle={bast.parsing.togglePurrify}
+        />
+        <ParsingOption
+          checked={bast.parsing.codify.peek()}
+          label="Codify - say `=>` as arrow function"
+          toggle={bast.parsing.toggleCodify}
         />
         <ParsingOption
           checked={bast.parsing.whitespace.peek()}
           label="Whitespace - remove spaces"
           toggle={bast.parsing.toggleWhitespace}
-        />
-        <ParsingOption
-          checked={bast.parsing.codify.peek()}
-          label="Codify - speak `=>` as arrow function"
-          toggle={bast.parsing.toggleCodify}
         />
       </Details>
     </fieldset>
