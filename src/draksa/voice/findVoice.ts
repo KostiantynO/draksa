@@ -3,7 +3,9 @@
 
 import { bast } from '@/draksa/heaven';
 
-const eng = 'Google US English';
+const pcEng = 'Google US English';
+
+const mobileEng = 'en_US';
 
 export const findVoice = () => {
   const moans = bast.voices.moans.peek();
@@ -15,6 +17,8 @@ export const findVoice = () => {
 
   if (voice) return voice;
 
-  const fallbackVoice = moans.find(({ name }) => name === eng) ?? moans[0];
+  const fallbackVoice =
+    moans.find(({ name }) => name === pcEng || name.includes(mobileEng)) ?? moans[0];
+
   return fallbackVoice;
 };

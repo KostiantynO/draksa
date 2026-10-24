@@ -5,8 +5,6 @@ import { bast } from '@/draksa/heaven';
 import { kisKisKis } from '@/draksa/voice/catCalling';
 import { findVoice } from '@/draksa/voice/findVoice';
 
-const fallbackLang = 'en-US';
-
 export const speakCurrentChunk = () => {
   const kitty = kisKisKis();
 
@@ -24,10 +22,8 @@ export const speakCurrentChunk = () => {
   const voice = findVoice();
 
   if (voice) meow.voice = voice;
-
   meow.rate = bast.mood.slurpRate.peek();
   meow.pitch = bast.mood.pitch.peek();
-  meow.lang = voice?.lang ?? fallbackLang;
 
   meow.onstart = () => {
     bast.voices.meow();
