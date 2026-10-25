@@ -1,13 +1,13 @@
 // src\draksa\cumponents\Draksa.tsx
 
 import { Emotions } from '@/draksa/cumponents/MeowAloud/Emotions';
-import { HerMind } from '@/draksa/cumponents/MeowAloud/HerMind';
+import { HerMind } from '@/draksa/cumponents/MeowAloud/HerMind/HerMind';
+import { Humanity } from '@/draksa/cumponents/MeowAloud/Humanity/Humanity';
 import { Lips } from '@/draksa/cumponents/MeowAloud/Lips';
 import { MilkAndHoney } from '@/draksa/cumponents/MeowAloud/Mood/MilkAndHoney';
 import { MyFamily } from '@/draksa/cumponents/MeowAloud/MyFamily';
 import { MyStory } from '@/draksa/cumponents/MeowAloud/MyStory/MyStory';
 import { Name } from '@/draksa/cumponents/MeowAloud/Name';
-import { ParsingOptions } from '@/draksa/cumponents/MeowAloud/ParsingOptions';
 import { Voice } from '@/draksa/cumponents/MeowAloud/Voice/Voice';
 
 export const Draksa = () => {
@@ -19,7 +19,7 @@ export const Draksa = () => {
       <MilkAndHoney />
       <HerMind />
       <Emotions />
-      <ParsingOptions />
+      <Humanity />
       <Voice />
       <MyStory />
     </main>
