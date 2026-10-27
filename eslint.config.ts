@@ -64,6 +64,15 @@ const eslintConfig = defineConfig([
         { assertionStyle: 'never' },
       ],
 
+      '@typescript-eslint/no-floating-promises': [
+        'error',
+        {
+          allowForKnownSafeCalls: [
+            { from: 'package', package: 'node:test', name: 'describe' },
+            { from: 'package', package: 'node:test', name: 'it' },
+          ],
+        },
+      ],
       '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-non-null-assertion': 'error',
       '@typescript-eslint/no-empty-object-type': [
