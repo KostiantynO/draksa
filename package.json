@@ -13,6 +13,7 @@
     "lint-check": "eslint . --cache --cache-strategy content --cache-location ./.next/cache/.eslintcache",
     "test": "node --import tsx --test src/draksa/voice/purrify/humanize.test.ts",
     "test2": "tsx src/draksa/voice/purrify/not.test.whatsoever.ts",
+    "buttons": "tsx src/draksa/voice/purrify/buttOns.ts",
     "ts-check": "next typegen && tsc",
     "format": "prettier --check .",
     "format-fix": "prettier --write .",
