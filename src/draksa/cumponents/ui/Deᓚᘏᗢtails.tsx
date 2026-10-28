@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 
-export const Details = ({
+export const Deᓚᘏᗢtails = ({
   summary,
   className = '',
   children,

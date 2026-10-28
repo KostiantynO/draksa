@@ -4,7 +4,7 @@
 import { useSignals } from '@preact/signals-react/runtime';
 
 import { useFeedHerLogic } from '@/draksa/cumponents/MeowAloud/useFeedHerLogic';
-import { Button } from '@/draksa/cumponents/ui/Button';
+import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { bast } from '@/draksa/heaven';
 import { pauseMeowing } from '@/draksa/voice/pauseMeowing';
 import { resumeMeowing } from '@/draksa/voice/resumeMeowing';
@@ -26,7 +26,7 @@ export const Play = () => {
       : pauseMeowing;
 
   return (
-    <Button
+    <ButtOn
       name="play"
       title="Play"
       className="grow rounded-full"
@@ -34,6 +34,6 @@ export const Play = () => {
       onClick={oneButtOnToRuleThemAll}
     >
       {label}
-    </Button>
+    </ButtOn>
   );
 };

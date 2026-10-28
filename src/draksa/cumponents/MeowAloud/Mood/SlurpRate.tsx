@@ -3,7 +3,7 @@
 
 import { useEffect, useState, useTransition } from 'react';
 
-import { Button } from '@/draksa/cumponents/ui/Button';
+import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
@@ -24,13 +24,13 @@ const SlurpRateButtons = ({ open }: { open: boolean }) => {
 
   const buttons = speeds.map(speed => (
     <li key={speed}>
-      <Button
+      <ButtOn
         name="slurpRateOption"
         className="px-3 text-sm"
         onClick={() => selectSpeed(speed)}
       >
         {speed}
-      </Button>
+      </ButtOn>
     </li>
   ));
 
@@ -54,14 +54,14 @@ export const SlurpRate = () => {
   return (
     <div className="relative">
       <SlurpRateButtons open={open} />
-      <Button
+      <ButtOn
         name="slurpRate"
         title="Slurp rate"
         className="min-w-21 text-xl"
         onClick={showSpeedButtons}
       >
         {bast.mood.slurpRate}
-      </Button>
+      </ButtOn>
     </div>
   );
 };

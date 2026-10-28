@@ -3,15 +3,15 @@
 
 import { useEffect } from 'react';
 
-import { Button } from '@/draksa/cumponents/ui/Button';
+import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { meowIt } from '@/draksa/perf/club/meowIt';
 
 export const MeowIt = () => {
   useEffect(() => meowIt.cancel, []);
 
   return (
-    <Button name="MeowIt" title="MeowItAloud" onClick={meowIt}>
-      Meow it :3
-    </Button>
+    <ButtOn name="MeowIt" title="MeowItAloud" onClick={meowIt}>
+      MeOwO it :3
+    </ButtOn>
   );
 };

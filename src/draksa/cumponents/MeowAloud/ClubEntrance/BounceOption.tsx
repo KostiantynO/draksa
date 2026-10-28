@@ -4,7 +4,7 @@
 import { useSignals } from '@preact/signals-react/runtime';
 import { useEffect } from 'react';
 
-import { OptionButton } from '@/draksa/cumponents/ui/OptionButton';
+import { OwOptionButton } from '@/draksa/cumponents/ui/OptionButton';
 import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
@@ -21,9 +21,9 @@ export const BounceOption = ({ label }: { label: number }) => {
 
   return (
     <li>
-      <OptionButton name="BounceOption" isActive={isActive} onClick={chooseBounce}>
+      <OwOptionButton name="BounceOption" isActive={isActive} onClick={chooseBounce}>
         {label}
-      </OptionButton>
+      </OwOptionButton>
     </li>
   );
 };

@@ -1,17 +1,17 @@
 // src\draksa\cumponents\MeowAloud\Humanity\Humanity.tsx
 
 import { SpeakLikeAHuman } from '@/draksa/cumponents/MeowAloud/Humanity/SpeakLikeAHuman';
-import { Details } from '@/draksa/cumponents/ui/Details';
+import { Deᓚᘏᗢtails } from '@/draksa/cumponents/ui/Deᓚᘏᗢtails';
 
 export const Humanity = () => {
   return (
     <fieldset>
-      <Details
+      <Deᓚᘏᗢtails
         className="container mx-auto max-w-3xl p-2"
-        summary={<legend>Humanity</legend>}
+        summary={<legend>HUwUmanity</legend>}
       >
         <SpeakLikeAHuman />
-      </Details>
+      </Deᓚᘏᗢtails>
     </fieldset>
   );
 };

@@ -2,19 +2,19 @@
 'use client';
 import { useState } from 'react';
 
-import { Button } from '@/draksa/cumponents/ui/Button';
+import { ButtOn } from '@/draksa/cumponents/ui/Button';
 
 import type { ReactNode } from 'react';
 
 const MoodButton = ({ toggleShowMood }: { toggleShowMood: () => void }) => {
   return (
-    <Button className="max-w-34" onClick={toggleShowMood}>
-      Mood
-    </Button>
+    <ButtOn className="max-w-34" onClick={toggleShowMood}>
+      MO𝝎Od
+    </ButtOn>
   );
 };
 
-export const Mood = ({
+export const MO𝝎Od = ({
   energetic,
   excited,
 

@@ -1,12 +1,12 @@
 // src\draksa\cumponents\MeowAloud\Throat\LipStick.tsx
 'use client';
 
-import { Button } from '@/draksa/cumponents/ui/Button';
+import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { lanDyshy } from '@/draksa/voice/lanDyshy';
 
 export const LipStick = () => {
   return (
-    <Button
+    <ButtOn
       name="lanDyshy"
       type="button"
       title="Clear"
@@ -14,6 +14,6 @@ export const LipStick = () => {
       onClick={lanDyshy}
     >
       💄
-    </Button>
+    </ButtOn>
   );
 };

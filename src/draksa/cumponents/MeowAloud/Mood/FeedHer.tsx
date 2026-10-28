@@ -3,15 +3,15 @@
 
 import { useEffect } from 'react';
 
-import { Button } from '@/draksa/cumponents/ui/Button';
+import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { afterPasteButtonClick } from '@/draksa/perf/club/afterPasteButtonClick';
 
 export const FeedHer = () => {
   useEffect(() => afterPasteButtonClick.cancel, []);
 
   return (
-    <Button name="feedHer" title="Paste" className="grow" onClick={afterPasteButtonClick}>
+    <ButtOn name="feedHer" title="Paste" className="grow" onClick={afterPasteButtonClick}>
       FeedHer 📝
-    </Button>
+    </ButtOn>
   );
 };

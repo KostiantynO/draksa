@@ -1,13 +1,10 @@
 // src\draksa\cumponents\ui\OptionButton.tsx
-// src\draksa\cumponents\ui\Button.tsx
-
 import type { ComponentProps } from 'react';
 
 interface OptionButtonProps extends ComponentProps<'button'> {
   isActive: boolean;
 }
-
-export const OptionButton = ({
+export const OwOptionButton = ({
   className = '',
   isActive,
   children,

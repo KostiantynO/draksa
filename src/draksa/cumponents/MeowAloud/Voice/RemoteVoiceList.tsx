@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 export const RemoteVoiceList = ({ children }: { children: ReactNode }) => (
   <div className="flex flex-col gap-2">
     <p className="sticky top-0 rounded-xl bg-neutral-950/90 px-2 py-1 font-bold">
-      Remote voices
+      RemO𝝎Ote voices
     </p>
     {children}
   </div>
