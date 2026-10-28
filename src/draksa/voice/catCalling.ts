@@ -1,8 +1,7 @@
 'use client';
 
-export const kisKisKis = () => {
-  const kitty = window.speechSynthesis;
-  if (kitty.speaking) kitty.cancel();
+import { peechSinTheSis } from '@/draksa/adapters/steppeBrOwOserPeech';
 
-  return kitty;
+export const kisKisKis = () => {
+  peechSinTheSis.stopMeowing();
 };

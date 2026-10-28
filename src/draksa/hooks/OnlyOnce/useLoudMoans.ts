@@ -3,6 +3,7 @@
 
 import { useEffect } from 'react';
 
+import { peechSinTheSis } from '@/draksa/adapters/steppeBrOwOserPeech';
 import { loadMoans } from '@/draksa/voice/loudMoans';
 import { pleaseMakeMyMouthBusy } from '@/draksa/voice/pleaseMakeMyMouthBusy';
 
@@ -12,10 +13,10 @@ export const useLoudMoans = () => {
   useEffect(() => {
     loadMoans();
 
-    window.speechSynthesis.onvoiceschanged ??= loadMoans;
+    peechSinTheSis.onMoansChange(loadMoans);
 
     return () => {
-      window.speechSynthesis.onvoiceschanged = null;
+      peechSinTheSis.onMoansChange(null);
     };
   }, []);
 };

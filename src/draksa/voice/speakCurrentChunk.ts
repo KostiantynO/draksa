@@ -1,12 +1,13 @@
 // src\draksa\voice\speakCurrentChunk.ts
 'use client';
 
+import { peechSinTheSis } from '@/draksa/adapters/steppeBrOwOserPeech';
 import { bast } from '@/draksa/heaven';
 import { kisKisKis } from '@/draksa/voice/catCalling';
 import { findVoice } from '@/draksa/voice/findVoice';
 
 export const speakCurrentChunk = () => {
-  const kitty = kisKisKis();
+  kisKisKis();
 
   const id = bast.chunks.activeChunkId.peek();
   const chunks = bast.chunks.chunks.peek();
@@ -49,5 +50,5 @@ export const speakCurrentChunk = () => {
   // play cat meow audio clip here
   // }
 
-  kitty.speak(meow);
+  peechSinTheSis.meOwO(meow);
 };
