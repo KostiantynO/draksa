@@ -1,21 +1,15 @@
 // src\draksa\cumponents\MeowAloud\Voice\VoiceList.tsx
 'use client';
 
-import { useSignals } from '@preact/signals-react/runtime';
+import { useComputed, useSignals } from '@preact/signals-react/runtime';
 
 import { LoadVoicesButton } from '@/draksa/cumponents/MeowAloud/Voice/LoadVoicesButton';
 import { VoiceOption } from '@/draksa/cumponents/MeowAloud/Voice/VoiceOption';
 import { bast } from '@/draksa/heaven';
 
-const makeOption = ({ name, lang, default: isDefaultVoice }: SpeechSynthesisVoice) => {
-  const label = `${name} (${lang}) ${isDefaultVoice ? ' — DEFAULT' : ''}`;
-
-  return (
-    <VoiceOption key={name} voiceName={name}>
-      {label}
-    </VoiceOption>
-  );
-};
+const makeOption = ({ name }: SpeechSynthesisVoice) => (
+  <VoiceOption key={name} voiceName={name} />
+);
 
 const Placeholder = () => (
   <div className="relative text-sm opacity-60">
@@ -27,14 +21,17 @@ const Placeholder = () => (
 export const VoiceList = ({ local }: { local: boolean }) => {
   useSignals();
 
-  const voices = bast.voices.moans.value;
+  const voices = useComputed(() => {
+    const ids = bast.voices.moansIds.value;
+    return ids.map(id => bast.voices.moans.value[id]).filter(Boolean);
+  });
 
-  if (!voices.length) return <Placeholder />;
+  if (!voices.value.length) return <Placeholder />;
 
-  // prettier-ignore
-  const arr = voices
+  const arr = voices.value
     .filter(({ localService }) => localService === local)
-    .map(makeOption);
+    .map(makeOption)
+    .filter(Boolean);
 
   return (
     <ul className="grid grid-cols-[repeat(auto-fit,minmax(305px,1fr))] gap-x-4 gap-y-1">

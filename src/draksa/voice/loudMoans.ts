@@ -1,40 +1,63 @@
 // src\draksa\voice\loudMoans.ts
 'use client';
 
+import { peechSinTheSis } from '@/draksa/adapters/steppeBrOwOserPeech';
 import { bast } from '@/draksa/heaven';
 
-interface BlockList extends Record<string, 'block' | 'allow'> {}
+interface BlockListItem {
+  gender: 'M' | 'F';
+  block: 0 | 1;
+}
+
+type BlockList = Record<string, BlockListItem>;
+
+// interface VoiceWithGender extends SpeechSynthesisVoice {
+//   gender: 'M' | 'F' | null;
+// }
 
 const blocklist: BlockList = {
-  'Microsoft Jakub - Czech (Czech Republic)': 'block',
-  'Microsoft David - English (United States)': 'block',
-  'Microsoft Mark - English (United States)': 'block',
-  //  'Microsoft Zira - English (United States)': 'allow',
-  'Microsoft Hemant - Hindi (India)': 'block',
-  'Microsoft Kalpana - Hindi (India)': 'allow',
-  'Google Deutsch': 'allow',
-  'Google US English': 'allow',
-  'Google UK English Female': 'allow',
-  'Google UK English Male': 'block',
-  'Google español': 'block',
-  'Google español de Estados Unidos': 'allow',
-  'Google français': 'allow',
-  'Google हिन्दी': 'allow',
-  'Google Bahasa Indonesia': 'allow',
-  'Google italiano': 'allow',
-  'Google 日本語': 'allow',
-  'Google 한국의': 'allow',
-  'Google Nederlands': 'allow',
-  'Google polski': 'allow',
-  'Google português do Brasil': 'allow',
-  'Google русский': 'allow',
-  'Google 普通话（中国大陆）': 'allow',
-  'Google 粤語（香港）': 'allow',
-  'Google 國語（臺灣）': 'allow',
+  // boys
+  'Microsoft Jakub - Czech (Czech Republic)': { gender: 'M', block: 1 },
+  'Microsoft David - English (United States)': { gender: 'M', block: 1 },
+  'Microsoft Mark - English (United States)': { gender: 'M', block: 1 },
+  'Microsoft Hemant - Hindi (India)': { gender: 'M', block: 1 },
+  'Google UK English Male': { gender: 'M', block: 1 },
+  'Google español': { gender: 'M', block: 1 },
+
+  // girls
+  'Google US English': { gender: 'F', block: 0 },
+  'Google Deutsch': { gender: 'F', block: 0 },
+  'Google UK English Female': { gender: 'F', block: 0 },
+  'Google español de Estados Unidos': { gender: 'F', block: 0 },
+  'Google français': { gender: 'F', block: 0 },
+  'Google हिन्दी': { gender: 'F', block: 0 },
+  'Google Bahasa Indonesia': { gender: 'F', block: 0 },
+  'Google italiano': { gender: 'F', block: 0 },
+  'Google 日本語': { gender: 'F', block: 0 },
+  'Google 한국의': { gender: 'F', block: 0 },
+  'Google Nederlands': { gender: 'F', block: 0 },
+  'Google polski': { gender: 'F', block: 0 },
+  'Google português do Brasil': { gender: 'F', block: 0 },
+  'Google русский': { gender: 'F', block: 0 },
+  'Google 普通话（中国大陆）': { gender: 'F', block: 0 },
+  'Google 粤語（香港）': { gender: 'F', block: 0 },
+  'Google 國語（臺灣）': { gender: 'F', block: 0 },
+  'Microsoft Kalpana - Hindi (India)': { gender: 'F', block: 0 },
+  'Microsoft Zira - English (United States)': { gender: 'F', block: 0 },
 };
 
 export const loadMoans = () => {
-  const voices = window.speechSynthesis.getVoices();
-  const onlyFunOnes = voices.filter(({ name }) => blocklist[name] !== 'block');
-  bast.voices.setMoans(onlyFunOnes);
+  const voices = peechSinTheSis.getMoans();
+
+  const onlyFunOnes = voices
+    .filter(({ name }) => blocklist[name].block === 0)
+    .map(mOܫOan =>
+      Object.defineProperty(mOܫOan, 'gender', {
+        configurable: true,
+        enumerable: true,
+        value: blocklist[mOܫOan.name]?.gender ?? null,
+      })
+    );
+
+  bast.voices.setMoansBeATCH(onlyFunOnes);
 };

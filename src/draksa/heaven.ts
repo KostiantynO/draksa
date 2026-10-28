@@ -12,6 +12,8 @@ type SpeechState = 'idle' | 'meowing' | 'paused' | 'changingVoice';
 export type PasteButtonState = 'idle' | 'pastingAfterButtonClick';
 type KeyboardPasteState = 'idle' | 'pastingAfterCtrlV';
 
+export interface MoansValues extends Record<string, SpeechSynthesisVoice> {}
+
 // prettier-ignore
 export const bast = {
   throat: {
@@ -69,8 +71,25 @@ export const bast = {
     voice: signal<string>('Google US English'),
     setVoice: (newVoice: string) => { bast.voices.voice.value = newVoice; },
 
-    moans: signal<SpeechSynthesisVoice[]>([]),
-    setMoans: (voices: SpeechSynthesisVoice[]) => { bast.voices.moans.value = voices; },
+    moans: signal<MoansValues>({}),
+    setMoans: (voices: MoansValues) => { bast.voices.moans.value = voices; },
+
+    moansIds: signal<string[]>([]),
+    setMoansIds: (voiceIds: string[]) => { bast.voices.moansIds.value = voiceIds; },
+
+    setMoansBeATCH: (moans:SpeechSynthesisVoice[]) => {
+      batch(() => {
+        const ids = moans.map(({ name }) => name);
+
+        const values = moans.reduce<MoansValues>((acc, voice) => {
+          acc[voice.name] = voice;
+          return acc;
+        }, {});
+
+        bast.voices.setMoansIds(ids)
+        bast.voices.setMoans(values)
+      });
+    },
 
     state: signal<SpeechState>('idle'),
     stop: () => { bast.voices.state.value = 'idle'; },
@@ -99,3 +118,11 @@ export const bast = {
     setActiveChunkId: (index: number) => { bast.chunks.activeChunkId.value = index; },
   },
 };
+
+/*
+- [ ] Can you understand what each group is responsible for?
+- [ ] Can you change voice logic without rewriting parsing logic?
+- [ ] Can you test the chunk-management behavior independently?
+- [ ] Can you predict the effects of each method from its name?
+- [ ] Are the cross-domain dependencies intentional?
+*/

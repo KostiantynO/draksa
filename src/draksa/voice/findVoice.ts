@@ -3,22 +3,22 @@
 
 import { bast } from '@/draksa/heaven';
 
-const pcEng = 'Google US English';
-
-const mobileEng = 'en_US';
+const eng = 'en-us';
 
 export const findVoice = () => {
   const moans = bast.voices.moans.peek();
-  if (!moans.length) return;
-
   const activeVoiceName = bast.voices.voice.peek();
-
-  const voice = moans.find(({ name }) => name === activeVoiceName);
+  const voice = moans[activeVoiceName];
 
   if (voice) return voice;
 
+  const moansArr = Object.entries(moans).map(([, moan]) => moan);
+
   const fallbackVoice =
-    moans.find(({ name }) => name === pcEng || name.includes(mobileEng)) ?? moans[0];
+    moansArr.find(({ name }) => {
+      const unified = name.replaceAll('_', '-').toLowerCase();
+      return unified.includes(eng);
+    }) ?? moansArr[0];
 
   return fallbackVoice;
 };
