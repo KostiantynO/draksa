@@ -20,6 +20,56 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 
 ## UI (hard)
 
+### feat: Where am I? :D
+
+Note: Draksa started as a simple page. One input and one button. The she grown up, and now
+has textarea and a button :D But each SEEMINGLY simple addition I want to add to her - is
+an extremely intense engineering task, that provides a real challenge for my mind. And for
+app's performance. This SO funny :D I just want a bunny :D Hopping around the text.
+
+Simpler said than done :D
+
+- IRL u need to:
+- consider unicode.
+- know the place where text splits
+- understand, that after humanizing the text, it will have different length then
+  original - need to map pre-to-post processing chunks.
+- translate initial text -> parsed text -> current word position -> bunny hop x-y
+  coordinates :D
+
+Me-Human: I want a small bunny (1rem = 22x24px box) following the currently spoken
+line/word (exact or coarse following - change in settings).
+
+Machine: And how i must do that? :D
+
+Me-Programmer: I am the answer :D
+
+Me-Developer: I am here just to translate human needs into machine-understandable
+instructions. Also I don't know why i split programmer from developer. They should be in
+the same sentence :D
+
+AI-agent: I am taught on the whole world codies without attribution. I can do any task you
+throw at me.
+
+Me: Ok. Then do that :D But explain and teach me how to do that.
+
+- Also me: Why am doing this task for 2 years? It is a simple input and a button. :D
+  - Answer:
+    - Me: I also want to KNOW how to implement each feature. And I want a lot of features.
+    - And I want performance. And I need to upgrade next from 15 to 16. And eslint is
+      hell, and it is hard to upgrade it from 8 to 9 with custom rules.
+    - And I want her to speak in CHUNKS, not in a single long line.
+    - And I want her to speak in different languages.
+    - And I want her to not to start from the beginning of the text, but continue to speak
+      after language changed.
+    - And I want a debounced input.
+    - And I want to see what's inside `HerMind`.
+    - And I want custom made - reinvent the wheel MY OWN `RippleButton` :D Which is not a
+      button, but a `Ripples` wrapper that provides on click `span` creation with css
+      `transform` expanding. And setTimeout management for `span` cleanup.
+
+---
+
 - [ ] show which line she is currently reading. (highlight the currently-reading line). Or
       just make a tiny catgirl😺 emoji following the currently spoken line on the left at
       the beginning of the line. Like a tiny overlay icon.
@@ -56,6 +106,20 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
       everybody is normal and just puts two symbols nearby and that's it. The TTS does the
       hard job guessing is the two nearby symbols match the UNICODE SPELL COMBINATION
       GRIMOIRE :] or not :] ).
+- [ ] split initial text into chunks by \n. Then, if line is longer that the 80/100 (I
+      actually don't want to set hard boundary - i just want text to split in the exact
+      places, where it is wrapped inside the textarea. So, it must look the same as in
+      textarea, but be splitted into chunks - by sentence - in memory. But it may just be
+      easier and more practical to set hard limit for 80 symbols - as recommended reading
+      length by prettier or idk what :D) symbols - split it again by dot or comma or
+      exclamation mark. Assign a `single group number` - an `initial text line number` to
+      a splited e.g. ~3-5 senteses. And make bunny-hop :D on each of them correctly
+      following the order of senteses of initial text and a suborder of a splitted long
+      line. This whole task may be simplified signifiCAnTly if bunny knows the x-y
+      coordinates of the text that is currently being read aloud by Draksa. Which would
+      require either to highlight a span of initial text. Or provide each word it's own
+      dom-element to take coordinates from - like `.getBoundingClientRect()` or smth other
+      more performant solution, that spamming page with tons of dom elements.
 
 ## LOGIC (normal)
 
@@ -86,7 +150,6 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 
 - [ ] use `FOR` component from `preact` to render `lists` of `languages` and
       `debounce delay`.
-
 - [ ] Use signals `Model` as a replacement for a God object. To me it is the same thing,
       don't know if it will improve any perf.
 - [ ] Use `computed` to buffer updates -> react diff only if `computed` value changes. But
@@ -103,6 +166,10 @@ Like a true polyGlotka(🥕) 🐇 om-nom-nom :D :D :D
 - [ ] Try to add `SWC plugin` for `react compiler` `instead` of `babel` one and see if it
       works, because build time is annoyingly long with babel in dev (on cold start
       sometimes it is ~5,~10,~20s). After that ~1.5s and below, usually below 0.2s
+- [ ] perf-6 try to set `ids` on initial chunks, when `.split(legs)` called for chunking
+      by `\n` and loop over real `ids` in `WhatsInside` to reduce rerenders of each
+      paragraph if possible. (only adding a space in the textarea to one initial paragraph
+      = only one paragraph rerenders in the output.)
 
 ## PERF (hard)
 
