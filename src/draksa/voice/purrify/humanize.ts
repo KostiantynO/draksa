@@ -41,7 +41,8 @@ const annoyance = Object.values<Mattern>(matterns)
 
 // const new = /<\/?(\w*\s*)\/?>/g // with capture group
 
-console.log({ annoyance });
+// console.log({ annoyance });
+
 // 2026-10-27 23:45
 // }\)|[)}\`];|<\/?>|<\/?(?=\w)>|<(?=[\w{"'])|(?<=[\w}"'])>|\/>(?=\s)|\`\`\`|\`|\*|_|---|(?<=\w)-(?=\w)|\.\.\.|#
 
