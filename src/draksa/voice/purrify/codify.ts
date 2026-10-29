@@ -20,7 +20,32 @@ const jsOperator = new Map<string, string>(
     "''": 'empty string',
     '""': 'empty string',
     '``': 'empty string',
-    '/g': 'global',
+    '/g;': 'global',
+    '/g ': 'global',
+    '/g\n': 'global',
+    '/g)': 'global',
+    '/g}': 'global',
+    '/g"': 'global',
+    "/g'": 'global',
+    '/g`': 'global',
+
+    '/u;': 'unicode',
+    '/u ': 'unicode',
+    '/u\n': 'unicode',
+    '/u)': 'unicode',
+    '/u}': 'unicode',
+    '/u"': 'unicode',
+    "/u'": 'unicode',
+    '/u`': 'unicode',
+
+    '/gu;': 'global unicode',
+    '/gu ': 'global unicode',
+    '/gu\n': 'global unicode',
+    '/gu)': 'global unicode',
+    '/gu}': 'global unicode',
+    '/gu"': 'global unicode',
+    "/gu'": 'global unicode',
+    '/gu`': 'global unicode',
   })
 );
 
@@ -40,17 +65,16 @@ const overLOADedSymbolsMoaning = new Map<string, string>(
 const curlyBraces = /[{}]/g;
 
 const withTheirMeaning = (raw: string): string =>
-  curlyBraces.test(raw)
-    ? ''
-    : jsOperator.has(raw)
-      ? ` ${jsOperator.get(raw) ?? ''} `
+  jsOperator.has(raw)
+    ? ` ${jsOperator.get(raw) ?? ''} `
+    : curlyBraces.test(raw)
+      ? ''
       : overLOADedSymbolsMoaning.has(raw)
         ? ` ${overLOADedSymbolsMoaning.get(raw) ?? ''} `
         : raw;
 
 const jsOperators =
-  /\(\(\) =>|=>|\(\s*\)\s*=>\s*\{\s*\}|\{\}|, \[\]\);|= \/|!==|!=|===|==|>=|<=|\|\||&&|\.\.\.args|''|""|(?<!`)``(?!`)|(?<= )\?\?|!!|>|<|'!'|"!"|`!`|\/g/g;
-
+  /\(\(\) =>|=>|\(\s*\)\s*=>\s*\{\s*\}|\{\}|{}|{|}|, \[\]\);|= \/|!==|!=|===|==|>=|<=|\|\||&&|\.\.\.args|''|""|(?<!`)``(?!`)|(?<= )\?\?|!!|>|<|'!'|"!"|`!`|\/[gimsuy]{0,6}[; )}"'`\s\n]/g;
 const jsNot = /!(?=[\w|"'])/g;
 
 export const codify = (rawCode: string): string =>
