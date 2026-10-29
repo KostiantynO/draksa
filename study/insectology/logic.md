@@ -37,3 +37,16 @@
 - [ ] after click on pause button, Draksa stops meowing. Then I write smth into input.
       Pause button should become 'play button', not stay frozen forever in 'continue'
       mode. Because I overwritten the old text already with my slight edits.
+
+- [ ] Draksa sometimes stops speaking next chunk / refuses to speak next sentence.
+
+  I heard there is some bug in chrome for 15sec?
+
+  But my speech is not so long.
+
+  I create a short sentences (split by `\n`).
+
+  What affects this random stopping of the speech?
+
+  And also, sometimes pause button does not work -> i press it -> and she continues to
+  speak! (sometimes fully continues, sometimes - till the end of the current chunk.)
