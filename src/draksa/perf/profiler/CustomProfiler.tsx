@@ -5,6 +5,8 @@ import { Profiler } from 'react';
 
 import { Draksa } from '@/draksa/cumponents/Draksa';
 
+import type { JSX } from 'react';
+
 type Phase = 'mount' | 'update' | 'nested-update';
 
 interface RenderRow {
@@ -68,7 +70,7 @@ const onRender = (
   }
 };
 
-export const Measurements = () => {
+export const Measurements = (): JSX.Element => {
   return (
     <div>
       <Profiler id="draksa" onRender={onRender}>

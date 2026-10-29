@@ -10,7 +10,9 @@ import { MyStoܫory } from '@/draksa/cumponents/MeowAloud/MyStory/MyStory';
 import { Name } from '@/draksa/cumponents/MeowAloud/Name';
 import { Voice } from '@/draksa/cumponents/MeowAloud/Voice/Voice';
 
-export const Draksa = () => {
+import type { JSX } from 'react';
+
+export const Draksa = (): JSX.Element => {
   return (
     <main className="relative grid gap-2 px-1 pt-4 pb-21">
       <MyFamily />

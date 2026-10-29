@@ -4,7 +4,9 @@
 import { SayIt } from '@/draksa/cumponents/MeowAloud/Humanity/SayIt';
 import { bast } from '@/draksa/heaven';
 
-export const SpeakLikeAHuman = () => {
+import type { JSX } from 'react';
+
+export const SpeakLikeAHuman = (): JSX.Element => {
   return (
     <>
       <SayIt

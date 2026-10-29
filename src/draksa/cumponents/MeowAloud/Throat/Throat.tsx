@@ -3,7 +3,9 @@
 
 import { useThroat } from '@/draksa/cumponents/MeowAloud/Throat/useThroat';
 
-export const Throat = () => {
+import type { JSX } from 'react';
+
+export const Throat = (): JSX.Element => {
   const { sheMeows, cumPuted } = useThroat();
 
   return (

@@ -1,7 +1,9 @@
 // src\app\not-found.tsx
 import Link from 'next/link';
 
-const NotFound = () => {
+import type { JSX } from 'react';
+
+const NotFound = (): JSX.Element => {
   return (
     <main className="grid min-h-dvh place-items-center bg-zinc-950 px-6 text-zinc-100">
       <article className="max-w-xl space-y-5 text-center">

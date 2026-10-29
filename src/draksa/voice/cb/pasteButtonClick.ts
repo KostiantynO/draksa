@@ -4,7 +4,7 @@
 import { bast } from '@/draksa/heaven';
 import { purrNow } from '@/draksa/perf/club/purrNow';
 
-export const pasteButtonClick = async () => {
+export const pasteButtonClick = async (): Promise<void> => {
   if (bast.throat.pasteButtonState.peek() === 'pastingAfterButtonClick') return;
   bast.throat.startButtonPasting();
 

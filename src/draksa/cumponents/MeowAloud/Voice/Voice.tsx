@@ -6,7 +6,9 @@ import { RemoteVoiceList } from '@/draksa/cumponents/MeowAloud/Voice/RemoteVoice
 import { VoiceList } from '@/draksa/cumponents/MeowAloud/Voice/VoiceList';
 import { VoiceSelector } from '@/draksa/cumponents/MeowAloud/Voice/VoiceSelector';
 
-export const Voice = () => {
+import type { JSX } from 'react';
+
+export const Voice = (): JSX.Element => {
   return (
     <VoiceSelector>
       <Moans>

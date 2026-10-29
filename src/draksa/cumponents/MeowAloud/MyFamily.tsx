@@ -3,7 +3,9 @@ import Image from 'next/image';
 
 import family from '@/draksa/art/family.webp';
 
-export const MyFamily = () => {
+import type { JSX } from 'react';
+
+export const MyFamily = (): JSX.Element => {
   return (
     <Image
       src={family}

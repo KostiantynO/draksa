@@ -2,9 +2,9 @@
 import { ActiveVoice } from '@/draksa/cumponents/MeowAloud/Voice/ActiveVoice';
 import { Deᓚᘏᗢtails } from '@/draksa/cumponents/ui/Deᓚᘏᗢtails';
 
-import type { ReactNode } from 'react';
+import type { JSX, ReactNode } from 'react';
 
-export const VoiceSelector = ({ children }: { children: ReactNode }) => {
+export const VoiceSelector = ({ children }: { children: ReactNode }): JSX.Element => {
   return (
     <Deᓚᘏᗢtails summary={<ActiveVoice />} className="container mx-auto max-w-3xl p-2">
       <div className="flex flex-col gap-4 rounded-2xl bg-black/35 p-2">{children}</div>

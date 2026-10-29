@@ -4,7 +4,7 @@
 import { peechSinTheSis } from '@/draksa/adapters/steppeBrOwOserPeech';
 import { bast } from '@/draksa/heaven';
 
-export const resumeMeowing = () => {
+export const resumeMeowing = (): void => {
   bast.voices.meow();
 
   peechSinTheSis.resume();

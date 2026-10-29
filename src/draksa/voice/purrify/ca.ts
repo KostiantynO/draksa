@@ -53,6 +53,7 @@ export const purrifae = (rrraawr: string): string =>
 //   '≽^•⩊•^≼',
 
 //   'm≽^•⩊•^≼m'
+//   'ฅ≽^•⩊•^≼ฅ'
 
 //   '^. .^₎ฅ',
 //   'ฅ^•ﻌ•^ฅ',

@@ -1,5 +1,10 @@
 // src\draksa\perf\club\bouncer.ts
 
+export interface BounceReturn {
+  (): void;
+  cancel(): void;
+}
+
 /**
  * @param cb callback function
  * @param getDelayMs reads the current delay when the `cb` is called.
@@ -16,7 +21,7 @@
  *
  * But if used in useCallback, it may rerun cause of unstable deps.
  */
-export const bounce = (cb: () => unknown, getDelayMs: () => number) => {
+export const bounce = (cb: () => unknown, getDelayMs: () => number): BounceReturn => {
   let id: undefined | ReturnType<typeof setTimeout>; // browser timeout
 
   const curried = () => {

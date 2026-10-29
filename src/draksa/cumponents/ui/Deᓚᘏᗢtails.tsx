@@ -1,6 +1,5 @@
-// src\draksa\cumponents\ui\Details.tsx
-
-import type { ReactNode } from 'react';
+// src\draksa\cumponents\ui\Deᓚᘏᗢtails.tsx
+import type { JSX, ReactNode } from 'react';
 
 export const Deᓚᘏᗢtails = ({
   summary,
@@ -10,7 +9,7 @@ export const Deᓚᘏᗢtails = ({
   summary: ReactNode;
   className?: string;
   children: ReactNode;
-}) => {
+}): JSX.Element => {
   return (
     <details
       className={`group grid gap-1 overflow-hidden rounded-2xl border bg-neutral-900/35 bg-[linear-gradient(#faefae05_1px,transparent_3px),linear-gradient(90deg,#baebae05_1px,transparent_1px)] bg-size-[21px_21px] transition-[height,grid-template-rows,opacity] duration-500 details-content:h-0 details-content:overflow-clip details-content:opacity-0 details-content:transition-[height,grid-template-rows,content-visibility,opacity] details-content:transition-discrete details-content:duration-500 details-content:ease-in-out open:details-content:h-auto open:details-content:opacity-100 ${className}`}

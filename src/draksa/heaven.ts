@@ -5,17 +5,80 @@ import { batch, signal } from '@preact/signals-react';
 
 import { draksaTells } from '@/draksa/cumponents/MeowAloud/draksaTells';
 
+import type { Signal } from '@preact/signals-react';
+
 const EMPTY: [] = [];
 
 type ChangingVoiceState = 'idle' | 'changingVoice';
 type SpeechState = 'idle' | 'meowing' | 'paused' | 'changingVoice';
-export type PasteButtonState = 'idle' | 'pastingAfterButtonClick';
+type PasteButtonState = 'idle' | 'pastingAfterButtonClick';
 type KeyboardPasteState = 'idle' | 'pastingAfterCtrlV';
 
-export interface MoansValues extends Record<string, SpeechSynthesisVoice> {}
+interface MoansValues extends Record<string, SpeechSynthesisVoice> {}
+
+type ArrowVoid = () => void;
+
+interface ᓚᘏᗢ_CatGirl_Goܫddess_ᗢᘏⳊ {
+  throat: {
+    polyGlotka: Signal<string>;
+    pleaseFeedMe: (yogurt: string) => void;
+    clear: ArrowVoid;
+    pasteButtonState: Signal<PasteButtonState>;
+    stopButtonPasting: ArrowVoid;
+    startButtonPasting: ArrowVoid;
+    keyboardPasteState: Signal<KeyboardPasteState>;
+    stopKeyboardPasting: ArrowVoid;
+    startKeyboardPasting: ArrowVoid;
+  };
+  mood: {
+    slurpRate: Signal<number>;
+    setSlurpRate: (value: number) => void;
+    pitch: Signal<number>;
+    setPitch: (value: number) => void;
+    isMeowingOnType: Signal<boolean>;
+    toggleIsMeowingOnType: ArrowVoid;
+    howLongSheWaitsBeforeSpeakingMs: Signal<number>;
+    setHowLongSheWaitsBeforeSpeaking: (ms: number) => void;
+  };
+  parsing: {
+    silence: Signal<boolean>;
+    toggleSilence: ArrowVoid;
+    humanize: Signal<boolean>;
+    toggleHumanize: ArrowVoid;
+    purrify: Signal<boolean>;
+    togglePurrify: ArrowVoid;
+    whitespace: Signal<boolean>;
+    toggleWhitespace: ArrowVoid;
+    codify: Signal<boolean>;
+    toggleCodify: ArrowVoid;
+  };
+  voices: {
+    voice: Signal<string>;
+    setVoice: (newVoice: string) => void;
+    moans: Signal<MoansValues>;
+    setMoans: (voices: MoansValues) => void;
+    moansIds: Signal<string[]>;
+    setMoansIds: (voiceIds: string[]) => void;
+    setMoansBeATCH: (moans: SpeechSynthesisVoice[]) => void;
+    state: Signal<SpeechState>;
+    stop: ArrowVoid;
+    meow: ArrowVoid;
+    pause: ArrowVoid;
+    isChangingVoice: Signal<ChangingVoiceState>;
+    startVoiceChange: ArrowVoid;
+    finishVoiceChange: ArrowVoid;
+  };
+  chunks: {
+    chunks: Signal<string[]>;
+    setChunks: (newChunks: string[]) => void;
+    reset: ArrowVoid;
+    activeChunkId: Signal<number>;
+    setActiveChunkId: (index: number) => void;
+  };
+}
 
 // prettier-ignore
-export const bast = {
+export const bast: ᓚᘏᗢ_CatGirl_Goܫddess_ᗢᘏⳊ = {
   throat: {
     polyGlotka: signal<string>(draksaTells.pleaseFeedMe),
     pleaseFeedMe: (yogurt: string) => { bast.throat.polyGlotka.value = yogurt; },

@@ -3,7 +3,9 @@
 import { SpeakLikeAHuman } from '@/draksa/cumponents/MeowAloud/Humanity/SpeakLikeAHuman';
 import { Deᓚᘏᗢtails } from '@/draksa/cumponents/ui/Deᓚᘏᗢtails';
 
-export const Humanity = () => {
+import type { JSX } from 'react';
+
+export const Humanity = (): JSX.Element => {
   return (
     <fieldset>
       <Deᓚᘏᗢtails

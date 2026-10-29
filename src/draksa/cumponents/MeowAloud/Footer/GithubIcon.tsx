@@ -1,4 +1,7 @@
-export const GithubLink = () => (
+// src\draksa\cumponents\MeowAloud\Footer\GithubIcon.tsx
+import type { JSX } from 'react';
+
+export const GithubLink = (): JSX.Element => (
   <a
     href="https://github.com/KostiantynO/draksa/"
     target="_blank"

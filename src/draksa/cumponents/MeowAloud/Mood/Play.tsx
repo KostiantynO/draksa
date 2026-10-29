@@ -9,7 +9,9 @@ import { bast } from '@/draksa/heaven';
 import { pauseMeowing } from '@/draksa/voice/pauseMeowing';
 import { resumeMeowing } from '@/draksa/voice/resumeMeowing';
 
-export const Play = () => {
+import type { JSX } from 'react';
+
+export const Play = (): JSX.Element => {
   useSignals();
   const { sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8, petHer } = useFeedHerLogic();
 

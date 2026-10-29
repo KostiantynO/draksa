@@ -4,13 +4,13 @@ const l = [
   //
   '( )',
   '(_)',
-];
+] as const;
 
 const r = [
   //
   '( )',
   '(_)',
-];
+] as const;
 
 const h = [
   //
@@ -23,12 +23,12 @@ const h = [
   'o',
   '0',
   'O',
-];
+] as const;
 
-const nogiOtUshei = l.length;
-const nautiCAl_knoTs = h.length;
+const nogiOtUshei: 2 = l.length;
+const nautiCAl_knoTs: 9 = h.length;
 
-const draw = () => {
+const draw = (): string[] => {
   const buttOns = [];
 
   for (let i = 0; i < nogiOtUshei; i++) {
@@ -41,5 +41,5 @@ const draw = () => {
   return buttOns.sort((a, b) => a.length - b.length);
 };
 
-const res = draw();
+const res: string[] = draw();
 console.table(res);

@@ -1,4 +1,4 @@
-// src\draksa\cumponents\Her.tsx
+// src\draksa\cumponents\ui\Her.tsx
 'use client';
 
 import { Component } from 'react';
@@ -15,11 +15,11 @@ export class Her extends Component<
     return { hasError: true };
   }
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+  componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
     console.error('ErrorBoundary caught an error:', error, errorInfo);
   }
 
-  render() {
+  render(): ReactNode {
     const { fallback, children } = this.props;
     const { hasError } = this.state;
 

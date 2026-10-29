@@ -6,9 +6,9 @@ import { useEffect, useTransition } from 'react';
 import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
-import type { ChangeEvent } from 'react';
+import type { ChangeEvent, JSX } from 'react';
 
-export const Pitch = () => {
+export const Pitch = (): JSX.Element => {
   const [, startTransition] = useTransition();
 
   const kindlyAskHerToSpeakWithThatPitch = ({
@@ -21,7 +21,7 @@ export const Pitch = () => {
       openWideAndPuuurrr( );
     });
 
-  useEffect(() => openWideAndPuuurrr.cancel, []);
+  useEffect(() => () => openWideAndPuuurrr.cancel(), []);
 
   return (
     <label className="flex items-center gap-2">

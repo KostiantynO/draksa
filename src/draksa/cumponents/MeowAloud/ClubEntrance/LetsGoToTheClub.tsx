@@ -1,10 +1,12 @@
-// src\draksa\cumponents\MeowAloud\ClubEntrance\SelectBounceTime.tsx
+// src\draksa\cumponents\MeowAloud\ClubEntrance\LetsGoToTheClub.tsx
 
 import { BounceList } from '@/draksa/cumponents/MeowAloud/ClubEntrance/BounceList';
 import { ConvinceBouncerToLetYouIn } from '@/draksa/cumponents/MeowAloud/ClubEntrance/ConvinceBouncerToLetYouIn';
 import { List } from '@/draksa/cumponents/MeowAloud/ClubEntrance/List';
 
-export const LetsGoToTheClub = () => {
+import type { JSX } from 'react';
+
+export const LetsGoToTheClub = (): JSX.Element => {
   return (
     <ConvinceBouncerToLetYouIn>
       <List>

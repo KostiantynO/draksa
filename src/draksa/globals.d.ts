@@ -6,3 +6,9 @@ declare module 'react' {
 }
 
 declare module '*.css' {}
+
+declare global {
+  interface SpeechSynthesisVoice {
+    gender: 'M' | 'F' | null;
+  }
+}

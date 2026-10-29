@@ -7,6 +7,8 @@ import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
+import type { JSX } from 'react';
+
 const speeds = [1, 1.1, 1.21, 1.3, 1.4, 1.5];
 
 const SlurpRateButtons = ({ open }: { open: boolean }) => {
@@ -20,7 +22,7 @@ const SlurpRateButtons = ({ open }: { open: boolean }) => {
       openWideAndPuuurrr( );
     });
 
-  useEffect(() => openWideAndPuuurrr.cancel, []);
+  useEffect(() => () => openWideAndPuuurrr.cancel(), []);
 
   const buttons = speeds.map(speed => (
     <li key={speed}>
@@ -45,7 +47,7 @@ const SlurpRateButtons = ({ open }: { open: boolean }) => {
   );
 };
 
-export const SlurpRate = () => {
+export const SlurpRate = (): JSX.Element => {
   const [open, setOpen] = useState(false);
   const showSpeedButtons = () => {
     setOpen(o => !o);

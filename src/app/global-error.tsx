@@ -1,6 +1,8 @@
 // src\app\global-error.tsx
 'use client';
 
+import type { JSX } from 'react';
+
 interface ErrorDigest extends Error {
   digest?: string;
 }
@@ -11,7 +13,7 @@ const GlobalError = ({
 }: {
   error: ErrorDigest;
   reset: () => void;
-}) => {
+}): JSX.Element => {
   return (
     <html>
       <body>

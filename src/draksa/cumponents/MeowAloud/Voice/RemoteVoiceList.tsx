@@ -1,7 +1,7 @@
 // src\draksa\cumponents\MeowAloud\Voice\RemoteVoiceList.tsx
-import type { ReactNode } from 'react';
+import type { JSX, ReactNode } from 'react';
 
-export const RemoteVoiceList = ({ children }: { children: ReactNode }) => (
+export const RemoteVoiceList = ({ children }: { children: ReactNode }): JSX.Element => (
   <div className="flex flex-col gap-2">
     <p className="sticky top-0 rounded-xl bg-neutral-950/90 px-2 py-1 font-bold">
       RemO𝝎Ote voices

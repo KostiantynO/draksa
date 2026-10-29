@@ -8,14 +8,16 @@ import { OwOptionButton } from '@/draksa/cumponents/ui/OptionButton';
 import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
-export const BounceOption = ({ label }: { label: number }) => {
+import type { JSX } from 'react';
+
+export const BounceOption = ({ label }: { label: number }): JSX.Element => {
   useSignals();
 
   const chooseBounce = () => {
     bast.mood.setHowLongSheWaitsBeforeSpeaking(label);
   };
 
-  useEffect(() => openWideAndPuuurrr.cancel, []);
+  useEffect(() => () => openWideAndPuuurrr.cancel(), []);
 
   const isActive = bast.mood.howLongSheWaitsBeforeSpeakingMs.value === label; // ok
 

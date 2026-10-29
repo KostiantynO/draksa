@@ -4,7 +4,9 @@
 import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { lanDyshy } from '@/draksa/voice/lanDyshy';
 
-export const LipStick = () => {
+import type { JSX } from 'react';
+
+export const LipStick = (): JSX.Element => {
   return (
     <ButtOn
       name="lanDyshy"

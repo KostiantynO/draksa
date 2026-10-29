@@ -5,7 +5,9 @@ import { useComputed } from '@preact/signals-react/runtime';
 
 import { bast } from '@/draksa/heaven';
 
-export const WhatsInside = () => {
+import type { JSX } from 'react';
+
+export const WhatsInside = (): JSX.Element => {
   const whatSheSays = useComputed(() =>
     // perf - try to set ids on initial chunks, when .split(legs) called for chunking by \n
     // and loop over real ids here

@@ -5,7 +5,7 @@ import { bast } from '@/draksa/heaven';
 
 const eng = 'en-us';
 
-export const findVoice = () => {
+export const findVoice = (): SpeechSynthesisVoice => {
   const moans = bast.voices.moans.peek();
   const activeVoiceName = bast.voices.voice.peek();
   const voice = moans[activeVoiceName];

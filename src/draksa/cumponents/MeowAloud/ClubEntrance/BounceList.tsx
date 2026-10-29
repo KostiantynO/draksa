@@ -3,6 +3,8 @@
 
 import { BounceOption } from '@/draksa/cumponents/MeowAloud/ClubEntrance/BounceOption';
 
+import type { JSX } from 'react';
+
 const makeBounceOption = (num: number) => {
   return <BounceOption key={num} label={num} />;
 };
@@ -13,7 +15,7 @@ const Placeholder = () => (
 
 const bounceTimeoutsMs = [50, 100, 200, 300, 400, 500, 600, 1000, 5000];
 
-export const BounceList = () => {
+export const BounceList = (): JSX.Element => {
   if (!bounceTimeoutsMs.length) return <Placeholder />;
 
   const arr = bounceTimeoutsMs.map(makeBounceOption);

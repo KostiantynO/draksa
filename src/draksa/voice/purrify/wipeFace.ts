@@ -1,14 +1,12 @@
 // src\draksa\voice\purrify\wipeFace.ts
 
-import {
-  collapseHorizontalWhitespace,
-  max2Newlines,
-  noSpaceBeforeNewline,
-} from '@/draksa/magic/regexp';
+const max2Newlines = /\n{3,}/g;
+const collapseHorizontalWhitespace = /[ \t]+/g;
+const noSpaceBeforeNewline = / \n/g;
 
-export const wipeFace = (beCaring: string) =>
+export const wipeFace = (beCaring: string): string =>
   beCaring
     .replace(max2Newlines, '\n\n')
     .replace(collapseHorizontalWhitespace, ' ')
-    .replace(noSpaceBeforeNewline, '\n') //
+    .replace(noSpaceBeforeNewline, '\n')
     .trim();

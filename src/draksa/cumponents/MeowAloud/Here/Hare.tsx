@@ -5,7 +5,9 @@ import { useComputed, useSignals } from '@preact/signals-react/runtime';
 
 import { bast } from '@/draksa/heaven';
 
-export const Hare = () => {
+import type { JSX } from 'react';
+
+export const Hare = (): JSX.Element => {
   useSignals();
 
   const bunnyHop = useComputed(() => {

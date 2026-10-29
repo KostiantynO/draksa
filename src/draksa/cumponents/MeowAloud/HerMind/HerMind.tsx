@@ -3,7 +3,9 @@
 import { WhatsInside } from '@/draksa/cumponents/MeowAloud/HerMind/WhatsInside';
 import { Deᓚᘏᗢtails } from '@/draksa/cumponents/ui/Deᓚᘏᗢtails';
 
-export const HerMind = () => {
+import type { JSX } from 'react';
+
+export const HerMind = (): JSX.Element => {
   return (
     <div className="relative container mx-auto max-w-3xl">
       <Deᓚᘏᗢtails className="p-2" summary={<p>Her mind</p>}>

@@ -5,7 +5,7 @@ import family from '@/draksa/art/family.webp';
 import { Footer } from '@/draksa/cumponents/MeowAloud/Footer/Footer';
 
 import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
+import type { JSX, ReactNode } from 'react';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://draksa.vercel.app';
 
@@ -36,7 +36,7 @@ const GoonLayout = ({
   children,
 }: Readonly<{
   children: ReactNode;
-}>) => {
+}>): JSX.Element => {
   return (
     <html lang="en">
       <body className="relative overflow-y-scroll antialiased">

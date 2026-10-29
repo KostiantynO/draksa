@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { ButtOn } from '@/draksa/cumponents/ui/Button';
 
-import type { ReactNode } from 'react';
+import type { JSX, ReactNode } from 'react';
 
 const MoodButton = ({ toggleShowMood }: { toggleShowMood: () => void }) => {
   return (
@@ -26,7 +26,7 @@ export const MO𝝎Od = ({
 
   ticklish: ReactNode;
   wannaDance: ReactNode;
-}) => {
+}): JSX.Element => {
   const [showMood, setShowMood] = useState(false);
 
   const toggleShowMood = () => {

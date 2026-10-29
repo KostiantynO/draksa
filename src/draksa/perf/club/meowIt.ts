@@ -6,6 +6,8 @@ import { bast } from '@/draksa/heaven';
 import { bounce } from '@/draksa/perf/club/bouncer';
 import { purrNow } from '@/draksa/perf/club/purrNow';
 
+import type { BounceReturn } from '@/draksa/perf/club/bouncer';
+
 const meowItButtonClick = () => {
   const yogurt = draksaTells.myStory;
 
@@ -19,4 +21,4 @@ const meowItButtonClick = () => {
 
 const mediumDelay = () => 210;
 
-export const meowIt = bounce(meowItButtonClick, mediumDelay);
+export const meowIt: BounceReturn = bounce(meowItButtonClick, mediumDelay);

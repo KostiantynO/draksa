@@ -1,11 +1,12 @@
 // src\draksa\cumponents\MeowAloud\Voice\VoiceList.tsx
 'use client';
-
 import { useComputed, useSignals } from '@preact/signals-react/runtime';
 
 import { LoadVoicesButton } from '@/draksa/cumponents/MeowAloud/Voice/LoadVoicesButton';
 import { VoiceOption } from '@/draksa/cumponents/MeowAloud/Voice/VoiceOption';
 import { bast } from '@/draksa/heaven';
+
+import type { JSX } from 'react';
 
 const makeOption = ({ name }: SpeechSynthesisVoice) => (
   <VoiceOption key={name} voiceName={name} />
@@ -18,7 +19,7 @@ const Placeholder = () => (
   </div>
 );
 
-export const VoiceList = ({ local }: { local: boolean }) => {
+export const VoiceList = ({ local }: { local: boolean }): JSX.Element => {
   useSignals();
 
   const voices = useComputed(() => {

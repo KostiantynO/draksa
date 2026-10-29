@@ -3,6 +3,8 @@
 
 import { bast } from '@/draksa/heaven';
 
-export const BouncerWristwatch = () => {
+import type { JSX } from 'react';
+
+export const BouncerWristwatch = (): JSX.Element => {
   return <p>{bast.mood.howLongSheWaitsBeforeSpeakingMs} ms</p>;
 };

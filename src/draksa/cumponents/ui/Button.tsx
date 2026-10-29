@@ -3,11 +3,15 @@
 
 import { Ripples } from '@/draksa/cumponents/ui/Ripples/Ripples';
 
-import type { ComponentProps } from 'react';
+import type { ComponentProps, JSX } from 'react';
 
 interface ButtonProps extends ComponentProps<'button'> {}
 
-export const ButtOn = ({ className = '', children, ...props }: ButtonProps) => {
+export const ButtOn = ({
+  className = '',
+  children,
+  ...props
+}: ButtonProps): JSX.Element => {
   return (
     <button
       className={`hover:pink-700 isolate cursor-pointer overflow-hidden rounded-full bg-linear-to-r from-red-600 to-amber-500 text-3xl font-bold whitespace-nowrap text-gray-50 shadow-md shadow-gray-400 transition-colors duration-210 contain-content hover:from-red-500 hover:to-fuchsia-500 ${className}`}

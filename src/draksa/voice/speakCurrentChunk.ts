@@ -6,7 +6,7 @@ import { bast } from '@/draksa/heaven';
 import { kisKisKis } from '@/draksa/voice/catCalling';
 import { findVoice } from '@/draksa/voice/findVoice';
 
-export const speakCurrentChunk = () => {
+export const speakCurrentChunk = (): void => {
   kisKisKis();
 
   const id = bast.chunks.activeChunkId.peek();

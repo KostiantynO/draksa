@@ -9,7 +9,7 @@ import { pleaseMakeMyMouthBusy } from '@/draksa/voice/pleaseMakeMyMouthBusy';
 
 pleaseMakeMyMouthBusy();
 
-export const useLoudMoans = () => {
+export const useLoudMoans = (): void => {
   useEffect(() => {
     loadMoans();
 

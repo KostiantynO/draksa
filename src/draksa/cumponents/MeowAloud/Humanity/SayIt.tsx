@@ -1,13 +1,15 @@
 // src\draksa\cumponents\MeowAloud\Humanity\SayIt.tsx
 'use client';
 
+import type { JSX } from 'react';
+
 interface DontGoHollowProps {
   checked: boolean;
   label: string;
   toggle: () => void;
 }
 
-export const SayIt = ({ checked, label, toggle }: DontGoHollowProps) => {
+export const SayIt = ({ checked, label, toggle }: DontGoHollowProps): JSX.Element => {
   return (
     <label className="flex cursor-pointer items-center gap-2 rounded-xl bg-neutral-950/40 px-3 py-2">
       <input

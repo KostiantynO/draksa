@@ -9,14 +9,16 @@ import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 import { selectVoice } from '@/draksa/voice/selectVoice';
 
-export const VoiceOption = ({ voiceName }: { voiceName: string }) => {
+import type { JSX } from 'react';
+
+export const VoiceOption = ({ voiceName }: { voiceName: string }): JSX.Element | null => {
   useSignals();
 
   const chooseVoice = () => {
     selectVoice(voiceName);
   };
 
-  useEffect(() => openWideAndPuuurrr.cancel, []);
+  useEffect(() => () => openWideAndPuuurrr.cancel(), []);
 
   const isActive = bast.voices.voice.value === voiceName;
 

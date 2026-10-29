@@ -4,8 +4,8 @@
 import { peechSinTheSis } from '@/draksa/adapters/steppeBrOwOserPeech';
 import { bast } from '@/draksa/heaven';
 
-export const pauseMeowing = () => {
-  peechSinTheSis.pause()
+export const pauseMeowing = (): void => {
+  peechSinTheSis.pause();
 
   bast.voices.pause();
 };

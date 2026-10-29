@@ -4,7 +4,7 @@
 import { peechSinTheSis } from '@/draksa/adapters/steppeBrOwOserPeech';
 import { kisKisKis } from '@/draksa/voice/catCalling';
 
-export const pleaseMakeMyMouthBusy = () => {
+export const pleaseMakeMyMouthBusy = (): void => {
   if (!peechSinTheSis.yaGotova()) return;
 
   kisKisKis();

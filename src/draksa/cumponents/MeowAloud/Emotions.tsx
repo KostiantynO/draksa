@@ -5,7 +5,9 @@ import { SlurpRate } from '@/draksa/cumponents/MeowAloud/Mood/SlurpRate';
 import { TickleHer } from '@/draksa/cumponents/MeowAloud/Mood/TickleHer';
 import { Pitch } from '@/draksa/cumponents/MeowAloud/Pitch';
 
-export const Emotions = () => {
+import type { JSX } from 'react';
+
+export const Emotions = (): JSX.Element => {
   return (
     <MO𝝎Od
       energetic={<SlurpRate />}

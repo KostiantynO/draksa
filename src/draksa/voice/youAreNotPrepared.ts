@@ -2,11 +2,11 @@
 import { bast } from '@/draksa/heaven';
 import { purrify } from '@/draksa/voice/purrify/purrify';
 
-export const unwrapLongLine = /(?<=[\n;.!?])\s+/g;
+const unwrapLongLine = /(?<=[\n;.!?])\s+/g;
 
-export const legs = /\n/g;
+const legs = /\n/g;
 
-export const youAreNotPrepared = () => {
+export const youAreNotPrepared = (): string[] | undefined => {
   const polyGlotka = bast.throat.polyGlotka.peek();
   if (!polyGlotka.length) {
     bast.chunks.reset();

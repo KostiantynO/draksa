@@ -11,10 +11,6 @@ interface BlockListItem {
 
 type BlockList = Record<string, BlockListItem>;
 
-// interface VoiceWithGender extends SpeechSynthesisVoice {
-//   gender: 'M' | 'F' | null;
-// }
-
 const blocklist: BlockList = {
   // boys
   'Microsoft Jakub - Czech (Czech Republic)': { gender: 'M', block: 1 },
@@ -46,7 +42,7 @@ const blocklist: BlockList = {
   'Microsoft Zira - English (United States)': { gender: 'F', block: 0 },
 };
 
-export const loadMoans = () => {
+export const loadMoans = (): void => {
   const voices = peechSinTheSis.getMoans();
 
   const onlyFunOnes = voices

@@ -5,7 +5,9 @@ import { useComputed } from '@preact/signals-react/runtime';
 
 import { bast } from '@/draksa/heaven';
 
-export const ActiveVoice = () => {
+import type { JSX } from 'react';
+
+export const ActiveVoice = (): JSX.Element => {
   const label = useComputed(() =>
     bast.voices.voice.value.replace('oo', 'OܫO').replace('US', 'UwUS')
   );

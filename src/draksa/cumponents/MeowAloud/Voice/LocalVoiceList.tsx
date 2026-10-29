@@ -1,7 +1,7 @@
 // src\draksa\cumponents\MeowAloud\Voice\LocalVoiceList.tsx
-import type { ReactNode } from 'react';
+import type { JSX, ReactNode } from 'react';
 
-export const LocalVoiceList = ({ children }: { children: ReactNode }) => (
+export const LocalVoiceList = ({ children }: { children: ReactNode }): JSX.Element => (
   <div>
     <p className="sticky top-0 rounded-xl bg-neutral-950/90 px-2 py-1 font-bold">
       Local voices

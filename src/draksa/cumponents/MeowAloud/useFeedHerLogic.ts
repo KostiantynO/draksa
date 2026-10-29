@@ -5,17 +5,22 @@ import { useEffect } from 'react';
 
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
-export const useFeedHerLogic = () => {
-  const sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8 = () => {
+interface FeedHerLogicReturn {
+  sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8: () => void;
+  petHer: () => void;
+}
+
+export const useFeedHerLogic = (): FeedHerLogicReturn => {
+  const sllluuuuuuuurp_8p_8Þ_8P_8o_8O_8 = (): void => {
     // prettier-ignore
     openWideAndPuuurrr( );
   };
 
-  const petHer = () => {
+  const petHer = (): void => {
     //
   };
 
-  useEffect(() => openWideAndPuuurrr.cancel, []);
+  useEffect(() => () => openWideAndPuuurrr.cancel(), []);
 
   return {
     /** itsSoMajesticThatJavaScriptGirlAcceptsSuchFunnyFunctionNamesAsAWorkingReferences

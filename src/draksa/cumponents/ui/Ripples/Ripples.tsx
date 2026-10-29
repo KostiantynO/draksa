@@ -4,11 +4,11 @@
 import { RippleSpan } from '@/draksa/cumponents/ui/Ripples/RippleSpan';
 import { useRipples } from '@/draksa/cumponents/ui/Ripples/useRipples';
 
-import type { ComponentProps } from 'react';
+import type { ComponentProps, JSX } from 'react';
 
 interface RipplesProps extends ComponentProps<'div'> {}
 
-export const Ripples = ({ className = '', children }: RipplesProps) => {
+export const Ripples = ({ className = '', children }: RipplesProps): JSX.Element => {
   const { ripples, makeWaves } = useRipples();
 
   const ripplesArray = ripples.map(({ id, x, y }) => <RippleSpan key={id} x={x} y={y} />);

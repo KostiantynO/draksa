@@ -3,7 +3,9 @@
 
 import { bast } from '@/draksa/heaven';
 
-export const TickleHer = () => {
+import type { JSX } from 'react';
+
+export const TickleHer = (): JSX.Element => {
   return (
     <label className="flex gap-3">
       <span>Meow on type</span>

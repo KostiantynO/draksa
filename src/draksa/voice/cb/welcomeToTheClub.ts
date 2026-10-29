@@ -5,7 +5,7 @@ import { kisKisKis } from '@/draksa/voice/catCalling';
 import { speakCurrentChunk } from '@/draksa/voice/speakCurrentChunk';
 import { youAreNotPrepared } from '@/draksa/voice/youAreNotPrepared';
 
-export const welcomeToTheClub = () => {
+export const welcomeToTheClub = (): void => {
   kisKisKis();
 
   if (bast.throat.keyboardPasteState.peek() === 'pastingAfterCtrlV') {

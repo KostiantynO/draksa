@@ -3,19 +3,25 @@
     "target": "ESNext",
     "module": "esnext",
     "strict": true,
+    "alwaysStrict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noUncheckedSideEffectImports": true,
 
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-
     "noEmit": true,
 
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
+
+    "allowJs": false,
+    "isolatedDeclarations": true,
+    "declaration": true,
+    "composite": true,
+    // "stableTypeOrdering": true, // ts6
+
     "jsx": "react-jsx",
     "incremental": true,
     "tsBuildInfoFile": "./.next/cache/tsconfig.app.tsbuildinfo",
@@ -24,8 +30,8 @@
         "name": "next"
       }
     ],
-    // "baseUrl": ".",
-    // "rootDir": "./src/", need for TS 6.0, but it imports things outside of the src.
+
+    "rootDir": "./",
     "types": ["node"],
     "paths": {
       "@/*": ["./src/*"],
@@ -35,9 +41,6 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-
-    // "postcss.config.mjs",
-    // "prettier.config.mjs",
 
     "next-env.d.ts",
     ".next/dev/types/**/*.ts",

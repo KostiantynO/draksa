@@ -8,7 +8,9 @@ import { ButtOn } from '@/draksa/cumponents/ui/Button';
 import { bast } from '@/draksa/heaven';
 import { loadMoans } from '@/draksa/voice/loudMoans';
 
-export const LoadVoicesButton = () => {
+import type { JSX } from 'react';
+
+export const LoadVoicesButton = (): JSX.Element | null => {
   useSignals();
   const show = bast.voices?.moansIds.value.length === 0;
 

@@ -9,11 +9,12 @@ import { useEffect } from 'react';
 import { bast } from '@/draksa/heaven';
 import { openWideAndPuuurrr } from '@/draksa/perf/club/openWideAndPuuurrr';
 
+import type { ReadonlySignal } from '@preact/signals-react';
 import type { ChangeEvent } from 'react';
 
 const sheMeows = ({
   currentTarget: { value: yogurt },
-}: ChangeEvent<HTMLTextAreaElement>) => {
+}: ChangeEvent<HTMLTextAreaElement>): void => {
   bast.throat.pleaseFeedMe(yogurt);
 
   if (!bast.mood.isMeowingOnType.peek()) return;
@@ -22,12 +23,17 @@ const sheMeows = ({
   openWideAndPuuurrr( );
 };
 
-export const useThroat = () => {
+interface ThroatReturn {
+  sheMeows: ({ currentTarget: { value } }: ChangeEvent<HTMLTextAreaElement>) => void;
+  cumPuted: ReadonlySignal<string>;
+}
+
+export const useThroat = (): ThroatReturn => {
   useSignals();
 
   const cumPuted = useComputed(() => bast.throat.polyGlotka.value);
 
-  useEffect(() => openWideAndPuuurrr.cancel, []);
+  useEffect(() => () => openWideAndPuuurrr.cancel(), []);
 
   return { sheMeows, cumPuted };
 };

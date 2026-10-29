@@ -8,7 +8,12 @@ import type { PointerEvent } from 'react';
 
 const RIPPLE_DURATION_MS = 1000;
 
-export const useRipples = () => {
+interface RipplesReturn {
+  ripples: Ripple[];
+  makeWaves: ({ clientX, clientY, currentTarget }: PointerEvent<HTMLDivElement>) => void;
+}
+
+export const useRipples = (): RipplesReturn => {
   const [ripples, setRipples] = useState<Ripple[]>([]);
   const nextId = useRef(0);
   const willUnmount = useRef<boolean>(false);
@@ -23,7 +28,7 @@ export const useRipples = () => {
     clientX,
     clientY,
     currentTarget,
-  }: PointerEvent<HTMLDivElement>) => {
+  }: PointerEvent<HTMLDivElement>): void => {
     const { left, top } = currentTarget.getBoundingClientRect();
     const x = clientX - left;
     const y = clientY - top;
